@@ -1,0 +1,24 @@
+---
+title: covidfn
+---
+
+# Project description
+
+The goal of this project is to do an assessment of the exposure of canadian communities to social pressures in the context of the covid pandemic. 
+
+The plan is to take large scale Canadian data associated with social vulnerability and associate them with data of cases and deaths from the covid pandemic. 
+
+There are some discrepancies between the covid data and the health regions data that I need to figure out to make sure everything makes total sense. For a first version I will simply extract data under the geolocated placenames to make things as simple as possible. 
+
+Having said that, however, it would be interesting to down scale the analysis to Statistics Canada's census subdivision scale. Before I can do that, however, I need to figure out why the health regions in the [covidtimelinecanada](https://github.com/ccodwg/CovidTimelineCanada) project are not the same as the health regions from Statistics Canada and how it affects case distribution in the country. There is a short [description](https://github.com/ccodwg/CovidTimelineCanada/tree/main/geo) of the modifications made to the shapefiles in the covidtimelinecanada project, but they are not sufficient to understand exactly what was done to modify the health regions boundaries.
+
+The outline of health regions from the covid data is too simplified, I'm losing a lot of data along the coast. This will need to be modified and I may need to figure out the issue with the health regions sooner rather than later. The first step would be to look at the 2018 health regions and see whether there are any differences. 
+
+After looking, it seems like the saskatchewan data needs to be replaced for their own specific reporting regions, which differ from the stats can data
+
+# Data 
+
+
+# Methods 
+
+
