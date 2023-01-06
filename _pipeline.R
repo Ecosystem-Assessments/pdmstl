@@ -3,17 +3,15 @@ load_all()
 
 pipeline <- function() {
   # Update global parameters
-  global_param()
-  
-  # Get area of interest 
-  get_aoi()
+  global_parameters()
   
   # Make grid 
-  # pipedat::pipegrid(x = pipedat:::basemap$can, cellsize = 1, crs = 4326)
+  make_grid(cellsize = 0.01)
 
   # Integrate data 
-  pipedat::pipeflow("./data/data-config/pipedat.yml")
+  pipedat::pipeflow("./data/config/pipedat.yml")
   
-  # Prepare data 
-  data_prep()
+  # Prepare assessment modules 
+  make_abiotic()
+  # make_biotic()
 }

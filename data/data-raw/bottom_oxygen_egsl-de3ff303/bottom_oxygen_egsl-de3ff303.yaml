@@ -1,0 +1,45 @@
+pipeline:
+  pipeline_id: de3ff303
+  pipeline_type: data
+  creators:
+  - contact_id: 1
+    first_name: David
+    last_name: Beauchesne
+    organization: Universite Laval
+    department: Department of Biology
+    role: Postdoctoral researcher
+    email: david.beauchesne@hotmail.com
+    phone: 1-514-553-4974
+  date_created: '2023-01-06'
+  url: https://github.com/Ecosystem-Assessments/pipedat/blob/main/R/dp_bottom_oxygen_egsl-de3ff303.R
+  pipeline_bbox_crs: 4326
+description:
+  name: Deep water dissolved oxygen in the Estuary and Gulf of St.Lawrence
+  description: Deep water (> 200 m) dissolved oxygen interpolated on a grid cell of
+    10 km x10 km in the Estuary and Gulf of St. Lawrence. Input data are from the
+    annual August multidisciplinary survey hold in 2011 to 2020.
+  access_date: '2023-01-06'
+  contacts:
+  - contact_id: 35
+    first_name: ''
+    last_name: ''
+    organization: Fisheries and Oceans Canada
+    department: Institut Maurice-Lamontagne
+    role: Data management
+    email: gddaiss-dmsaisb.XLAU@dfo-mpo.gc.ca
+    phone: ''
+  citekey: df02022c
+  timespan:
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  url: https://open.canada.ca/data/en/dataset/fb362c48-fe21-4e4d-abee-cf7ef92b475d
+  uuid: fb362c48-fe21-4e4d-abee-cf7ef92b475d
+  availability: open

@@ -42,3 +42,4 @@ vignettes/*.pdf
 *.tif
 .DS_Store
 raw/
+*.RData
