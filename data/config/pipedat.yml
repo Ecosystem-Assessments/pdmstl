@@ -36,19 +36,21 @@ pipedat:
   data_pipelines:
     # ------------------------------------------------------------------------
     # Abiotic data 
-    - "a8d6e8b7" # Temperature & salinity
-    - "de3ff303" # Oxygen
-    - "e775900b" # The GEBCO_2021 Grid Bathymetry
+    # - "a8d6e8b7" # Temperature & salinity
+    # - "de3ff303" # Oxygen
+    # - "e775900b" # The GEBCO_2021 Grid Bathymetry
     # - "4d4292ca" # Bio-ORACLE
-  #   # ------------------------------------------------------------------------
-  #   # Biotic data 
+    # ------------------------------------------------------------------------
+    # Biotic data 
+    - "d6b6f3fa" # Groundfish survey estuary and northern gulf
+    - "5b61d05c" # Groundfish survey southern gulf
   # ==========================================================================
   data_integration:
     # ------------------------------------------------------------------------
     # Abiotic data 
     # - "6c724ee5" # Temperature & salinity
     # - "0d36cf5d" # Oxygen 
-    - "ee0dd36a" # The GEBCO_2021 Grid Bathymetry
+    # - "ee0dd36a" # The GEBCO_2021 Grid Bathymetry
   #   # ------------------------------------------------------------------------
   #   # Biotic data 
   # ==========================================================================

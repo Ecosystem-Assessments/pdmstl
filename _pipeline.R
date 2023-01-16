@@ -13,5 +13,5 @@ pipeline <- function() {
   
   # Prepare assessment modules 
   make_abiotic()
-  # make_biotic()
+  make_biotic()
 }
