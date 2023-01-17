@@ -72,6 +72,9 @@ make_abiotic <- function() {
   nm <- gsub("Light.bottom","Light", nm)
   nm <- gsub("bio-oracle-4d4292ca-Present.Benthic.Mean.Depth.","Bottom_", nm)
   nm <- gsub("bio-oracle-4d4292ca-Present.Surface.","Surface_", nm)
+  nm <- gsub(".tif", "", nm)
+  nm <- gsub("\\.", "_", nm)
+  nm <- gsub("\\-", "_", nm)
   nm <- tolower(nm)
   nm
   
