@@ -23,7 +23,7 @@ msgInfo <- function(..., appendLF = TRUE) {
 # Params 
 global_param <- function() {
   assign(x = "param",
-         value = yaml::read_yaml("./data/data-config/global_parameters.yml"),
+         value = yaml::read_yaml("./data/config/global_parameters.yml"),
          envir = globalenv())
 }
  
