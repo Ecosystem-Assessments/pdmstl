@@ -100,22 +100,37 @@ make_biotic <- function() {
   # Bind both dataframe
   dat <- dplyr::bind_rows(north, south)
 
-  # Select only target species 
-  # WARNING: À compléter avec la liste à Lisa et faire le ménage des espèces
-  nm <- c(
-    "pennatula_aculeata",
-    "pennatulacea"
-  )
+
+  #---------- Filter for species ----------#
+
+  # Changes synonyms for accepted taxa name
+  syn <- data.frame(syn = c("halipteris_finmarchica",
+                            "pennatula_grandis",
+                            "pennatulacea"),
+                    acc = c("balticina_finmarchica",
+                            "ptilella_grandis",
+                            "pennatuloidea"))
+  for(i in 1:nrow(syn)) {
+    dat[dat$scientific_name %in% syn$syn[i], "scientific_name"] <- syn$acc[i]
+  }
+
+  # Select only target species
+  nm <- c("balticina_finmarchica",
+          "pennatula_aculeata",
+          "pennatuloidea",
+          "ptilella_grandis",
+          "anthoptilum_grandiflorum")
+
   dat <- dat[dat$scientific_name %in% nm, ]
     
   # Make dat a spatial object 
   dat <- sf::st_as_sf(
-    dat, 
+    dat,
     coords = c("lon","lat"),
     crs = 4326
   )
   
   # Save object in data-biotic
-  sf::st_write(dat, paste0(out,"/pennatulacea.gpkg"))
+  sf::st_write(dat, paste0(out,"/sea_pens.gpkg"), append = FALSE)
 
 }
