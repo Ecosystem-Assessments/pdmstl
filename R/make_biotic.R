@@ -1,11 +1,11 @@
 #' Prepare biotic data 
 #'
 #' @export
+
 make_biotic <- function() {
   library(stars)
   out <- here::here("data","data-biotic")
   chk_create(out)
-  grd <- stars::read_stars("data/grid/grid.tif")
   
   # Biotic data
   south <- vroom::vroom("data/data-raw/groundfish_survey_4t_dfo-5b61d05c/groundfish_survey_4t_dfo-5b61d05c.csv")
