@@ -12,12 +12,17 @@ pipeline:
     phone: 1-514-553-4974
   date_created: '2022-11-21'
   url: https://github.com/Ecosystem-Assessments/pipedat/blob/main/R/dp_bio-oracle-4d4292ca.R
+  pipeline_bbox:
+  - -75
+  - 40
+  - -50
+  - 58
   pipeline_bbox_crs: 4326
 description:
   name: Bio-ORACLE
   description: Bio-ORACLE is a set of GIS rasters providing geophysical, biotic and
     environmental data for surface and benthic marine realms.
-  access_date: '2023-01-06'
+  access_date: '2023-01-30'
   contacts:
   - contact_id: 69
     first_name: Lennert

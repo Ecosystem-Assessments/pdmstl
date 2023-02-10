@@ -12,6 +12,11 @@ pipeline:
     phone: 1-514-553-4974
   date_created: '2023-01-06'
   url: https://github.com/Ecosystem-Assessments/pipedat/blob/main/R/dp_bottom_temperature_salinity_egsl-a8d6e8b7.R
+  pipeline_bbox:
+  - -75
+  - 40
+  - -50
+  - 58
   pipeline_bbox_crs: 4326
 description:
   name: Bottom water temperature and salinity in the Estuary and Gulf of St.Lawrence
@@ -19,7 +24,7 @@ description:
     bottom waters including shallow waters. Data are a result of a 3D interpolation
     on a 1km x 1km x bottom depth grid. They mostly come from the 2 multidisciplinary
     surveys but all the available CTD data sampled in August and September were used.
-  access_date: '2023-01-06'
+  access_date: '2023-01-30'
   contacts:
   - contact_id: 35
     first_name: ''

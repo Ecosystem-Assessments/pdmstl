@@ -3,15 +3,9 @@
 #' @export
 plot_basemap <- function(aoi) {
 
-  bbox <- sf::st_bbox(aoi)
-
   basemap("cities")
 
   global_param()
-
-  # Basemap
-  graphicsutils::plot0(x = c(bbox$xmin, bbox$xmax), 
-                       y = c(bbox$ymin, bbox$ymax))
   
   # Data
   plot(sf::st_geometry(aoi),

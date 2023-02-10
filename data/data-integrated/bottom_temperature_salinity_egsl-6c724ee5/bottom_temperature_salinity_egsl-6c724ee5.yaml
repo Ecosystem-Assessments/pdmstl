@@ -19,6 +19,6 @@ description:
     bottom waters including shallow waters. Data are a result of a 3D interpolation
     on a 1km x 1km x bottom depth grid. They mostly come from the 2 multidisciplinary
     surveys but all the available CTD data sampled in August and September were used.
-  access_date: '2023-01-06'
+  access_date: '2023-01-30'
   citekey: dfo2022b
   integration_data: a8d6e8b7

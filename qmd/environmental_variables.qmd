@@ -1,0 +1,11 @@
+# Variables environnementales
+
+Il n'y a pas de effets significatifs entre le taux de croissance et les variables environnementales testé dans le papier de *de Moura Neves 2015* (i.e. depth, latitude, temperature, chlorophyll a, surface particulate organic carbon and surface particulate inorganic carbon).
+
+depth, temperature and food input are generally recognised as important factors influencing growth (Roberts et al., 2009).
+
+Temperature, surface primary productivity, salinity and calcite saturation have been predicted to be some of the most influential environmental factors in determining the distribution of cold-water sea pens (Yesson et al., 2012)
+
+ Greathead et al. (2015) found that mud, minimum salinity, depth and gravel were important variables influencing the presence of three sea pen species in Scottish waters.
+
+Je n'ai pris aucune données de surface, seulement des données de fond.

@@ -1,0 +1,10 @@
+# Bathymétrie {.unnumbered}
+
+Les donnés de bathymétrie proviennent de [GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/).
+Dans le papier de Ross _et. al_ 2021, des variables dérivées de la bathymétrie sont également utilisées (e.g. la pente, le Topographic Position Index, etc.).
+J'ai calculé ces dérivés avec la fonction `terrain` du la librairie R `terra`.
+Je n'ai gardé que la pente puisque les autres dérivés de la bathymétrie étaient tous fortement corrélés avec la pente.
+
+![Données de bathymétrie du GEBCO à une résolution de 0.01 degré décimal](figures/env_bathy.png){#fig-bathy}
+
+![Données de pente calculées avec la bathymétrie à une résolution de 0.01 degré décimal](figures/env_slope.png){#fig-slope}

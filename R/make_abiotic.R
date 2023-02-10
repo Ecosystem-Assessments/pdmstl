@@ -16,12 +16,31 @@ make_abiotic <- function() {
   
   # Abiotic data
   ## Bathymetry
-  bathy <- importdat("e775900b")
-  
+  bathy <- terra::rast("data/data-raw/bathymetry_gebco_2021-e775900b/gebco_2021_sub_ice_topo_n90.0_s0.0_w-90.0_e0.0.tif") |>
+    terra::crop(x = _, 
+                y = terra::vect(sf::st_read("data/aoi/aoi.gpkg")),
+                mask = TRUE) |>
+    terra::clamp(x = _, upper = 0) |>
+    stars::st_as_stars() |>
+    list()
+
+  slope <- terra::terrain(terra::rast(bathy[[1]]), "slope", unit = "degrees") |>
+             stars::st_as_stars() |>
+             list()
+
+
   ## Bio-ORACLE
   biooracle <- here::here("data","data-raw","bio-oracle-4d4292ca") |>
                dir(pattern = ".tif$", full.names = TRUE) |>
-               lapply(stars::read_stars)
+               lapply(stars::read_stars) |>
+               lapply(stars::st_warp, dest = grd)
+  biooracle <- lapply(biooracle, function(x) {
+                 tmp <- terra::mask(terra::rast(x), terra::vect(sf::st_read("data/aoi/aoi.gpkg")))
+                 names(tmp) <- names(x)
+                 return(tmp)
+               }) |>
+               lapply(stars::st_as_stars)
+
   
   ## Temperature & Salinity
   dat <- here::here("data","data-integrated","bottom_temperature_salinity_egsl-6c724ee5") |>
@@ -47,7 +66,7 @@ make_abiotic <- function() {
     env[[i]] <- stars::st_as_stars(temp[[i]])
   }
   rm(temp)
-                
+                                
   ## All together
   abiotic <- c(
     bathy,
@@ -55,7 +74,8 @@ make_abiotic <- function() {
     salinity,
     temperature,
     oxygen,
-    env
+    env,
+    slope
   )
 
   # Warp 
@@ -63,15 +83,13 @@ make_abiotic <- function() {
   
   # Change names
   nm <- names_stars(abiotic)
-  nm <- gsub("_gebco_2021-e775900b-n90_s0_w-90_e0.tif","", nm)
-  nm <- gsub("bottom_temperature_salinity_egsl-6c724ee5-","",nm)
-  nm <- gsub("bottom_oxygen_egsl-0d36cf5d-","",nm)
-  nm <- gsub(".Mean.tif","", nm)
-  nm <- gsub(".Mean.BOv2_2.tif","", nm)
+  nm <- gsub("gebco_2021_sub_ice_topo_n90.0_s0.0_w-90.0_e0.0","bathy", nm)
+  nm <- gsub("bottom_temperature_salinity_egsl-6c724ee5-","mean_",nm)
+  nm <- gsub("bottom_oxygen_egsl-0d36cf5d-","mean_",nm)
+  nm <- gsub(".BOv2_1.tif","", nm)
   nm <- gsub(".BOv2_2.tif","", nm)
   nm <- gsub("Light.bottom","Light", nm)
   nm <- gsub("bio-oracle-4d4292ca-Present.Benthic.Mean.Depth.","Bottom_", nm)
-  nm <- gsub("bio-oracle-4d4292ca-Present.Surface.","Surface_", nm)
   nm <- gsub(".tif", "", nm)
   nm <- gsub("\\.", "_", nm)
   nm <- gsub("\\-", "_", nm)

@@ -1,0 +1,41 @@
+project:
+  type: book
+  output-dir: ../docs
+  pre-render: cp -r ../figures ./figures
+  post-render: rm -r ./figures
+
+book:
+  title: "Exploration of Sea Pens Data"
+  author: "Vincent Bellavance"
+  date: "2023-02-08"
+  sidebar:
+    search: false
+    title: Sections
+    pinned: true
+  chapters:
+    - index.qmd
+    - sea_pens_occurrence_data.qmd
+    - part: environmental_variables.qmd
+      chapters:
+        - bathymetry.qmd
+        - oxygen.qmd
+        - salinity.qmd
+        - temperature.qmd
+        - current_velocity.qmd
+        - molecules.qmd
+        - aragonite_ph.qmd
+        - sediments.qmd
+
+    - part: species_distribution_modelling.qmd
+      chapters:
+        - inla.qmd
+        - bathymetry_vs_enviro.qmd
+
+#bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+fig-cap-location: margin
+

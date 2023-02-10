@@ -100,8 +100,13 @@ make_biotic <- function() {
   # Bind both dataframe
   dat <- dplyr::bind_rows(north, south)
 
+  # Standardize start_time with the same format
+  dat$start_time <- format(as.POSIXct(gsub(" ", "", dat$start_time),
+                                      format = "%H:%M:%S"), 
+                           format = "%H:%M:%S")
 
-  #---------- Filter for species ----------#
+
+  #---------- make absences for every species ----------#
 
   # Changes synonyms for accepted taxa name
   syn <- data.frame(syn = c("halipteris_finmarchica",
@@ -115,22 +120,54 @@ make_biotic <- function() {
   }
 
   # Select only target species
-  nm <- c("balticina_finmarchica",
-          "pennatula_aculeata",
-          "pennatuloidea",
-          "ptilella_grandis",
-          "anthoptilum_grandiflorum")
+  species <- c("balticina_finmarchica",
+               "pennatula_aculeata",
+               "ptilella_grandis",
+               "anthoptilum_grandiflorum")
+  genus <- "pennatuloidea"
 
-  dat <- dat[dat$scientific_name %in% nm, ]
+  sampling <- unique(dat[,c("start_date", "start_time", "lat", "lon")])
+  sampling[,"id"] <- paste(1:nrow(sampling))
+  dat <- dplyr::left_join(dat, sampling, by = c("start_date", "start_time", "lat", "lon"))
+
+  cols_to_zero <- c("weight_caught", "number_caught")
+  cols_to_na <- "species_code" #multiple code for a single species...
+
+  for(i in unique(dat$id)) {
+    cat("\r", paste0("Sampling point number ", i, " of ",length(unique(dat$id))))
+    absences <- !species %in% dat[dat$id == i, "scientific_name"]
+    genus_pr <- genus %in% dat[dat$id == i, "scientific_name"]
+    if(any(absences) & !genus_pr) {
+      line_to_add <- dat[dat$id == i, ][1,]
+      for(j in species[absences]) {
+        add_line <- line_to_add
+        add_line[,cols_to_zero] <- 0
+        add_line[,cols_to_na] <- NA
+        add_line[,"scientific_name"] <- j
+        dat <- rbind(dat, add_line)
+      }
+    }
+  }
+
+  #---------- Save one sf object for each species ----------#
+
+  dat_sp <- lapply(species, function(x) {
     
-  # Make dat a spatial object 
-  dat <- sf::st_as_sf(
-    dat,
-    coords = c("lon","lat"),
-    crs = 4326
-  )
+    # Filter for each species
+    dat_tmp <- dat[dat$scientific_name %in% x, ]
+    absence_rows <- sapply(1:nrow(dat_tmp), function(x) {
+      all(dat_tmp[x,cols_to_zero] == 0)
+    })
+    dat_tmp[absence_rows,"presence"] <- 0
+    dat_tmp[is.na(dat_tmp$presence), "presence"] <- 1
+    # Make dat a spatial object 
+    dat_tmp <- sf::st_as_sf(
+      dat_tmp,
+      coords = c("lon","lat"),
+      crs = 4326
+    )
   
-  # Save object in data-biotic
-  sf::st_write(dat, paste0(out,"/sea_pens.gpkg"), append = FALSE)
-
-}
+    # Save object in data-biotic
+    sf::st_write(dat_tmp, paste0(out,"/",x,".gpkg"), append = FALSE)
+  
+  })

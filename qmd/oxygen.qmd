@@ -1,0 +1,18 @@
+# Oxygène dissous
+
+J'ai présentement deux sources pour des données d'oxygène au fond de l'eau. J'ai présentement les valeurs moyennes de saturation d'oxygène et d'oxygène dissous en plus de la différence entre le minimum et la maximum d'oxygène dissous. Est-ce que le minimum d'oxygène dissous serait plus pertinent à utiliser puisqu'il représenterait un stress que les plumes de mer peuvent rencontrer?
+
+## Blais, M. et al. Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St. Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p. iv + 56 p. (2019).
+
+Ce sont des données de saturation d'oxygène modélisées à une résolution de 1km².
+
+![Saturation d'oxygène moyenne au fond de l'eau en 2017.](figures/env_sat.png){#fig-oxy_sat}
+
+
+## Bio-Oracle
+
+J'ai également explorer les données de Bio-Oracle. J'ai présentement extrait la moyenne et le range d'oxygène dissous au fond de l'eau. La résolution des cellules est de 0.01 degré décimal.
+
+![Moyenne d'oxygène dissous au fond de l'eau en mol.m^-3^](figures/env_bottom_dissolved_oxygen_mean.png){#fig-bo-oxy-mean}
+
+![Différence entre la maximum et le minimum d'oxygène dissous au fond de l'eau en mol.m^-3^](figures/env_bottom_dissolved_oxygen_range.png){#fig-bo-oxy-range}

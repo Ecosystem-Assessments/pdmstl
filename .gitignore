@@ -1,6 +1,9 @@
 # Everything in data and figures repo
-data/*
-figures/*
+data/
+figures/
 
 # tmp_exploration folder
-tmp_exploration
+tmp_exploration/
+
+# docs/ folder that contains final output
+docs/
