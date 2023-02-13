@@ -1,10 +1,10 @@
 # Everything in data and figures repo
-data/
+data/**
 !data/config/
-figures/
+figures/**
 
 # tmp_exploration folder
-tmp_exploration/
+tmp_exploration/**
 
 # docs/ folder that contains final output
-docs/
+docs/**
