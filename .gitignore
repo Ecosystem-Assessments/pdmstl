@@ -1,7 +1,9 @@
 # Everything in data and figures repo
 data/
 !/data/config/
-figures/
+
+# Exploration of abiotic variables
+tmp_exploration/
 
 # docs/ folder that contains final output
 docs/

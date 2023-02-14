@@ -42,7 +42,7 @@ pipedat:
      - "4d4292ca" # Bio-ORACLE
     # ------------------------------------------------------------------------
     # Biotic data 
-     - "d6b6f3fa" # Groundfish survey estuary and northern gulf
+#     - "d6b6f3fa" # Groundfish survey estuary and northern gulf
      - "5b61d05c" # Groundfish survey southern gulf
   # ==========================================================================
   data_integration:

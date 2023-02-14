@@ -1,2 +1,23 @@
-# Salinité
+# Salinité des eaux de fond {#sec-sal}
 
+J'ai présentement deux sources de données de salinité des eaux de fond:
+
+## Pêches et Océans
+
+Ces données proviennent de Pêches et Océans Canada. 
+Elles sont disponibles sur [Open.Canada](https://open.canada.ca/data/en/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2) et sont mises à jour annuellement. 
+Les données sont représentées dans la @fig-sal-dfo comme une moyenne de salinité pour la période de 2011 à 2020, mais elles sont disponibles annuellement.
+L'unité est en g/L.
+
+![Salinité moyenne des eaux de fond de 2011 à 2020.](figures/env_mean_salinity.png){#fig-sal-dfo}
+
+
+## Bio-Oracle
+
+J'ai également exploré les données de Bio-Oracle (Version 2.2). 
+J'ai présentement extrait la moyenne et l'étendue de salinité des eaux de fond.
+L'unité de mesure pour les deux jeux de données (moyenne et étendue) est l'échelle pratique de salinité (Practical Salinity Scale, PSS)
+
+![Salinité moyenne des eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes s'étendent de 2000 à 2014.](figures/env_bottom_salinity_mean.png){#fig-bo-sal-mean}
+
+![Différence entre la maximum et le minimum de salinité des eaux de fond à une profondeur moyenne. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014.](figures/env_bottom_salinity_range.png){#fig-bo-sal-range}

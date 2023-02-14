@@ -1,0 +1,14 @@
+# Biomasse de phytoplankton et concentration de chlorophylle {#sec-phyto}
+
+Le phytoplankton et la chlorophylle a sont utilisés dans d'autres analyses.
+Cependant, comme les valeurs semblent prêts de 0 pour les deux variables où l'espèce est majoritairement présente, je doute un peu de la pertinence d'ajouter ces variables ici.
+
+## Phytoplankton
+
+![Concentration molaire moyenne de phytoplankton exprimée en micromol/m^3^ de carbone dans l'eau de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_phytoplankton_mean.png){#fig-bo-phyto-mean}
+
+
+## Chlorophylle
+
+![Concentration massique moyenne de chlorophylle dans l'eau de fond à profondeur moyenne exprimée en mg/m^3^. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_chlorophyll_mean.png){#fig-bo-chloro-mean}
+

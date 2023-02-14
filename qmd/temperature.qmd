@@ -1,0 +1,23 @@
+# Température des eaux de fond {#sec-temp}
+
+J'ai présentement deux sources de données de température des eaux de fond:
+
+## Pêches et Océans
+
+Ces données proviennent de Pêches et Océans Canada. 
+Elles sont disponibles sur [Open.Canada](https://open.canada.ca/data/en/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2) et sont mises à jour annuellement. 
+Les données sont représentées dans la @fig-temp-dfo comme une moyenne de la température pour la période de 2011 à 2020, mais elles sont disponibles annuellement.
+L'unité est en degré celcius.
+
+![Moyenne des température des eaux de fond de 2011 à 2020.](figures/env_mean_temperature.png){#fig-temp-dfo}
+
+
+## Bio-Oracle
+
+J'ai également exploré les données de Bio-Oracle (Version 2.2). 
+J'ai présentement extrait la moyenne et l'étendue des températures des eaux de fond.
+Les mesures sont en degré celcius.
+
+![Température moyenne des eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_temperature_mean.png){#fig-bo-temp-mean}
+
+![Étendue des température des eaux de fond à profinderu moyenne. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014.](figures/env_bottom_temperature_range.png){#fig-bo-temp-range}

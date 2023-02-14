@@ -1,0 +1,10 @@
+# Vitesse du courant {#sec-current}
+
+La vitesse du courant pourrait être une variable déterminante dans l'établissement de la plume de mer.
+Elle pourrait entre autres être relié à la capacité d'ancrage de la plume de mer.
+
+
+Pour l'instant, la seule source de données que j'ai trouvé est Bio-Oracle.
+Les données sont en m/s.
+
+![Vélocité maximale du courant. Les données utilisées pour calculer les valeurs maximales ont été récoltées entre 2000 et 2014.](figures/env_bottom_current_velocity_max.png){#fig-bo-curvel-max}

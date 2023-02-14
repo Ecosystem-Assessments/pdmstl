@@ -171,3 +171,5 @@ make_biotic <- function() {
     sf::st_write(dat_tmp, paste0(out,"/",x,".gpkg"), append = FALSE)
   
   })
+
+}

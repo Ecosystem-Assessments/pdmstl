@@ -16,7 +16,7 @@ make_abiotic <- function() {
   
   # Abiotic data
   ## Bathymetry
-  bathy <- terra::rast("data/data-raw/bathymetry_gebco_2021-e775900b/gebco_2021_sub_ice_topo_n90.0_s0.0_w-90.0_e0.0.tif") |>
+  bathy <- terra::rast("data/data-raw/bathymetry_gebco_2021-e775900b/bathymetry_gebco_2021-e775900b-n90_s0_w-90_e0.tif") |>
     terra::crop(x = _, 
                 y = terra::vect(sf::st_read("data/aoi/aoi.gpkg")),
                 mask = TRUE) |>
@@ -83,7 +83,7 @@ make_abiotic <- function() {
   
   # Change names
   nm <- names_stars(abiotic)
-  nm <- gsub("gebco_2021_sub_ice_topo_n90.0_s0.0_w-90.0_e0.0","bathy", nm)
+  nm <- gsub("bathymetry_gebco_2021-e775900b-n90_s0_w-90_e0","bathy", nm)
   nm <- gsub("bottom_temperature_salinity_egsl-6c724ee5-","mean_",nm)
   nm <- gsub("bottom_oxygen_egsl-0d36cf5d-","mean_",nm)
   nm <- gsub(".BOv2_1.tif","", nm)

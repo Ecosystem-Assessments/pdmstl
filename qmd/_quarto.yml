@@ -22,8 +22,9 @@ book:
         - salinity.qmd
         - temperature.qmd
         - current_velocity.qmd
+        - iron.qmd
         - molecules.qmd
-        - aragonite_ph.qmd
+        - chloro_phyto.qmd
         - sediments.qmd
 
     - part: species_distribution_modelling.qmd
@@ -31,11 +32,14 @@ book:
         - inla.qmd
         - bathymetry_vs_enviro.qmd
 
-#bibliography: references.bib
+    - references.qmd
+
+bibliography: references.bib
 
 format:
   html:
     theme: cosmo
+    number-sections: false
 
 fig-cap-location: margin
 

@@ -1,0 +1,25 @@
+# Les molécules dissoutes dans les eaux de fond {#sec-mol}
+
+J'ai regroupé ici toutes les données de molécules dissoutes dans les eaux de fond disponible sur **Bio-ORACLE**.
+Certaines sont peut-être plus pertinentes que d'autres.
+L'aragonite pourrait entre autre être un proxy de l'acidité de l'eau.
+
+Je sais que la calcite pourrait être une variable imporatnte, mais les données de calcites ne sont disponibles que pour les eaux de surfaces.
+Il m'apparaissait cependant moins pertinent d'utiliser des données d'eaux de surface alors que les plumes de mer se retrouvent majoritairement dans les profondeurs du golfe.
+
+
+1. Nitrate
+
+![Nitrate dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_nitrate_mean.png){#fig-bo-nitrate-mean}
+
+2. Phosphate
+
+![Phosphate dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_phosphate_mean.png){#fig-bo-phosphate-mean}
+
+3. Silicate
+
+![Silicate dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_silicate_mean.png){#fig-bo-silicate-mean}
+
+4. Aragonite
+
+![Aragonite dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_arag.png){#fig-arag}

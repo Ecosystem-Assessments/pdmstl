@@ -1,4 +1,4 @@
-# Occurrence {.unnumbered}
+# Données d'occurrence {#sec-occ}
 
 ## Sources de données
 
@@ -40,7 +40,9 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 4. *Ptilella grandis*
 
 
-## *Anthoptilum grandiflorum*
+## Cartes des données d'occurrence
+
+### *Anthoptilum grandiflorum*
 
 ::: {layout="[[100],[100]]"}
 
@@ -51,7 +53,7 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 :::
 
 
-## *Balticina finmarchica*
+### *Balticina finmarchica*
 
 ::: {layout="[[100],[100]]"}
 
@@ -62,7 +64,7 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 :::
 
 
-## *Pennatula aculeata*
+### *Pennatula aculeata*
 
 ::: {layout="[[100],[100]]"}
 
@@ -73,7 +75,7 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 :::
 
 
-## *Ptilella grandis*
+### *Ptilella grandis*
 
 ::: {layout="[[100],[100]]"}
 

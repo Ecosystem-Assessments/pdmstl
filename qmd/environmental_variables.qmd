@@ -1,11 +1,135 @@
-# Variables environnementales
+# Variables environnementales {#sec-env}
 
-Il n'y a pas de effets significatifs entre le taux de croissance et les variables environnementales testé dans le papier de *de Moura Neves 2015* (i.e. depth, latitude, temperature, chlorophyll a, surface particulate organic carbon and surface particulate inorganic carbon).
+## Papiers sur l'habitat et l'environnement favorable aux plumes de mer
 
-depth, temperature and food input are generally recognised as important factors influencing growth (Roberts et al., 2009).
+* [@yesson2012] :
 
-Temperature, surface primary productivity, salinity and calcite saturation have been predicted to be some of the most influential environmental factors in determining the distribution of cold-water sea pens (Yesson et al., 2012)
+  + Temperature,
+  + Surface primary productivity
+  + Salinity
+  + Calcite saturation
 
- Greathead et al. (2015) found that mud, minimum salinity, depth and gravel were important variables influencing the presence of three sea pen species in Scottish waters.
+* [@greathead2015] :
 
-Je n'ai pris aucune données de surface, seulement des données de fond.
+  + Mud
+  + Minimum salinity
+  + Depth
+  + Gravel
+
+* [@neves2015] : 
+
+  + No significant relationships between growth rates and these environmental variables:
+
+    - Depth
+    - Latitude
+    - Temperature
+    - Chlorophyll a
+    - Surface particulate inorganic carbon
+
+  + BUT, when pooling two species of *Halipteris*, significant relationship with diametric growth rates and:
+
+    - Latitude
+    - Temperature
+    - Chlorophyll a concentration
+    - POC
+
+* [@ross2021] : Management-Relevant Ecology and Distribution of Sea Pens in Norway
+
+  + Most important variables in models for *Halipteris spp.*:
+
+    - Bathymetry
+    - Slope
+
+  + Most important variables in models for *Pennatulidae spp.*:
+
+    - Current speed (max)
+    - Batymetry
+    - Bottom water temperature-salinity interaction
+
+  + Other variables used in this study:
+  
+    - Topographic Position Index (TPI)
+    - Valleyness
+    - %Gravel
+    - %Mud
+    - %Sand
+    - Average bottom water carbon biomass of phytoplankton
+    - Distance to shore
+    - Ice cover average (the only surface variable)
+    - Range of bottom water salinity
+    - Range of bottom water temperature
+    - Bottom water average salinity-temperature interaction as water mass proxy
+
+
+## Résumé des données environnementales présentées
+
+J'ai présentement plusieurs données environnementales.
+Certains types de données sont utilisées dans certains papiers, alors que d'autres ont simplement été incluses parce qu'elle était facilement accessibles et je que je préfèrais ratisser plus large.
+Quelques types de données ont plus d'une source, ce qui nécessitera d'en choisir une éventuellement.
+C'est ici une première liste, peut-être que certaines variables ne seront pas vraiment pertinentes:
+
+* [Bathymétrie et dérivés](bathymetry.qmd)
+
+  + Source(s): 
+
+    - GEBCO
+
+
+* [Oxygène dissous dans les eaux de fond](oxygen.qmd)
+
+  + Source(s):
+
+    - Blais, M. et al. Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St. Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p. iv + 56 p. (2019).
+    - Bio-ORACLE
+
+
+* [Salinité des eaux de fond](salinity.qmd)
+
+  + Source(s):
+
+    - Données de pêche et océans Canada
+    - Bio-ORACLE
+
+
+* [Température des eaux de fond](temperature.qmd)
+
+  + Source(s):
+
+    - Données de pêche et océans Canada
+    - Bio-ORACLE
+
+
+* [Vitesse du courant](current_velocity.qmd)
+
+  + Source(s):
+
+    - Bio-ORACLE
+
+
+* [Fer dissous dans les eaux de fond](iron.qmd)
+
+  + Source(s): 
+
+    - Bio-ORACLE
+
+
+* [Molécules dissoutes dans les eaux de fond](molecules.qmd)
+
+  + Source(s):
+
+    - Bio-ORACLE
+    - Starr, M. & Chassé, J. Distribution of omega aragonite in the Estuary and Gulf of St.Lawrence in eastern Canada. Department of Fisheries and Oceans. (2019).
+
+
+* [Biomasse de phytoplankton et concentration de chlorophylle a](chloro_phyto.qmd)
+
+  + Source(s):
+
+    - Bio-ORACLE
+
+
+* [Sédiments](sediments.qmd)
+
+  + Source(s): 
+
+    - Aucune

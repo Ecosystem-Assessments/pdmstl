@@ -16,12 +16,14 @@
            "bathy",
            "slope",
            "sat",
+           "bottom_chlorophyll_mean",
            "bottom_current_velocity_max",
            "bottom_dissolved_oxygen_mean",
            "bottom_dissolved_oxygen_range",
            "bottom_iron_mean",
            "bottom_nitrate_mean",
            "bottom_phosphate_mean",
+           "bottom_phytoplankton_mean",
            "bottom_salinity_mean",
            "bottom_salinity_range",
            "bottom_silicate_mean",
@@ -57,12 +59,11 @@
         units = "mm")
 
     # Figure font family and margin
-    par(family = 'serif', mar = c(.5, .5, .5, .5))
+    par(family = 'serif', mar = c(2, 2, 1, 4))
 
     plot(sf::st_geometry(aoi),
          border = "transparent")
     basemap("cities")
-    global_param()
     box()
 
     # Plot data
@@ -82,7 +83,7 @@
       text(x = cities$X[i]+cities$offX[i],
            y = cities$Y[i]+cities$offY[i],
            labels = cities$city[i],
-           cex = .35,
+           cex = .65,
            col = "#000000",
            adj = c(cities$adjX[i], .5))
     }
