@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Exploration of Sea Pens Data",
+    "section": "",
+    "text": "Introduction\nCe rapport a pour but de documenter l’avancement sur le projet d’identification des habitats potentiels de plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent. Il se décline en trois parties:\n\nLes données d’occurrence de plumes de mer\n\nCette partie présente:\n\nSources des données\nTraitement des données\nCartes des occurrence pour chaque espèce\n\n\nLes variables environnementales\n\nCette partie sert à présenter les variables environnementales potentielles à utiliser dans les modèles.\nJ’ai fait la liste de quelques articles avec la liste de variables environnementales qui pourraient être d’intérêt.\nJe présente ensuite les différentes données que j’ai jusqu’à présent.\nLe but ici est de voir si certaines données sont inutiles ou si d’autres types de données devraient être ajoutées.\n\nLa modélisation des habitats potentielles\n\nCette partie est en construction.\nElle servira à présenter les idées de modèles à utiliser en plus de résultats prélliminaires"
+  },
+  {
+    "objectID": "sea_pens_occurrence_data.html#sources-de-données",
+    "href": "sea_pens_occurrence_data.html#sources-de-données",
+    "title": "Données d’occurrence",
+    "section": "Sources de données",
+    "text": "Sources de données\nLes données d’occurrence des plumes de mer proviennent de deux sources:\n\nRelevé au chalut par navire de recherche de poisson de fond de la Division 4T de l’OPANO. Ces données ont été récoltées de 1970 à 2021.\n\n\n\n\nFigure 1.1: Localisation des points d’échantillonnages lors du relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l’OPANO\n\n\n\nRelevé multidisciplinaire de poissons de fond et de crevette d’août dans l’estuaire et le nord du golfe du Saint-Laurent\n\n\n\n\nFigure 1.2: Localisation des points d’échantillonnages lors du relevé multidisciplinaire de poissons de fond et de crevette d’août dans l’estuaire et le nord du golfe du Saint-Laurent de 2004 à 2021 effectué à bord du NGCC Teleost\n\n\nPour le nord du golfe, il semble y avoir d’autres relevés disponibles sur open.canada.ca qui ont été réalisés sur d’autres navires:\n\nNM Gadus Atlantica (1978-1994)\nNM Lady Hammond (1984-1990)\nNGCC Alfred Needler (1990-2005)\n\nPar contre, il est spécifié que la qualité des données s’est améliorée au fil du temps et que les données ne sont pas directement comparables entre ces différents relevés."
+  },
+  {
+    "objectID": "sea_pens_occurrence_data.html#inférence-des-absences",
+    "href": "sea_pens_occurrence_data.html#inférence-des-absences",
+    "title": "Données d’occurrence",
+    "section": "Inférence des absences",
+    "text": "Inférence des absences\nLes données utilisées contiennent l’identification de toutes les espèces récoltées à chacun des traits de pêche. Il est donc possible d’inférer les absences d’une espèce pour chaque trait de pêche où elle n’a pas été identifiée. Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g. problèmes d’identification, non-détection alors que l’espèce est bien présente), mais elles amènent tout de même de l’information très utile lors de la modélisation des aires de distribution d’espèces.\nNou avons donc inférer les absences pour les quatres espèces se situant dans l’estuaire et le golfe du Saint-Laurent:\n\nAnthoptilum grandiflorum\nBalticina finmarchica\nPennatula aculeata\nPtilella grandis"
+  },
+  {
+    "objectID": "sea_pens_occurrence_data.html#cartes-des-données-doccurrence",
+    "href": "sea_pens_occurrence_data.html#cartes-des-données-doccurrence",
+    "title": "Données d’occurrence",
+    "section": "Cartes des données d’occurrence",
+    "text": "Cartes des données d’occurrence\n\nAnthoptilum grandiflorum\n\n\n\n\n\n\nFigure 1.3: Données de présence d’Anthoptilum_grandiflorum dans l’estuaire maritime et le golfe du Saint-Laurent\n\n\n\n\n\n\n\n\n\nFigure 1.4: Données de présence/absence d’Anthoptilum_grandiflorum dans l’estuaire maritime et le golfe du Saint-Laurent\n\n\n\n\n\n\n\nBalticina finmarchica\n\n\n\n\n\n\nFigure 1.5: Données de présence de Balticina finmarchica dans l’estuaire maritime et le golfe du Saint-Laurent\n\n\n\n\n\n\n\n\n\nFigure 1.6: Données de présence/absence de Balticina finmarchica dans l’estuaire maritime et le golfe du Saint-Laurent\n\n\n\n\n\n\n\nPennatula aculeata\n\n\n\n\n\n\nFigure 1.7: Données de présence de Pennatula aculeata dans l’estuaire maritime et le golfe du Saint-Laurent\n\n\n\n\n\n\n\n\n\nFigure 1.8: Données de présence/absence de Pennatula aculeata dans l’estuaire maritime et le golfe du Saint-Laurent\n\n\n\n\n\n\n\nPtilella grandis\n\n\n\n\n\n\nFigure 1.9: Données de présence de Ptilella grandis dans l’estuaire maritime et le golfe du Saint-Laurent\n\n\n\n\n\n\n\n\n\nFigure 1.10: Données de présence/absence de Ptilella grandis dans l’estuaire maritime et le golfe du Saint-Laurent"
+  },
+  {
+    "objectID": "environmental_variables.html#papiers-sur-lhabitat-et-lenvironnement-favorable-aux-plumes-de-mer",
+    "href": "environmental_variables.html#papiers-sur-lhabitat-et-lenvironnement-favorable-aux-plumes-de-mer",
+    "title": "Variables environnementales",
+    "section": "Papiers sur l’habitat et l’environnement favorable aux plumes de mer",
+    "text": "Papiers sur l’habitat et l’environnement favorable aux plumes de mer\n\n(Yesson et al. 2012) :\n\nTemperature,\nSurface primary productivity\nSalinity\nCalcite saturation\n\n(Greathead et al. 2015) :\n\nMud\nMinimum salinity\nDepth\nGravel\n\n(Neves et al. 2015) :\n\nNo significant relationships between growth rates and these environmental variables:\n\nDepth\nLatitude\nTemperature\nChlorophyll a\nSurface particulate inorganic carbon\n\nBUT, when pooling two species of Halipteris, significant relationship with diametric growth rates and:\n\nLatitude\nTemperature\nChlorophyll a concentration\nPOC\n\n\n(Ross et al. 2021) : Management-Relevant Ecology and Distribution of Sea Pens in Norway\n\nMost important variables in models for Halipteris spp.:\n\nBathymetry\nSlope\n\nMost important variables in models for Pennatulidae spp.:\n\nCurrent speed (max)\nBatymetry\nBottom water temperature-salinity interaction\n\nOther variables used in this study:\n\nTopographic Position Index (TPI)\nValleyness\n%Gravel\n%Mud\n%Sand\nAverage bottom water carbon biomass of phytoplankton\nDistance to shore\nIce cover average (the only surface variable)\nRange of bottom water salinity\nRange of bottom water temperature\nBottom water average salinity-temperature interaction as water mass proxy"
+  },
+  {
+    "objectID": "environmental_variables.html#résumé-des-données-environnementales-présentées",
+    "href": "environmental_variables.html#résumé-des-données-environnementales-présentées",
+    "title": "Variables environnementales",
+    "section": "Résumé des données environnementales présentées",
+    "text": "Résumé des données environnementales présentées\nJ’ai présentement plusieurs données environnementales. Certains types de données sont utilisées dans certains papiers, alors que d’autres ont simplement été incluses parce qu’elle était facilement accessibles et je que je préfèrais ratisser plus large. Quelques types de données ont plus d’une source, ce qui nécessitera d’en choisir une éventuellement. C’est ici une première liste, peut-être que certaines variables ne seront pas vraiment pertinentes:\n\nBathymétrie et dérivés\n\nSource(s):\n\nGEBCO\n\n\nOxygène dissous dans les eaux de fond\n\nSource(s):\n\nBlais, M. et al. Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St. Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p. iv + 56 p. (2019).\nBio-ORACLE\n\n\nSalinité des eaux de fond\n\nSource(s):\n\nDonnées de pêche et océans Canada\nBio-ORACLE\n\n\nTempérature des eaux de fond\n\nSource(s):\n\nDonnées de pêche et océans Canada\nBio-ORACLE\n\n\nVitesse du courant\n\nSource(s):\n\nBio-ORACLE\n\n\nFer dissous dans les eaux de fond\n\nSource(s):\n\nBio-ORACLE\n\n\nMolécules dissoutes dans les eaux de fond\n\nSource(s):\n\nBio-ORACLE\nStarr, M. & Chassé, J. Distribution of omega aragonite in the Estuary and Gulf of St.Lawrence in eastern Canada. Department of Fisheries and Oceans. (2019).\n\n\nBiomasse de phytoplankton et concentration de chlorophylle a\n\nSource(s):\n\nBio-ORACLE\n\n\nSédiments\n\nSource(s):\n\nAucune\n\n\n\n\n\n\n\nGreathead, C., J. M. González-Irusta, J. Clarke, P. Boulcott, L. Blackadder, A. Weetman, and P. J. Wright. 2015. “Environmental Requirements for Three Sea Pen Species: Relevance to Distribution and Conservation.” ICES Journal of Marine Science 72 (2): 576–86. https://doi.org/10.1093/icesjms/fsu129.\n\n\nNeves, Bárbara de Moura, Evan Edinger, Graham D. Layne, and Vonda E. Wareham. 2015. “Decadal Longevity and Slow Growth Rates in the Deep-Water Sea Pen Halipteris Finmarchica (Sars, 1851) (Octocorallia: Pennatulacea): Implications for Vulnerability and Recovery from Anthropogenic Disturbance.” Hydrobiologia 759 (1): 147–70. https://doi.org/10.1007/s10750-015-2229-x.\n\n\nRoss, Rebecca E., Genoveva Gonzalez-Mirelis, Pablo Lozano, and Pål Buhl-Mortensen. 2021. “Discerning the Management-Relevant Ecology and Distribution of Sea Pens (Cnidaria: Pennatulacea) in Norway and Beyond.” Frontiers in Marine Science 8.\n\n\nYesson, Chris, Michelle L. Taylor, Derek P. Tittensor, Andrew J. Davies, John Guinotte, Amy Baco, Julie Black, Jason M. Hall-Spencer, and Alex D. Rogers. 2012. “Global Habitat Suitability of Cold-Water Octocorals.” Journal of Biogeography 39 (7): 1278–92. https://doi.org/10.1111/j.1365-2699.2011.02681.x."
+  },
+  {
+    "objectID": "bathymetry.html",
+    "href": "bathymetry.html",
+    "title": "Bathymétrie",
+    "section": "",
+    "text": "Les donnés de bathymétrie proviennent de GEBCO. Dans le papier de Ross et. al (2021), des variables dérivées de la bathymétrie sont également utilisées (e.g. la pente, le Topographic Position Index, etc.). J’ai calculé ces dérivés avec la fonction terrain du la librairie R terra. Je n’ai gardé que la pente puisque les autres dérivés de la bathymétrie étaient tous fortement corrélés avec la pente.\n\n\n\nFigure 2.1: Données de bathymétrie du GEBCO\n\n\n\n\n\nFigure 2.2: Données de pente calculées avec la bathymétrie\n\n\n\n\n\n\nRoss, Rebecca E., Genoveva Gonzalez-Mirelis, Pablo Lozano, and Pål Buhl-Mortensen. 2021. “Discerning the Management-Relevant Ecology and Distribution of Sea Pens (Cnidaria: Pennatulacea) in Norway and Beyond.” Frontiers in Marine Science 8."
+  },
+  {
+    "objectID": "oxygen.html#blais-m.-et-al.-chemical-and-biological-oceanographic-conditions-in-the-estuary-and-gulf-of-st.-lawrence-during-2017.-dfo-can.-sci.-advis.-sec.-res.-doc.-2019009.-iv-56-p.-iv-56-p.-2019.",
+    "href": "oxygen.html#blais-m.-et-al.-chemical-and-biological-oceanographic-conditions-in-the-estuary-and-gulf-of-st.-lawrence-during-2017.-dfo-can.-sci.-advis.-sec.-res.-doc.-2019009.-iv-56-p.-iv-56-p.-2019.",
+    "title": "Oxygène dissous dans les eaux de fond",
+    "section": "Blais, M. et al. Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St. Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p. iv + 56 p. (2019).",
+    "text": "Blais, M. et al. Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St. Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p. iv + 56 p. (2019).\nCe sont des données de saturation d’oxygène modélisées à une résolution de 1km².\n\n\n\nFigure 3.1: Saturation d’oxygène moyenne dans les eaux de fond en 2017."
+  },
+  {
+    "objectID": "oxygen.html#bio-oracle",
+    "href": "oxygen.html#bio-oracle",
+    "title": "Oxygène dissous dans les eaux de fond",
+    "section": "Bio-Oracle",
+    "text": "Bio-Oracle\nJ’ai également exploré les données de Bio-Oracle. J’ai présentement extrait la moyenne et l’étendue (max-min) d’oxygène dissous dans les eaux de fond à une profondeur moyenne.\n\n\n\nFigure 3.2: Moyenne d’oxygène dissous dans les eaux de fond à une profondeur moyenne en mol.m-3. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 à 2014.\n\n\n\n\n\nFigure 3.3: Étendue des valeurs d’oxygène dissous dans les eaux de fond à une profondeur moyenne mol.m-3. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "salinity.html#pêches-et-océans",
+    "href": "salinity.html#pêches-et-océans",
+    "title": "Salinité des eaux de fond",
+    "section": "Pêches et Océans",
+    "text": "Pêches et Océans\nCes données proviennent de Pêches et Océans Canada. Elles sont disponibles sur Open.Canada et sont mises à jour annuellement. Les données sont représentées dans la Figure 4.1 comme une moyenne de salinité pour la période de 2011 à 2020, mais elles sont disponibles annuellement. L’unité est en g/L.\n\n\n\nFigure 4.1: Salinité moyenne des eaux de fond de 2011 à 2020."
+  },
+  {
+    "objectID": "salinity.html#bio-oracle",
+    "href": "salinity.html#bio-oracle",
+    "title": "Salinité des eaux de fond",
+    "section": "Bio-Oracle",
+    "text": "Bio-Oracle\nJ’ai également exploré les données de Bio-Oracle (Version 2.2). J’ai présentement extrait la moyenne et l’étendue de salinité des eaux de fond. L’unité de mesure pour les deux jeux de données (moyenne et étendue) est l’échelle pratique de salinité (Practical Salinity Scale, PSS)\n\n\n\nFigure 4.2: Salinité moyenne des eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes s’étendent de 2000 à 2014.\n\n\n\n\n\nFigure 4.3: Différence entre la maximum et le minimum de salinité des eaux de fond à une profondeur moyenne. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "temperature.html#pêches-et-océans",
+    "href": "temperature.html#pêches-et-océans",
+    "title": "Température des eaux de fond",
+    "section": "Pêches et Océans",
+    "text": "Pêches et Océans\nCes données proviennent de Pêches et Océans Canada. Elles sont disponibles sur Open.Canada et sont mises à jour annuellement. Les données sont représentées dans la Figure 5.1 comme une moyenne de la température pour la période de 2011 à 2020, mais elles sont disponibles annuellement. L’unité est en degré celcius.\n\n\n\nFigure 5.1: Moyenne des température des eaux de fond de 2011 à 2020."
+  },
+  {
+    "objectID": "temperature.html#bio-oracle",
+    "href": "temperature.html#bio-oracle",
+    "title": "Température des eaux de fond",
+    "section": "Bio-Oracle",
+    "text": "Bio-Oracle\nJ’ai également exploré les données de Bio-Oracle (Version 2.2). J’ai présentement extrait la moyenne et l’étendue des températures des eaux de fond. Les mesures sont en degré celcius.\n\n\n\nFigure 5.2: Température moyenne des eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.\n\n\n\n\n\nFigure 5.3: Étendue des température des eaux de fond à profinderu moyenne. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "current_velocity.html",
+    "href": "current_velocity.html",
+    "title": "Vitesse du courant",
+    "section": "",
+    "text": "La vitesse du courant pourrait être une variable déterminante dans l’établissement de la plume de mer. Elle pourrait entre autres être relié à la capacité d’ancrage de la plume de mer.\nPour l’instant, la seule source de données que j’ai trouvé est Bio-Oracle. Les données sont en m/s.\n\n\n\nFigure 6.1: Vélocité maximale du courant. Les données utilisées pour calculer les valeurs maximales ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "iron.html",
+    "href": "iron.html",
+    "title": "Fer dissous dans les eaux de fond",
+    "section": "",
+    "text": "Je ne suis pas certain que cette données soit pertinente. Ne connaissant pas encore super bien les écosystèmes marins, j’ai décidé de la garder pour l’instant.\nLes données de fer dissous dans l’eau proviennent de Bio-Oracle. Les unités sont en micromol/m3.\n\n\n\nFigure 7.1: Fer dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "molecules.html",
+    "href": "molecules.html",
+    "title": "Les molécules dissoutes dans les eaux de fond",
+    "section": "",
+    "text": "J’ai regroupé ici toutes les données de molécules dissoutes dans les eaux de fond disponible sur Bio-ORACLE. Certaines sont peut-être plus pertinentes que d’autres. L’aragonite pourrait entre autre être un proxy de l’acidité de l’eau.\nJe sais que la calcite pourrait être une variable imporatnte, mais les données de calcites ne sont disponibles que pour les eaux de surfaces. Il m’apparaissait cependant moins pertinent d’utiliser des données d’eaux de surface alors que les plumes de mer se retrouvent majoritairement dans les profondeurs du golfe.\n\nNitrate\n\n\n\n\nFigure 8.1: Nitrate dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.\n\n\n\nPhosphate\n\n\n\n\nFigure 8.2: Phosphate dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.\n\n\n\nSilicate\n\n\n\n\nFigure 8.3: Silicate dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.\n\n\n\nAragonite\n\n\n\n\nFigure 8.4: Aragonite dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "chloro_phyto.html#phytoplankton",
+    "href": "chloro_phyto.html#phytoplankton",
+    "title": "Biomasse de phytoplankton et concentration de chlorophylle",
+    "section": "Phytoplankton",
+    "text": "Phytoplankton\n\n\n\nFigure 9.1: Concentration molaire moyenne de phytoplankton exprimée en micromol/m3 de carbone dans l’eau de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "chloro_phyto.html#chlorophylle",
+    "href": "chloro_phyto.html#chlorophylle",
+    "title": "Biomasse de phytoplankton et concentration de chlorophylle",
+    "section": "Chlorophylle",
+    "text": "Chlorophylle\n\n\n\nFigure 9.2: Concentration massique moyenne de chlorophylle dans l’eau de fond à profondeur moyenne exprimée en mg/m3. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014."
+  },
+  {
+    "objectID": "sediments.html",
+    "href": "sediments.html",
+    "title": "Les sédiments",
+    "section": "",
+    "text": "Les sédiments semblent avoir une grande importance dans l’établissement des plumes de mer. Cependant, les données les plus récentes de sédiments, celle de Loring, datent de plus de 50 ans. J’ai donc un doute sur la pertinence d’utiliser ces données pour l’instant et je me demande si on pourrait faire sans."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Greathead, C., J. M. González-Irusta, J. Clarke, P. Boulcott, L.\nBlackadder, A. Weetman, and P. J. Wright. 2015. “Environmental\nRequirements for Three Sea Pen Species: Relevance to Distribution and\nConservation.” ICES Journal of Marine Science 72 (2):\n576–86. https://doi.org/10.1093/icesjms/fsu129.\n\n\nNeves, Bárbara de Moura, Evan Edinger, Graham D. Layne, and Vonda E.\nWareham. 2015. “Decadal Longevity and Slow Growth Rates in the\nDeep-Water Sea Pen Halipteris Finmarchica\n(Sars, 1851) (Octocorallia:\nPennatulacea): Implications for Vulnerability and Recovery\nfrom Anthropogenic Disturbance.” Hydrobiologia 759 (1):\n147–70. https://doi.org/10.1007/s10750-015-2229-x.\n\n\nRoss, Rebecca E., Genoveva Gonzalez-Mirelis, Pablo Lozano, and Pål\nBuhl-Mortensen. 2021. “Discerning the Management-Relevant\nEcology and Distribution of Sea Pens\n(Cnidaria: Pennatulacea) in\nNorway and Beyond.” Frontiers in\nMarine Science 8.\n\n\nYesson, Chris, Michelle L. Taylor, Derek P. Tittensor, Andrew J. Davies,\nJohn Guinotte, Amy Baco, Julie Black, Jason M. Hall-Spencer, and Alex D.\nRogers. 2012. “Global Habitat Suitability of Cold-Water\nOctocorals.” Journal of Biogeography 39 (7): 1278–92. https://doi.org/10.1111/j.1365-2699.2011.02681.x."
+  }
+]
