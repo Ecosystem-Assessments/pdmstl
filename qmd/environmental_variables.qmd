@@ -11,6 +11,8 @@ Ces zones où la concentration de plumes de mer est particulièrement élevée s
 Ces polygones ont été complémentés par les modèles d'espèces réalisés par @murillo2016.
 Les modèles basés sur des arbres décisionnels ont permis d'identifier la salinité et la température des eaux de fond ainsi que la profondeur comme variables les plus importantes pour la prédiction de la présence de plumes de mer @murillo2016.
 La productivité primaire et la température des eaux de surface sont quant à elles les deux variables les plus importantes à la prédiction de la biomasse de plume de mer @murillo2016.
+
+
 D'autres modèles de distribution de la plume de mer ont également été réalisés pour complémenter les travaux de @kenchington2016. 
 Ces modèles visent la région des Maritimes [@beazley2016a], les plates-formes de Terre-Neuve et du Labrador [@guijarro2016] et l'est de l'Arctique [@beazley2016b].
 La profondeur est une variable importante à la prédiction de la présence de la plume de mer dans ces trois régions [@beazley2016a;@beazley2016b;@guijarro2016], alors que l'étendue des valeus de salinité des eaux de fond s'est également avérée importante pour le modèle de la région de l'Arctique [@guijarro2016].
