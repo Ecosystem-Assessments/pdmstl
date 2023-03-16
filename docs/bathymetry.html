@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -146,27 +146,37 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vitesse du courant</span></a>
+  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iron.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fer dissous dans les eaux de fond</span></a>
+  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./molecules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></a>
+  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></a>
+  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments</span></a>
+  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -181,12 +191,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inla.html" class="sidebar-item-text sidebar-link">Type de modèles</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./bathymetry_vs_enviro.html" class="sidebar-item-text sidebar-link">Modèle avec ou sans bathymétrie</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
   </div>
 </li>
       </ul>
@@ -223,24 +228,27 @@ div.csl-indent {
 
 </header>
 
-<p>Les donnés de bathymétrie proviennent de <a href="https://www.gebco.net/data_and_products/gridded_bathymetry_data/">GEBCO</a>. Dans le papier de Ross <em>et. al</em> <span class="citation" data-cites="ross2021">(<a href="references.html#ref-ross2021" role="doc-biblioref">2021</a>)</span>, des variables dérivées de la bathymétrie sont également utilisées (e.g.&nbsp;la pente, le Topographic Position Index, etc.). J’ai calculé ces dérivés avec la fonction <code>terrain</code> du la librairie R <code>terra</code>. Je n’ai gardé que la pente puisque les autres dérivés de la bathymétrie étaient tous fortement corrélés avec la pente.</p>
+<p><strong>Source:</strong> GEBCO Compilation Group (2022) GEBCO_2022 Grid (doi:10.5285/e0f0bb80-ab44-2739-e053-6c86abc0289c)</p>
+<p><strong>Résolution spatiale originale:</strong> 15 secondes d’arc</p>
+<p><strong>Étendue temporelle:</strong> 2022</p>
 <div id="fig-bathy" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bathy.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;2.1: Données de bathymétrie du GEBCO</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;2.1: Données de bathymétrie du GEBCO (m)</figcaption><p></p>
 </figure>
 </div>
+<p>Les données de pente ont été calculées les données de bathymétrie et la fonction <code>terrain</code> du paquet R <code>terra</code> <span class="citation" data-cites="hijmans2023">(<a href="references.html#ref-hijmans2023" role="doc-biblioref">Hijmans 2023</a>)</span>.</p>
 <div id="fig-slope" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_slope.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;2.2: Données de pente calculées avec la bathymétrie</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;2.2: Données de pente calculées avec la bathymétrie (degrés)</figcaption><p></p>
 </figure>
 </div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-ross2021" class="csl-entry" role="doc-biblioentry">
-Ross, Rebecca E., Genoveva Gonzalez-Mirelis, Pablo Lozano, and Pål Buhl-Mortensen. 2021. <span>“Discerning the <span>Management-Relevant Ecology</span> and <span>Distribution</span> of <span>Sea Pens</span> (<span>Cnidaria</span>: <span>Pennatulacea</span>) in <span>Norway</span> and <span>Beyond</span>.”</span> <em>Frontiers in Marine Science</em> 8.
+<div id="ref-hijmans2023" class="csl-entry" role="doc-biblioentry">
+Hijmans, Robert J. 2023. <span>“Terra: <span>Spatial Data Analysis</span>.”</span>
 </div>
 </div>
 

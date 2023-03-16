@@ -33,41 +33,78 @@ pipedat:
       - 2020
       - 2021
   # ==========================================================================
-  data_pipelines:
+  data_pipeline:
     # ------------------------------------------------------------------------
     # Abiotic data 
-     - "a8d6e8b7" # Temperature & salinity
-     - "de3ff303" # Oxygen
+#     - "a8d6e8b7" # Temperature & salinity
 #     - "e775900b" # The GEBCO_2021 Grid Bathymetry
-     - "4d4292ca" # Bio-ORACLE
+#     - "4d4292ca" # Bio-ORACLE
     # ------------------------------------------------------------------------
     # Biotic data 
 #     - "d6b6f3fa" # Groundfish survey estuary and northern gulf
-     - "5b61d05c" # Groundfish survey southern gulf
+#     - "5b61d05c" # Groundfish survey southern gulf
   # ==========================================================================
   data_integration:
     # ------------------------------------------------------------------------
     # Abiotic data 
-     - "6c724ee5" # Temperature & salinity
-     - "0d36cf5d" # Oxygen 
+#     - "6c724ee5" # Temperature & salinity
 #     - "ee0dd36a" # The GEBCO_2021 Grid Bathymetry
   # ------------------------------------------------------------------------
   # Biotic data 
   # ==========================================================================
   params:
     biooracle_layers:
-      - "BO22_carbonphytomean_bdmean"
-      - "BO22_chlomean_bdmean"
       - "BO22_ironmean_bdmean"
-      - "BO22_lightbotmean_bdmean"
+      - "BO22_ironmin_bdmean"
+      - "BO22_ironmax_bdmean"
+      - "BO22_ironrange_bdmean"
       - "BO22_nitratemean_bdmean"
+      - "BO22_nitratemin_bdmean"
+      - "BO22_nitratemax_bdmean"
+      - "BO22_nitraterange_bdmean"
       - "BO22_phosphatemean_bdmean"
-      - "BO22_ppmean_bdmean"
+      - "BO22_phosphatemin_bdmean"
+      - "BO22_phosphatemax_bdmean"
+      - "BO22_phosphaterange_bdmean"
       - "BO22_silicatemean_bdmean"
-      - "BO22_dissoxmean_bdmean"
-      - "BO22_dissoxrange_bdmean"
-      - "BO22_salinitymean_bdmean"
-      - "BO22_salinityrange_bdmean"
-      - "BO21_curvelmax_bdmean"
+      - "BO22_silicatemin_bdmean"
+      - "BO22_silicatemax_bdmean"
+      - "BO22_silicaterange_bdmean"
       - "BO22_tempmean_bdmean"
+      - "BO22_tempmin_bdmean"
+      - "BO22_tempmax_bdmean"
       - "BO22_temprange_bdmean"
+      - "BO22_salinitymean_bdmean"
+      - "BO22_salinitymin_bdmean"
+      - "BO22_salinitymax_bdmean"
+      - "BO22_salinityrange_bdmean"
+      - "BO22_dissoxmean_bdmean"
+      - "BO22_dissoxmin_bdmean"
+      - "BO22_dissoxmax_bdmean"
+      - "BO22_dissoxrange_bdmean"
+      - "BO21_curvelmean_bdmean"
+      - "BO21_curvelmin_bdmean"
+      - "BO21_curvelmax_bdmean"
+      - "BO21_curvelrange_bdmean"
+      - "BO22_carbonphytomean_bdmean"
+      - "BO22_carbonphytomin_bdmean"
+      - "BO22_carbonphytomax_bdmean"
+      - "BO22_carbonphytorange_bdmean"
+      - "BO22_chlomean_bdmean"
+      - "BO22_chlomin_bdmean"
+      - "BO22_chlomax_bdmean"
+      - "BO22_chlorange_bdmean"
+      - "BO22_icecovermax_ss"
+      - "BO22_chlomean_ss"
+      - "BO22_chlomin_ss"
+      - "BO22_chlomax_ss"
+      - "BO22_chlorange_ss"
+      - "BO22_ppmean_ss"
+      - "BO22_ppmin_ss"
+      - "BO22_ppmax_ss"
+      - "BO22_pprange_ss"
+      - "BO22_carbonphytomean_ss"
+      - "BO22_carbonphytomin_ss"
+      - "BO22_carbonphytomax_ss"
+      - "BO22_carbonphytorange_ss"
+      - "BO22_calcite"

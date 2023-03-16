@@ -1,0 +1,10 @@
+# Exploration des covariables {.unnumbered}
+
+## Exploration des covariables
+Exploration de covariables pour chaque espèces:
+  - PCA
+  - Filtre avec le VIF (enlever les variables selon la pertinence de chacune), peut-être commencer avec plusieurs modèles
+  - Modèles stepwise en enlevant variables non importantes dans le modèle
+
+
+## Exemples avec pennatula_aculeata

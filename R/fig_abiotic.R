@@ -12,44 +12,20 @@
   # Get global parameters
   global_param()
 
-  env <- c("arag",
-           "bathy",
-           "slope",
-           "sat",
-           "bottom_chlorophyll_mean",
-           "bottom_current_velocity_max",
-           "bottom_dissolved_oxygen_mean",
-           "bottom_dissolved_oxygen_range",
-           "bottom_iron_mean",
-           "bottom_nitrate_mean",
-           "bottom_phosphate_mean",
-           "bottom_phytoplankton_mean",
-           "bottom_salinity_mean",
-           "bottom_salinity_range",
-           "bottom_silicate_mean",
-           "bottom_temperature_mean",
-           "bottom_temperature_range",
-           "mean_salinity",
-           "mean_temperature",
-           "sat")
-
+  env <- list.files("data/data-abiotic/", pattern = ".tif$") |>
+           gsub(pattern = ".tif",
+                replacement = "",
+                x = _)
 
   #---------- Plot every abiotic data ----------#
 
   lapply(env, function(x) {
     
-    # Species name with first capital letter and space instead of underscore
-    if(x %in% c("mean_salinity", "mean_temperature")) {
-      dat <- terra::rast(sapply(2011:2020, function(i) {
-        terra::rast(paste0("data/data-abiotic/",x,"_", i, ".tif"))
-      })) |>
-        terra::app(x = _, fun = mean, na.rm = TRUE)
-    } else {
-      dat <- terra::rast(paste0("data/data-abiotic/",x,".tif"))
-    }
+    # Load data
+    dat <- terra::rast(sprintf("data/data-abiotic/%s.tif", x))
 
     # Define filename of the figures
-    filename <- paste0("figures/env_", x, ".png")
+    filename <- sprintf("figures/env_%s.png", x)
 
     # Save figure in .png
     png(filename, 
@@ -68,8 +44,15 @@
 
     # Plot data
     terra::plot(dat,
-                add = TRUE)
-
+                add = TRUE,
+                col = "#6699CC")
+    legend("bottomright",
+           "Zones de concentration significative\nde plumes de mer",
+           col = "#6699CC",
+           bty = "n",
+           pch = 16,
+           cex = 0.8,
+           pt.cex = 1.3)
     plot(sf::st_geometry(aoi),
          add = TRUE)
     # Cities

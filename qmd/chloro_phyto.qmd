@@ -1,14 +1,35 @@
-# Biomasse de phytoplankton et concentration de chlorophylle {#sec-phyto}
-
-Le phytoplankton et la chlorophylle a sont utilisés dans d'autres analyses.
-Cependant, comme les valeurs semblent prêts de 0 pour les deux variables où l'espèce est majoritairement présente, je doute un peu de la pertinence d'ajouter ces variables ici.
-
-## Phytoplankton
-
-![Concentration molaire moyenne de phytoplankton exprimée en micromol/m^3^ de carbone dans l'eau de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_phytoplankton_mean.png){#fig-bo-phyto-mean}
+# Biomasse de phytoplankton et concentration de chlorophylle a {#sec-phyto}
 
 
-## Chlorophylle
+## Biomasse de phytolankton
 
-![Concentration massique moyenne de chlorophylle dans l'eau de fond à profondeur moyenne exprimée en mg/m^3^. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_chlorophyll_mean.png){#fig-bo-chloro-mean}
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
 
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Biomasse de phytoplankton minimale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_min.png){#fig-bo-phyto-min}
+
+![Biomasse de phytoplankton moyenne dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_mean.png){#fig-bo-phyto-mean}
+
+![Biomasse de phytoplankton maximale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_max.png){#fig-bo-phyto-max}
+
+![Étendue des valeurs de biomasse de phytoplankton dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_range.png){#fig-bo-phyto-range}
+
+
+## Concentration de chlorophylle a
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_min.png){#fig-bo-chloro-min}
+
+![Concentration moyenne de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_mean.png){#fig-bo-chloro-mean}
+
+![Concentration maximale de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_max.png){#fig-bo-chloro-max}
+
+![Étendue des valeurs de concentration de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_range.png){#fig-bo-chloro-range}

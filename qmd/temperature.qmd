@@ -1,23 +1,37 @@
 # Température des eaux de fond {#sec-temp}
 
-J'ai présentement deux sources de données de température des eaux de fond:
+Deux sources de données sont disponibles pour la salinité des eaux de fond:
 
-## Pêches et Océans
+* Pêches et Océans Canada
 
-Ces données proviennent de Pêches et Océans Canada. 
-Elles sont disponibles sur [Open.Canada](https://open.canada.ca/data/en/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2) et sont mises à jour annuellement. 
-Les données sont représentées dans la @fig-temp-dfo comme une moyenne de la température pour la période de 2011 à 2020, mais elles sont disponibles annuellement.
-L'unité est en degré celcius.
+* Bio-Oracle
 
-![Moyenne des température des eaux de fond de 2011 à 2020.](figures/env_mean_temperature.png){#fig-temp-dfo}
+
+## Pêches et Océans Canada
+
+**Source:** Pêches et Océans Canada (2022). Température et salinité au fond dans l'estuaire et le golfe du St-Laurent. Pêches et Océans Canada. https://ouvert.canada.ca/data/fr/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2.
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2011 à 2020
+
+![Température moyenne des eaux de fond](figures/env_mean_temperature.png){#fig-temp_mean}
 
 
 ## Bio-Oracle
 
-J'ai également exploré les données de Bio-Oracle (Version 2.2). 
-J'ai présentement extrait la moyenne et l'étendue des températures des eaux de fond.
-Les mesures sont en degré celcius.
+Les données de Bio-Oracle permettent d'avoir des données sur la température minimale, maximale et moyenne dans les eaux de fond à une profondeur moyenne.
 
-![Température moyenne des eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_temperature_mean.png){#fig-bo-temp-mean}
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
 
-![Étendue des température des eaux de fond à profinderu moyenne. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014.](figures/env_bottom_temperature_range.png){#fig-bo-temp-range}
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Température minimale des eaux de fond (°C)](figures/env_bottom_temperature_min.png){#fig-bo-temp-min}
+
+![Température moyenne dissous des eaux de fond (°C)](figures/env_bottom_temperature_mean.png){#fig-bo-temp-mean}
+
+![Température maximale dissous des eaux de fond (°C)](figures/env_bottom_temperature_max.png){#fig-bo-temp-max}
+
+![Étendue des valeurs de température des eaux de fond (°C)](figures/env_bottom_temperature_range.png){#fig-bo-temp-range}

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -127,27 +127,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vitesse du courant</span></a>
+  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iron.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fer dissous dans les eaux de fond</span></a>
+  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./molecules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></a>
+  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></a>
+  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments</span></a>
+  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -162,12 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inla.html" class="sidebar-item-text sidebar-link">Type de modèles</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./bathymetry_vs_enviro.html" class="sidebar-item-text sidebar-link">Modèle avec ou sans bathymétrie</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
   </div>
 </li>
       </ul>
@@ -186,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#blais-m.-et-al.-chemical-and-biological-oceanographic-conditions-in-the-estuary-and-gulf-of-st.-lawrence-during-2017.-dfo-can.-sci.-advis.-sec.-res.-doc.-2019009.-iv-56-p.-iv-56-p.-2019." id="toc-blais-m.-et-al.-chemical-and-biological-oceanographic-conditions-in-the-estuary-and-gulf-of-st.-lawrence-during-2017.-dfo-can.-sci.-advis.-sec.-res.-doc.-2019009.-iv-56-p.-iv-56-p.-2019." class="nav-link active" data-scroll-target="#blais-m.-et-al.-chemical-and-biological-oceanographic-conditions-in-the-estuary-and-gulf-of-st.-lawrence-during-2017.-dfo-can.-sci.-advis.-sec.-res.-doc.-2019009.-iv-56-p.-iv-56-p.-2019.">Blais, M. et al.&nbsp;Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St.&nbsp;Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p.&nbsp;iv + 56 p.&nbsp;(2019).</a></li>
+  <li><a href="#pêches-et-océans-canada" id="toc-pêches-et-océans-canada" class="nav-link active" data-scroll-target="#pêches-et-océans-canada">Pêches et Océans Canada</a></li>
   <li><a href="#bio-oracle" id="toc-bio-oracle" class="nav-link" data-scroll-target="#bio-oracle">Bio-Oracle</a></li>
   </ul>
 </nav>
@@ -211,30 +216,51 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>J’ai présentement deux sources pour des données d’oxygène au fond de l’eau, soit les valeurs moyennes de saturation d’oxygène et d’oxygène dissous en plus de la différence entre le minimum et la maximum d’oxygène dissous. Est-ce que le minimum d’oxygène dissous serait plus pertinent à utiliser puisqu’il représenterait un stress que les plumes de mer peuvent rencontrer?</p>
-<section id="blais-m.-et-al.-chemical-and-biological-oceanographic-conditions-in-the-estuary-and-gulf-of-st.-lawrence-during-2017.-dfo-can.-sci.-advis.-sec.-res.-doc.-2019009.-iv-56-p.-iv-56-p.-2019." class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="blais-m.-et-al.-chemical-and-biological-oceanographic-conditions-in-the-estuary-and-gulf-of-st.-lawrence-during-2017.-dfo-can.-sci.-advis.-sec.-res.-doc.-2019009.-iv-56-p.-iv-56-p.-2019.">Blais, M. et al.&nbsp;Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St.&nbsp;Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p.&nbsp;iv + 56 p.&nbsp;(2019).</h2>
-<p>Ce sont des données de saturation d’oxygène modélisées à une résolution de 1km².</p>
+<p>Deux sources de données sont disponibles pour l’oxygène dissous dans les eaux de fond:</p>
+<ul>
+<li><p>Pêches et Océans Canada</p></li>
+<li><p>Bio-Oracle</p></li>
+</ul>
+<section id="pêches-et-océans-canada" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="pêches-et-océans-canada">Pêches et Océans Canada</h2>
+<p><strong>Source:</strong> Blais, M. et al.&nbsp;Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St.&nbsp;Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p.&nbsp;iv + 56 p.&nbsp;(2019).</p>
+<p><strong>Résolution spatiale originale:</strong> 1km²</p>
+<p><strong>Étendue temporelle:</strong> 2017</p>
 <div id="fig-oxy_sat" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_sat.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.1: Saturation d’oxygène moyenne dans les eaux de fond en 2017.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.1: Saturation d’oxygène moyenne des eaux de fond</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="bio-oracle" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="bio-oracle">Bio-Oracle</h2>
-<p>J’ai également exploré les données de Bio-Oracle. J’ai présentement extrait la moyenne et l’étendue (max-min) d’oxygène dissous dans les eaux de fond à une profondeur moyenne.</p>
+<p>Les données de Bio-Oracle permettent d’avoir des données sur l’oxygène dissous minimal, maximal et moyen dans les eaux de fond à une profondeur moyenne.</p>
+<p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
+<p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
+<p><strong>Étendue temporelle:</strong> 2000 à 2014</p>
+<div id="fig-bo-oxy-min" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_dissolved_oxygen_min.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.2: Minimum d’oxygène dissous dans les eaux de fond (mol.m<sup>-3</sup>)</figcaption><p></p>
+</figure>
+</div>
 <div id="fig-bo-oxy-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_dissolved_oxygen_mean.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.2: Moyenne d’oxygène dissous dans les eaux de fond à une profondeur moyenne en mol.m<sup>-3</sup>. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 à 2014.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.3: Moyenne d’oxygène dissous dans les eaux de fond (mol.m<sup>-3</sup>)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-oxy-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_dissolved_oxygen_max.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.4: Maximum d’oxygène dissous dans les eaux de fond (mol.m<sup>-3</sup>)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-oxy-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_dissolved_oxygen_range.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.3: Étendue des valeurs d’oxygène dissous dans les eaux de fond à une profondeur moyenne mol.m<sup>-3</sup>. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.5: Étendue des valeurs d’oxygène dissous dans les eaux de fond (mol.m<sup>-3</sup>)</figcaption><p></p>
 </figure>
 </div>
 

@@ -1,10 +1,14 @@
-# Bathymétrie {#sec-bathy}
+## Bathymétrie {#sec-bathy}
 
-Les donnés de bathymétrie proviennent de [GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/).
-Dans le papier de Ross _et. al_ [-@ross2021], des variables dérivées de la bathymétrie sont également utilisées (e.g. la pente, le Topographic Position Index, etc.).
-J'ai calculé ces dérivés avec la fonction `terrain` du la librairie R `terra`.
-Je n'ai gardé que la pente puisque les autres dérivés de la bathymétrie étaient tous fortement corrélés avec la pente.
+**Source:** GEBCO Compilation Group (2022) GEBCO_2022 Grid (doi:10.5285/e0f0bb80-ab44-2739-e053-6c86abc0289c)
 
-![Données de bathymétrie du GEBCO](figures/env_bathy.png){#fig-bathy}
+**Résolution spatiale originale:** 15 secondes d'arc
 
-![Données de pente calculées avec la bathymétrie](figures/env_slope.png){#fig-slope}
+**Étendue temporelle:** 2022
+
+![Données de bathymétrie du GEBCO (m)](figures/env_bathy.png){#fig-bathy}
+
+
+Les données de pente ont été calculées les données de bathymétrie et la fonction `terrain` du paquet R `terra` [@hijmans2023].
+
+![Données de pente calculées avec la bathymétrie (degrés)](figures/env_slope.png){#fig-slope}

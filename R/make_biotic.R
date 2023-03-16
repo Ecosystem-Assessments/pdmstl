@@ -8,8 +8,10 @@ make_biotic <- function() {
   chk_create(out)
   
   # Biotic data
-  south <- vroom::vroom("data/data-raw/groundfish_survey_4t_dfo-5b61d05c/groundfish_survey_4t_dfo-5b61d05c.csv")
-  north <- vroom::vroom("data/data-raw/groundfish_survey_teleost_dfo-d6b6f3fa/groundfish_survey_teleost_dfo-d6b6f3fa.csv")
+  south <- vroom::vroom("data/data-raw/groundfish_survey_4t_dfo-5b61d05c/groundfish_survey_4t_dfo-5b61d05c.csv") |>
+    as.data.frame()
+  north <- vroom::vroom("data/data-raw/groundfish_survey_teleost_dfo-d6b6f3fa/groundfish_survey_teleost_dfo-d6b6f3fa.csv") |>
+    as.data.frame()
   
 
   #---------- Standardize south ----------#
@@ -135,17 +137,18 @@ make_biotic <- function() {
 
   for(i in unique(dat$id)) {
     cat("\r", paste0("Sampling point number ", i, " of ",length(unique(dat$id))))
-    absences <- !species %in% dat[dat$id == i, "scientific_name"]
-    genus_pr <- genus %in% dat[dat$id == i, "scientific_name"]
-    if(any(absences) & !genus_pr) {
-      line_to_add <- dat[dat$id == i, ][1,]
-      for(j in species[absences]) {
-        add_line <- line_to_add
-        add_line[,cols_to_zero] <- 0
-        add_line[,cols_to_na] <- NA
-        add_line[,"scientific_name"] <- j
-        dat <- rbind(dat, add_line)
-      }
+    absences <- !species %in% dat[dat$id %in% i, "scientific_name"]
+    genus_pr <- genus %in% dat[dat$id %in% i, "scientific_name"]
+    if(any(absences) && !genus_pr) {
+      lines_to_add <- matrix(ncol = ncol(dat), 
+                             nrow = length(which(absences))) |>
+                        as.data.frame()
+      colnames(lines_to_add) <- colnames(dat)
+      lines_to_add[,] <- dat[dat$id %in% i, ][1,]
+      lines_to_add[,"scientific_name"] <- species[absences]
+      lines_to_add[,cols_to_zero] <- 0
+      lines_to_add[,cols_to_na] <- NA
+      dat <- rbind(dat, lines_to_add)
     }
   }
 

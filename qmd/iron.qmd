@@ -1,9 +1,0 @@
-# Fer dissous dans les eaux de fond {#sec-iron}
-
-Je ne suis pas certain que cette données soit pertinente.
-Ne connaissant pas encore super bien les écosystèmes marins, j'ai décidé de la garder pour l'instant.
-
-Les données de fer dissous dans l'eau proviennent de Bio-Oracle.
-Les unités sont en micromol/m^3^.
-
-![Fer dissous moyen dans les eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.](figures/env_bottom_iron_mean.png){#fig-bo-iron-mean}

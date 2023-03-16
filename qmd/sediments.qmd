@@ -1,5 +1,9 @@
-# Les sédiments {#sec-sed}
+# Les sédiments de fond {#sec-sed}
 
-Les sédiments semblent avoir une grande importance dans l'établissement des plumes de mer.
-Cependant, les données les plus récentes de sédiments, celle de Loring, datent de plus de 50 ans.
-Elles pourraient être utilisées si jamais c'est nécessaire, bien que les données semblent dater.
+**Source:** Loring, D. H., and D. J. G. Nota. 1973. Morphology and sediments of the Gulf of St. Lawrence. Bull. Fish. Res. Bd. Can. 182. 147 p. + 7 charts.
+
+**Résolution spatiale originale:** Ne s'applique pas, les données sont des polygones
+
+**Étendue temporelle:** 1961-1969
+
+![Catégories générales des sédiments de surface](figures/env_depot_gro.png){#fig-sediments}

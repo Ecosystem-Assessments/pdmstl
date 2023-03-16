@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -82,7 +82,7 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -146,27 +146,37 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vitesse du courant</span></a>
+  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iron.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fer dissous dans les eaux de fond</span></a>
+  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./molecules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></a>
+  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></a>
+  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments</span></a>
+  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -181,12 +191,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inla.html" class="sidebar-item-text sidebar-link">Type de modèles</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./bathymetry_vs_enviro.html" class="sidebar-item-text sidebar-link">Modèle avec ou sans bathymétrie</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
   </div>
 </li>
       </ul>
@@ -205,13 +210,17 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#papiers-sur-lhabitat-et-lenvironnement-favorable-aux-plumes-de-mer" id="toc-papiers-sur-lhabitat-et-lenvironnement-favorable-aux-plumes-de-mer" class="nav-link active" data-scroll-target="#papiers-sur-lhabitat-et-lenvironnement-favorable-aux-plumes-de-mer">Papiers sur l’habitat et l’environnement favorable aux plumes de mer</a></li>
-  <li><a href="#résumé-des-données-environnementales-présentées" id="toc-résumé-des-données-environnementales-présentées" class="nav-link" data-scroll-target="#résumé-des-données-environnementales-présentées">Résumé des données environnementales présentées</a></li>
+  <li><a href="#connaissances-sur-lhabitat-des-plumes-de-mer" id="toc-connaissances-sur-lhabitat-des-plumes-de-mer" class="nav-link active" data-scroll-target="#connaissances-sur-lhabitat-des-plumes-de-mer">Connaissances sur l’habitat des plumes de mer</a></li>
+  <li><a href="#listes-des-données-environnementales-présentées" id="toc-listes-des-données-environnementales-présentées" class="nav-link" data-scroll-target="#listes-des-données-environnementales-présentées">Listes des données environnementales présentées</a>
+  <ul class="collapse">
+  <li><a href="#fond-marin" id="toc-fond-marin" class="nav-link" data-scroll-target="#fond-marin">Fond marin</a></li>
+  <li><a href="#surface" id="toc-surface" class="nav-link" data-scroll-target="#surface">Surface</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -230,151 +239,118 @@ div.csl-indent {
 
 </header>
 
-<section id="papiers-sur-lhabitat-et-lenvironnement-favorable-aux-plumes-de-mer" class="level2">
-<h2 class="anchored" data-anchor-id="papiers-sur-lhabitat-et-lenvironnement-favorable-aux-plumes-de-mer">Papiers sur l’habitat et l’environnement favorable aux plumes de mer</h2>
+<section id="connaissances-sur-lhabitat-des-plumes-de-mer" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="connaissances-sur-lhabitat-des-plumes-de-mer">Connaissances sur l’habitat des plumes de mer</h2>
+<p>Les connaissances sur l’habitat de la plume de mer dans le golfe du Saint-Laurent sont limitées à ce jour. Les travaux de <span class="citation" data-cites="kenchington2016">Kenchington et al. (<a href="references.html#ref-kenchington2016" role="doc-biblioref">n.d.</a>)</span> ont délimité des zones d’importances pour la plume de mer est élevées avec la méthode du noyau. Ces zones où la concentration de plumes de mer est particulièrement élevée se situent le long du Chenal Laurentien <a href="#fig-zones-sea-pens">Figure&nbsp;<span>1</span></a>.</p>
+<div id="fig-zones-sea-pens" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/sea_pens_areas.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1: Zones de concentration significative de plumes de mer dans le golfe du Saint-Laurent identifiées par <span class="citation" data-cites="kenchington2016">Kenchington et al. (<a href="references.html#ref-kenchington2016" role="doc-biblioref">n.d.</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>Ces polygones ont été complémentés par les modèles d’espèces réalisés par <span class="citation" data-cites="murillo2016">Murillo et al. (<a href="references.html#ref-murillo2016" role="doc-biblioref">2016</a>)</span>. Les modèles basés sur des arbres décisionnels ont permis d’identifier la salinité et la température des eaux de fond ainsi que la profondeur comme variables les plus importantes pour la prédiction de la présence de plumes de mer <span class="citation" data-cites="murillo2016">Murillo et al. (<a href="references.html#ref-murillo2016" role="doc-biblioref">2016</a>)</span>. La productivité primaire et la température des eaux de surface sont quant à elles les deux variables les plus importantes à la prédiction de la biomasse de plume de mer <span class="citation" data-cites="murillo2016">Murillo et al. (<a href="references.html#ref-murillo2016" role="doc-biblioref">2016</a>)</span>. D’autres modèles de distribution de la plume de mer ont également été réalisés pour complémenter les travaux de <span class="citation" data-cites="kenchington2016">Kenchington et al. (<a href="references.html#ref-kenchington2016" role="doc-biblioref">n.d.</a>)</span>. Ces modèles visent la région des Maritimes <span class="citation" data-cites="beazley2016a">(<a href="references.html#ref-beazley2016a" role="doc-biblioref">Beazley, Kenchington, et al. 2016</a>)</span>, les plates-formes de Terre-Neuve et du Labrador <span class="citation" data-cites="guijarro2016">(<a href="references.html#ref-guijarro2016" role="doc-biblioref">Guijarro et al. 2016</a>)</span> et l’est de l’Arctique <span class="citation" data-cites="beazley2016b">(<a href="references.html#ref-beazley2016b" role="doc-biblioref">Beazley, Murillo, et al. 2016</a>)</span>. La profondeur est une variable importante à la prédiction de la présence de la plume de mer dans ces trois régions <span class="citation" data-cites="beazley2016a beazley2016b guijarro2016">(<a href="references.html#ref-beazley2016a" role="doc-biblioref">Beazley, Kenchington, et al. 2016</a>; <a href="references.html#ref-beazley2016b" role="doc-biblioref">Beazley, Murillo, et al. 2016</a>; <a href="references.html#ref-guijarro2016" role="doc-biblioref">Guijarro et al. 2016</a>)</span>, alors que l’étendue des valeus de salinité des eaux de fond s’est également avérée importante pour le modèle de la région de l’Arctique&nbsp;<span class="citation" data-cites="guijarro2016">(<a href="references.html#ref-guijarro2016" role="doc-biblioref">Guijarro et al. 2016</a>)</span>.</p>
+<p>Nous nous sommes également fiés sur d’autres études portant sur la distribution et l’habitat de la plume de mer ailleurs dans le monde afin d’élaborer la liste de variables environnementales à utiliser avec nos modèles. La <a href="#tbl-studies">Table&nbsp;<span>1</span></a> présente un résumé de ces études avec les taxons visés, l’aire d’étude et les variables les plus importantes pour la prédiction de la présence de la plume de mer.</p>
+<div id="tbl-studies" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Variables les plus importantes pour la prédiction de la présence de plumes de mer selon cinq études aillant modéliser sa distribution</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 29%">
+<col style="width: 31%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Études</th>
+<th>Taxons visés</th>
+<th>Aires d’étude</th>
+<th>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="citation" data-cites="gullage2017">Gullage, Devillers, and Edinger (<a href="references.html#ref-gullage2017" role="doc-biblioref">2017</a>)</span></td>
+<td></td>
+<td>Plates-formes de Terre-Neuve et du Labrador</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="citation" data-cites="yesson2012">Yesson et al. (<a href="references.html#ref-yesson2012" role="doc-biblioref">2012</a>)</span></td>
+<td></td>
+<td>Global</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="citation" data-cites="greathead2015">Greathead et al. (<a href="references.html#ref-greathead2015" role="doc-biblioref">2015</a>)</span></td>
+<td></td>
+<td>Royaume-Uni</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="citation" data-cites="downie2021">Downie et al. (<a href="references.html#ref-downie2021" role="doc-biblioref">2021</a>)</span></td>
+<td></td>
+<td>Royaume-Uni</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="citation" data-cites="ross2021">Ross et al. (<a href="references.html#ref-ross2021" role="doc-biblioref">2021</a>)</span></td>
+<td></td>
+<td>Norvège</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="listes-des-données-environnementales-présentées" class="level2">
+<h2 class="anchored" data-anchor-id="listes-des-données-environnementales-présentées">Listes des données environnementales présentées</h2>
+<p>En raison de l’état des connaissances relativement limitée sur l’habitat de la plume de mer dans le golfe du Saint-Laurent, il est préférable d’explorer un grand nombre de variables avant de commencer la modélisation afin d’éviter d’exclure une variable potentiellement importante dès le départ. Les prochaines sections présentent les 61 variables environnementales intégrées jusqu’à présent pour modéliser l’habitat potentiel de la plume de mer. Ces données proviennent de Pêches et Océans Canada ainsi que de Bio-Oracle. Les données ont toutes été reprojetées sur une grille de 36 secondes d’arc de résolution, à l’exception des données de sédiments puisqu’elles sont sous forme de polygones.</p>
+<section id="fond-marin" class="level3">
+<h3 class="anchored" data-anchor-id="fond-marin">Fond marin</h3>
 <ul>
-<li><p><span class="citation" data-cites="yesson2012">(<a href="references.html#ref-yesson2012" role="doc-biblioref">Yesson et al. 2012</a>)</span> :</p>
-<ul>
-<li>Temperature,</li>
-<li>Surface primary productivity</li>
-<li>Salinity</li>
-<li>Calcite saturation</li>
-</ul></li>
-<li><p><span class="citation" data-cites="greathead2015">(<a href="references.html#ref-greathead2015" role="doc-biblioref">Greathead et al. 2015</a>)</span> :</p>
-<ul>
-<li>Mud</li>
-<li>Minimum salinity</li>
-<li>Depth</li>
-<li>Gravel</li>
-</ul></li>
-<li><p><span class="citation" data-cites="neves2015">(<a href="references.html#ref-neves2015" role="doc-biblioref">Neves et al. 2015</a>)</span> :</p>
-<ul>
-<li><p>No significant relationships between growth rates and these environmental variables:</p>
-<ul>
-<li>Depth</li>
-<li>Latitude</li>
-<li>Temperature</li>
-<li>Chlorophyll a</li>
-<li>Surface particulate inorganic carbon</li>
-</ul></li>
-<li><p>BUT, when pooling two species of <em>Halipteris</em>, significant relationship with diametric growth rates and:</p>
-<ul>
-<li>Latitude</li>
-<li>Temperature</li>
-<li>Chlorophyll a concentration</li>
-<li>POC</li>
-</ul></li>
-</ul></li>
-<li><p><span class="citation" data-cites="ross2021">(<a href="references.html#ref-ross2021" role="doc-biblioref">Ross et al. 2021</a>)</span> : Management-Relevant Ecology and Distribution of Sea Pens in Norway</p>
-<ul>
-<li><p>Most important variables in models for <em>Halipteris spp.</em>:</p>
-<ul>
-<li>Bathymetry</li>
-<li>Slope</li>
-</ul></li>
-<li><p>Most important variables in models for <em>Pennatulidae spp.</em>:</p>
-<ul>
-<li>Current speed (max)</li>
-<li>Batymetry</li>
-<li>Bottom water temperature-salinity interaction</li>
-</ul></li>
-<li><p>Other variables used in this study:</p>
-<ul>
-<li>Topographic Position Index (TPI)</li>
-<li>Valleyness</li>
-<li>%Gravel</li>
-<li>%Mud</li>
-<li>%Sand</li>
-<li>Average bottom water carbon biomass of phytoplankton</li>
-<li>Distance to shore</li>
-<li>Ice cover average (the only surface variable)</li>
-<li>Range of bottom water salinity</li>
-<li>Range of bottom water temperature</li>
-<li>Bottom water average salinity-temperature interaction as water mass proxy</li>
-</ul></li>
-</ul></li>
+<li><p><a href="./bathymetry.html">Bathymétrie et dérivés</a></p></li>
+<li><p><a href="./oxygen.html">Oxygène dissous dans les eaux de fond</a></p></li>
+<li><p><a href="./salinity.html">Salinité des eaux de fond</a></p></li>
+<li><p><a href="./temperature.html">Température des eaux de fond</a></p></li>
+<li><p><a href="./current_velocity.html">Vitesse du courant</a></p></li>
+<li><p><a href="./chloro_phyto.html">Biomasse de phytoplankton et concentration de chlorophylle a</a></p></li>
+<li><p><a href="./molecules_elements.html">Molécules et éléments dissous dans l’eau</a></p></li>
+<li><p><a href="./sediments.html">Sédiments</a></p></li>
 </ul>
 </section>
-<section id="résumé-des-données-environnementales-présentées" class="level2">
-<h2 class="anchored" data-anchor-id="résumé-des-données-environnementales-présentées">Résumé des données environnementales présentées</h2>
-<p>J’ai présentement plusieurs données environnementales. Certains types de données sont utilisées dans certains papiers, alors que d’autres ont simplement été incluses parce qu’elle était facilement accessibles et je que je préfèrais ratisser plus large. Quelques types de données ont plus d’une source, ce qui nécessitera d’en choisir une éventuellement. C’est ici une première liste, peut-être que certaines variables ne seront pas vraiment pertinentes:</p>
+<section id="surface" class="level3">
+<h3 class="anchored" data-anchor-id="surface">Surface</h3>
 <ul>
-<li><p><a href="./bathymetry.html">Bathymétrie et dérivés</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>GEBCO</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./oxygen.html">Oxygène dissous dans les eaux de fond</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Blais, M. et al.&nbsp;Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St.&nbsp;Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p.&nbsp;iv + 56 p.&nbsp;(2019).</li>
-<li>Bio-ORACLE</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./salinity.html">Salinité des eaux de fond</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Données de pêche et océans Canada</li>
-<li>Bio-ORACLE</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./temperature.html">Température des eaux de fond</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Données de pêche et océans Canada</li>
-<li>Bio-ORACLE</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./current_velocity.html">Vitesse du courant</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Bio-ORACLE</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./iron.html">Fer dissous dans les eaux de fond</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Bio-ORACLE</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./molecules.html">Molécules dissoutes dans les eaux de fond</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Bio-ORACLE</li>
-<li>Starr, M. &amp; Chassé, J. Distribution of omega aragonite in the Estuary and Gulf of St.Lawrence in eastern Canada. Department of Fisheries and Oceans. (2019).</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./chloro_phyto.html">Biomasse de phytoplankton et concentration de chlorophylle a</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Bio-ORACLE</li>
-</ul></li>
-</ul></li>
-<li><p><a href="./sediments.html">Sédiments</a></p>
-<ul>
-<li><p>Source(s):</p>
-<ul>
-<li>Aucune</li>
-</ul></li>
-</ul></li>
+<li><p><a href="./surf_ice_cover.html">Couvert glacier</a></p></li>
+<li><p><a href="./surf_pp.html">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire</a></p></li>
+<li><p><a href="./surf_calcite.html">Calcite</a></p></li>
 </ul>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-beazley2016a" class="csl-entry" role="doc-biblioentry">
+Beazley, L, E Kenchington, F. J. Murillo, C Lirette, J Guijarro, A McMillan, and A Knudby. 2016. <span>“Species <span>Distribution Modelling</span> of <span>Corals</span> and <span>Sponges</span> in the <span>Maritimes Region</span> for <span>Use</span> in the <span>Identification</span> of <span>Significant Benthic Areas</span>.”</span> <em>Canadian Technical Report of Fisheries and Aquatic Sciences</em>, no. 3172: vi + 189.
+</div>
+<div id="ref-beazley2016b" class="csl-entry" role="doc-biblioentry">
+Beazley, L, F. J. Murillo, E Kenchington, J Guijarro, C Lirette, T Siferd, M Treble, E Baker, M Bouchard Marmen, and G Tompkins MacDonald. 2016. <span>“Species <span>Distribution Modelling</span> of <span>Corals</span> and <span>Sponges</span> in the <span>Eastern Arctic</span> for <span>Use</span> in the <span>Identification</span> of <span>Significant Benthic Areas</span>.”</span> <em>Canadian Technical Report of Fisheries and Aquatic Sciences</em> 3175: vii + 210.
+</div>
+<div id="ref-downie2021" class="csl-entry" role="doc-biblioentry">
+Downie, Anna-Leena, Tamsyn Noble-James, Ana Chaverra, and Kerry L. Howell. 2021. <span>“Predicting Sea Pen (<span>Pennatulacea</span>) Distribution on the <span>UK</span> Continental Shelf: Evidence of Range Modification by Benthic Trawling.”</span> <em>Marine Ecology Progress Series</em> 670 (July): 75–91. <a href="https://doi.org/10.3354/meps13744">https://doi.org/10.3354/meps13744</a>.
+</div>
 <div id="ref-greathead2015" class="csl-entry" role="doc-biblioentry">
 Greathead, C., J. M. González-Irusta, J. Clarke, P. Boulcott, L. Blackadder, A. Weetman, and P. J. Wright. 2015. <span>“Environmental Requirements for Three Sea Pen Species: Relevance to Distribution and Conservation.”</span> <em>ICES Journal of Marine Science</em> 72 (2): 576–86. <a href="https://doi.org/10.1093/icesjms/fsu129">https://doi.org/10.1093/icesjms/fsu129</a>.
 </div>
-<div id="ref-neves2015" class="csl-entry" role="doc-biblioentry">
-Neves, Bárbara de Moura, Evan Edinger, Graham D. Layne, and Vonda E. Wareham. 2015. <span>“Decadal Longevity and Slow Growth Rates in the Deep-Water Sea Pen <span>Halipteris</span> Finmarchica (<span>Sars</span>, 1851) (<span>Octocorallia</span>: <span>Pennatulacea</span>): Implications for Vulnerability and Recovery from Anthropogenic Disturbance.”</span> <em>Hydrobiologia</em> 759 (1): 147–70. <a href="https://doi.org/10.1007/s10750-015-2229-x">https://doi.org/10.1007/s10750-015-2229-x</a>.
+<div id="ref-guijarro2016" class="csl-entry" role="doc-biblioentry">
+Guijarro, J, L Beazley, C Lirette, E Kenchington, V Wareham, K Gilkinson, M Koen-Alonso, and F. J. Murillo. 2016. <span>“Species <span>Distribution Modelling</span> of <span>Corals</span> and <span>Sponges</span> from <span>Research Vessel Survey Data</span> in the <span>Newfoundland</span> and <span>Labrador Region</span> for <span>Use</span> in the <span>Identification</span> of <span>Significant Benthic Areas</span>.”</span> <em>Canadian Technical Report of Fisheries and Aquatic Sciences</em> 3171.
+</div>
+<div id="ref-gullage2017" class="csl-entry" role="doc-biblioentry">
+Gullage, Lauren, Rodolphe Devillers, and Evan Edinger. 2017. <span>“Predictive Distribution Modelling of Cold-Water Corals in the <span>Newfoundland</span> and <span>Labrador</span> Region.”</span> <em>Marine Ecology Progress Series</em> 582 (November): 57–77. <a href="https://doi.org/10.3354/meps12307">https://doi.org/10.3354/meps12307</a>.
+</div>
+<div id="ref-kenchington2016" class="csl-entry" role="doc-biblioentry">
+Kenchington, E, L Beazley, C Lirette, F J Murillo, J Guijarro, V Wareham, K Gilkinson, et al. n.d. <span>“Delineation of <span>Coral</span> and <span>Sponge Significant Benthic Areas</span> in <span>Eastern Canada Using Kernel Density Analyses</span> and <span>Species Distribution Models</span>.”</span>
+</div>
+<div id="ref-murillo2016" class="csl-entry" role="doc-biblioentry">
+Murillo, F J, E Kenchington, L Beazley, C Lirette, A Knudby, J Guijarro, H Benoît, H Bourdages, and B Sainte-Marie. 2016. <span>“Distribution <span>Modelling</span> of <span>Sea Pens</span>, <span>Sponges</span>, <span>Stalked Tunicates</span> and <span>Soft Corals</span> from <span>Research Vessel Survey Data</span> in the <span>Gulf</span> of <span>St</span>. <span>Lawrence</span> for <span>Use</span> in the <span>Identification</span> of <span>Significant Benthic Areas</span>.”</span> <em>Canadian Technical Report of Fisheries and Aquatic Sciences</em>, no. 3170: vi + 132.
 </div>
 <div id="ref-ross2021" class="csl-entry" role="doc-biblioentry">
 Ross, Rebecca E., Genoveva Gonzalez-Mirelis, Pablo Lozano, and Pål Buhl-Mortensen. 2021. <span>“Discerning the <span>Management-Relevant Ecology</span> and <span>Distribution</span> of <span>Sea Pens</span> (<span>Cnidaria</span>: <span>Pennatulacea</span>) in <span>Norway</span> and <span>Beyond</span>.”</span> <em>Frontiers in Marine Science</em> 8.
@@ -383,6 +359,7 @@ Ross, Rebecca E., Genoveva Gonzalez-Mirelis, Pablo Lozano, and Pål Buhl-Mortens
 Yesson, Chris, Michelle L. Taylor, Derek P. Tittensor, Andrew J. Davies, John Guinotte, Amy Baco, Julie Black, Jason M. Hall-Spencer, and Alex D. Rogers. 2012. <span>“Global Habitat Suitability of Cold-Water Octocorals.”</span> <em>Journal of Biogeography</em> 39 (7): 1278–92. <a href="https://doi.org/10.1111/j.1365-2699.2011.02681.x">https://doi.org/10.1111/j.1365-2699.2011.02681.x</a>.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->

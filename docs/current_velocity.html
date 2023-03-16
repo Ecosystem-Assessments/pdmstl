@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploration of Sea Pens Data - 6&nbsp; Vitesse du courant</title>
+<title>Exploration of Sea Pens Data - 6&nbsp; Vélocité du courant</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./iron.html" rel="next">
+<link href="./chloro_phyto.html" rel="next">
 <link href="./temperature.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Vitesse du courant</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Vélocité du courant</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -127,27 +127,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Vitesse du courant</span></a>
+  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Vélocité du courant</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iron.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fer dissous dans les eaux de fond</span></a>
+  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./molecules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></a>
+  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></a>
+  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments</span></a>
+  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -162,12 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inla.html" class="sidebar-item-text sidebar-link">Type de modèles</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./bathymetry_vs_enviro.html" class="sidebar-item-text sidebar-link">Modèle avec ou sans bathymétrie</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
   </div>
 </li>
       </ul>
@@ -189,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Vitesse du courant</span></h1>
+<h1 class="title"><span class="chapter-title">Vélocité du courant</span></h1>
 </div>
 
 
@@ -204,12 +209,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>La vitesse du courant pourrait être une variable déterminante dans l’établissement de la plume de mer. Elle pourrait entre autres être relié à la capacité d’ancrage de la plume de mer.</p>
-<p>Pour l’instant, la seule source de données que j’ai trouvé est Bio-Oracle. Les données sont en m/s.</p>
+<p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
+<p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
+<p><strong>Étendue temporelle:</strong> 2000-2014</p>
+<div id="fig-bo-curvel-min" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_current_velocity_min.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;6.1: Vélocité minimale du courant des eaux de fond (m/s)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-curvel-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_current_velocity_mean.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;6.2: Vélocité moyenne du courant des eaux de fond (m/s)</figcaption><p></p>
+</figure>
+</div>
 <div id="fig-bo-curvel-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_current_velocity_max.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;6.1: Vélocité maximale du courant. Les données utilisées pour calculer les valeurs maximales ont été récoltées entre 2000 et 2014.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;6.3: Vélocité maximale du courant des eaux de fond (m/s)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-curvel-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_current_velocity_range.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;6.4: Étendue des valeurs de vélocité du courant des eaux de fond (m/s)</figcaption><p></p>
 </figure>
 </div>
 
@@ -356,8 +380,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./iron.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-title">Fer dissous dans les eaux de fond</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chloro_phyto.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

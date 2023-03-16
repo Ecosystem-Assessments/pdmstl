@@ -1,0 +1,79 @@
+# Molécules et éléments dissous dans les eaux de fond {#sec-mol}
+
+## Fer
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_min.png){#fig-bo-iron-min}
+
+![Concentration moyenne de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_mean.png){#fig-bo-iron-mean}
+
+![Concentration maximale de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_max.png){#fig-bo-iron-max}
+
+![Étendue des valeurs de concentration de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_range.png){#fig-bo-iron-range}
+
+
+## Nitrate
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_min.png){#fig-bo-nitrate-min}
+
+![Concentration moyenne de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_mean.png){#fig-bo-nitrate-mean}
+
+![Concentration maximale de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_max.png){#fig-bo-nitrate-max}
+
+![Étendue des valeurs de concentration de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_range.png){#fig-bo-nitrate-range}
+
+
+## Phosphate
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_min.png){#fig-bo-nitrate-min}
+
+![Concentration moyenne de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_mean.png){#fig-bo-nitrate-mean}
+
+![Concentration maximale de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_max.png){#fig-bo-nitrate-max}
+
+![Étendue des valeurs de concentration de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_range.png){#fig-bo-nitrate-range}
+
+
+## Silicate
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_min.png){#fig-bo-silicate-min}
+
+![Concentration moyenne de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_mean.png){#fig-bo-silicate-mean}
+
+![Concentration maximale de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_max.png){#fig-bo-silicate-max}
+
+![Étendue des valeurs de concentration de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_range.png){#fig-bo-silicate-range}
+
+
+## Aragonite
+
+**Source:** 
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2017
+
+![Horizon de saturation par l'aragonite des eaux de fond (Ω)](figures/env_arag.png){#fig-arag}

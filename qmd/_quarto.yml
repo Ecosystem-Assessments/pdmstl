@@ -17,20 +17,20 @@ book:
     - sea_pens_occurrence_data.qmd
     - part: environmental_variables.qmd
       chapters:
-        - bathymetry.qmd
-        - oxygen.qmd
-        - salinity.qmd
-        - temperature.qmd
-        - current_velocity.qmd
-        - iron.qmd
-        - molecules.qmd
-        - chloro_phyto.qmd
-        - sediments.qmd
-
+      - bathymetry.qmd
+      - oxygen.qmd
+      - salinity.qmd
+      - temperature.qmd
+      - current_velocity.qmd
+      - chloro_phyto.qmd
+      - molecules_elements.qmd
+      - sediments.qmd
+      - surf_ice_cover.qmd
+      - surf_pp.qmd
+      - surf_calcite.qmd
     - part: species_distribution_modelling.qmd
       chapters:
-        - inla.qmd
-        - bathymetry_vs_enviro.qmd
+        - models.qmd
 
     - references.qmd
 

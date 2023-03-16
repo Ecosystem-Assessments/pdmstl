@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -127,27 +127,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vitesse du courant</span></a>
+  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iron.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fer dissous dans les eaux de fond</span></a>
+  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./molecules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></a>
+  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></a>
+  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments</span></a>
+  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -162,12 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inla.html" class="sidebar-item-text sidebar-link">Type de modèles</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./bathymetry_vs_enviro.html" class="sidebar-item-text sidebar-link">Modèle avec ou sans bathymétrie</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
   </div>
 </li>
       </ul>
@@ -186,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#pêches-et-océans" id="toc-pêches-et-océans" class="nav-link active" data-scroll-target="#pêches-et-océans">Pêches et Océans</a></li>
+  <li><a href="#pêches-et-océans-canada" id="toc-pêches-et-océans-canada" class="nav-link active" data-scroll-target="#pêches-et-océans-canada">Pêches et Océans Canada</a></li>
   <li><a href="#bio-oracle" id="toc-bio-oracle" class="nav-link" data-scroll-target="#bio-oracle">Bio-Oracle</a></li>
   </ul>
 </nav>
@@ -211,30 +216,51 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>J’ai présentement deux sources de données de salinité des eaux de fond:</p>
-<section id="pêches-et-océans" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="pêches-et-océans">Pêches et Océans</h2>
-<p>Ces données proviennent de Pêches et Océans Canada. Elles sont disponibles sur <a href="https://open.canada.ca/data/en/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2">Open.Canada</a> et sont mises à jour annuellement. Les données sont représentées dans la <a href="#fig-sal-dfo">Figure&nbsp;<span>4.1</span></a> comme une moyenne de salinité pour la période de 2011 à 2020, mais elles sont disponibles annuellement. L’unité est en g/L.</p>
-<div id="fig-sal-dfo" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<p>Deux sources de données sont disponibles pour la salinité des eaux de fond:</p>
+<ul>
+<li><p>Pêches et Océans Canada</p></li>
+<li><p>Bio-Oracle</p></li>
+</ul>
+<section id="pêches-et-océans-canada" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="pêches-et-océans-canada">Pêches et Océans Canada</h2>
+<p><strong>Source:</strong> Pêches et Océans Canada (2022). Température et salinité au fond dans l’estuaire et le golfe du St-Laurent. Pêches et Océans Canada. https://ouvert.canada.ca/data/fr/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2.</p>
+<p><strong>Résolution spatiale originale:</strong> 1km²</p>
+<p><strong>Étendue temporelle:</strong> 2011 à 2020</p>
+<div id="fig-sal_mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_mean_salinity.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.1: Salinité moyenne des eaux de fond de 2011 à 2020.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.1: Salinité moyenne des eaux de fond</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="bio-oracle" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="bio-oracle">Bio-Oracle</h2>
-<p>J’ai également exploré les données de Bio-Oracle (Version 2.2). J’ai présentement extrait la moyenne et l’étendue de salinité des eaux de fond. L’unité de mesure pour les deux jeux de données (moyenne et étendue) est l’échelle pratique de salinité (Practical Salinity Scale, PSS)</p>
+<p>Les données de Bio-Oracle permettent d’avoir des données sur la salinité minimale, maximale et moyenne dans les eaux de fond à une profondeur moyenne.</p>
+<p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
+<p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
+<p><strong>Étendue temporelle:</strong> 2000-2014</p>
+<div id="fig-bo-sal-min" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_salinity_min.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.2: Salinité minimale des eaux de fond (PSS)</figcaption><p></p>
+</figure>
+</div>
 <div id="fig-bo-sal-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_salinity_mean.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.2: Salinité moyenne des eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes s’étendent de 2000 à 2014.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.3: Salinité moyenne dissous des eaux de fond (PSS)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-sal-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_salinity_max.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.4: Salinité maximale dissous des eaux de fond (PSS)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-sal-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_salinity_range.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.3: Différence entre la maximum et le minimum de salinité des eaux de fond à une profondeur moyenne. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.5: Étendue des valeurs de salinité des eaux de fond (PSS)</figcaption><p></p>
 </figure>
 </div>
 

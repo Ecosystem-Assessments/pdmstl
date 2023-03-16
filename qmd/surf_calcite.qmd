@@ -1,0 +1,9 @@
+# Concentration de calcite dissous dans les eaux de surface {#sec-curvel}
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration de calcite dissous moyenne (mol/m³)](figures/env_surface_calcite_mean.png){#fig-bo-calcite-surf-mean}

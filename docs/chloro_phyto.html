@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploration of Sea Pens Data - 9&nbsp; Biomasse de phytoplankton et concentration de chlorophylle</title>
+<title>Exploration of Sea Pens Data - 7&nbsp; Biomasse de phytoplankton et concentration de chlorophylle a</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./sediments.html" rel="next">
-<link href="./molecules.html" rel="prev">
+<link href="./molecules_elements.html" rel="next">
+<link href="./current_velocity.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -127,27 +127,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vitesse du courant</span></a>
+  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iron.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fer dissous dans les eaux de fond</span></a>
+  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./molecules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></a>
+  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></a>
+  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments</span></a>
+  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -162,12 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inla.html" class="sidebar-item-text sidebar-link">Type de modèles</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./bathymetry_vs_enviro.html" class="sidebar-item-text sidebar-link">Modèle avec ou sans bathymétrie</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
   </div>
 </li>
       </ul>
@@ -186,8 +191,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#phytoplankton" id="toc-phytoplankton" class="nav-link active" data-scroll-target="#phytoplankton">Phytoplankton</a></li>
-  <li><a href="#chlorophylle" id="toc-chlorophylle" class="nav-link" data-scroll-target="#chlorophylle">Chlorophylle</a></li>
+  <li><a href="#biomasse-de-phytolankton" id="toc-biomasse-de-phytolankton" class="nav-link active" data-scroll-target="#biomasse-de-phytolankton">Biomasse de phytolankton</a></li>
+  <li><a href="#concentration-de-chlorophylle-a" id="toc-concentration-de-chlorophylle-a" class="nav-link" data-scroll-target="#concentration-de-chlorophylle-a">Concentration de chlorophylle a</a></li>
   </ul>
 </nav>
     </div>
@@ -196,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></h1>
+<h1 class="title"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></h1>
 </div>
 
 
@@ -211,22 +216,63 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Le phytoplankton et la chlorophylle a sont utilisés dans d’autres analyses. Cependant, comme les valeurs semblent prêts de 0 pour les deux variables où l’espèce est majoritairement présente, je doute un peu de la pertinence d’ajouter ces variables ici.</p>
-<section id="phytoplankton" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="phytoplankton">Phytoplankton</h2>
+<section id="biomasse-de-phytolankton" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="biomasse-de-phytolankton">Biomasse de phytolankton</h2>
+<p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
+<p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
+<p><strong>Étendue temporelle:</strong> 2000-2014</p>
+<div id="fig-bo-phyto-min" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_phytoplankton_min.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.1: Biomasse de phytoplankton minimale dans les eaux de fond (μmol/m³)</figcaption><p></p>
+</figure>
+</div>
 <div id="fig-bo-phyto-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_phytoplankton_mean.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;9.1: Concentration molaire moyenne de phytoplankton exprimée en micromol/m<sup>3</sup> de carbone dans l’eau de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.2: Biomasse de phytoplankton moyenne dans les eaux de fond (μmol/m³)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-phyto-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_phytoplankton_max.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.3: Biomasse de phytoplankton maximale dans les eaux de fond (μmol/m³)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-phyto-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_phytoplankton_range.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.4: Étendue des valeurs de biomasse de phytoplankton dans les eaux de fond (μmol/m³)</figcaption><p></p>
 </figure>
 </div>
 </section>
-<section id="chlorophylle" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="chlorophylle">Chlorophylle</h2>
+<section id="concentration-de-chlorophylle-a" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="concentration-de-chlorophylle-a">Concentration de chlorophylle a</h2>
+<p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
+<p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
+<p><strong>Étendue temporelle:</strong> 2000-2014</p>
+<div id="fig-bo-chloro-min" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_chlorophyll_min.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.5: Concentration minimale de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
+</figure>
+</div>
 <div id="fig-bo-chloro-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_chlorophyll_mean.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;9.2: Concentration massique moyenne de chlorophylle dans l’eau de fond à profondeur moyenne exprimée en mg/m<sup>3</sup>. Les données utilisées pour calculer les moyennes ont été récoltées entre 2000 et 2014.</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.6: Concentration moyenne de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-chloro-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_chlorophyll_max.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.7: Concentration maximale de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
+</figure>
+</div>
+<div id="fig-bo-chloro-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="figures/env_bottom_chlorophyll_range.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;7.8: Étendue des valeurs de concentration de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
 </figure>
 </div>
 
@@ -369,13 +415,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./molecules.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></span>
+      <a href="./current_velocity.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Vélocité du courant</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./sediments.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-title">Les sédiments</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./molecules_elements.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

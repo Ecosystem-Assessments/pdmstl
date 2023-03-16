@@ -1,23 +1,37 @@
 # Salinité des eaux de fond {#sec-sal}
 
-J'ai présentement deux sources de données de salinité des eaux de fond:
+Deux sources de données sont disponibles pour la salinité des eaux de fond:
 
-## Pêches et Océans
+* Pêches et Océans Canada
 
-Ces données proviennent de Pêches et Océans Canada. 
-Elles sont disponibles sur [Open.Canada](https://open.canada.ca/data/en/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2) et sont mises à jour annuellement. 
-Les données sont représentées dans la @fig-sal-dfo comme une moyenne de salinité pour la période de 2011 à 2020, mais elles sont disponibles annuellement.
-L'unité est en g/L.
+* Bio-Oracle
 
-![Salinité moyenne des eaux de fond de 2011 à 2020.](figures/env_mean_salinity.png){#fig-sal-dfo}
+
+## Pêches et Océans Canada
+
+**Source:** Pêches et Océans Canada (2022). Température et salinité au fond dans l'estuaire et le golfe du St-Laurent. Pêches et Océans Canada. https://ouvert.canada.ca/data/fr/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2.
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2011 à 2020
+
+![Salinité moyenne des eaux de fond](figures/env_mean_salinity.png){#fig-sal_mean}
 
 
 ## Bio-Oracle
 
-J'ai également exploré les données de Bio-Oracle (Version 2.2). 
-J'ai présentement extrait la moyenne et l'étendue de salinité des eaux de fond.
-L'unité de mesure pour les deux jeux de données (moyenne et étendue) est l'échelle pratique de salinité (Practical Salinity Scale, PSS)
+Les données de Bio-Oracle permettent d'avoir des données sur la salinité minimale, maximale et moyenne dans les eaux de fond à une profondeur moyenne.
 
-![Salinité moyenne des eaux de fond à profondeur moyenne. Les données utilisées pour calculer les moyennes s'étendent de 2000 à 2014.](figures/env_bottom_salinity_mean.png){#fig-bo-sal-mean}
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
 
-![Différence entre la maximum et le minimum de salinité des eaux de fond à une profondeur moyenne. Les données utilisées pour calculer les étendues ont été récoltées entre 2000 et 2014.](figures/env_bottom_salinity_range.png){#fig-bo-sal-range}
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Salinité minimale des eaux de fond (PSS)](figures/env_bottom_salinity_min.png){#fig-bo-sal-min}
+
+![Salinité moyenne dissous des eaux de fond (PSS)](figures/env_bottom_salinity_mean.png){#fig-bo-sal-mean}
+
+![Salinité maximale dissous des eaux de fond (PSS)](figures/env_bottom_salinity_max.png){#fig-bo-sal-max}
+
+![Étendue des valeurs de salinité des eaux de fond (PSS)](figures/env_bottom_salinity_range.png){#fig-bo-sal-range}

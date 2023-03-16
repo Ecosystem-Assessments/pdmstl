@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -127,27 +127,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vitesse du courant</span></a>
+  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iron.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fer dissous dans les eaux de fond</span></a>
+  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./molecules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les molécules dissoutes dans les eaux de fond</span></a>
+  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle</span></a>
+  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments</span></a>
+  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -162,12 +172,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inla.html" class="sidebar-item-text sidebar-link">Type de modèles</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./bathymetry_vs_enviro.html" class="sidebar-item-text sidebar-link">Modèle avec ou sans bathymétrie</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
   </div>
 </li>
       </ul>
@@ -187,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#sources-de-données" id="toc-sources-de-données" class="nav-link active" data-scroll-target="#sources-de-données">Sources de données</a></li>
-  <li><a href="#inférence-des-absences" id="toc-inférence-des-absences" class="nav-link" data-scroll-target="#inférence-des-absences">Inférence des absences</a></li>
+  <li><a href="#sec-abs" id="toc-sec-abs" class="nav-link" data-scroll-target="#sec-abs">Inférence des absences</a></li>
   <li><a href="#cartes-des-données-doccurrence" id="toc-cartes-des-données-doccurrence" class="nav-link" data-scroll-target="#cartes-des-données-doccurrence">Cartes des données d’occurrence</a>
   <ul class="collapse">
   <li><a href="#anthoptilum-grandiflorum" id="toc-anthoptilum-grandiflorum" class="nav-link" data-scroll-target="#anthoptilum-grandiflorum"><em>Anthoptilum grandiflorum</em></a></li>
@@ -247,8 +252,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Par contre, il est spécifié que la qualité des données s’est améliorée au fil du temps et que les données ne sont pas directement comparables entre ces différents relevés.</p>
 </section>
-<section id="inférence-des-absences" class="level2">
-<h2 class="anchored" data-anchor-id="inférence-des-absences">Inférence des absences</h2>
+<section id="sec-abs" class="level2">
+<h2 class="anchored" data-anchor-id="sec-abs">Inférence des absences</h2>
 <p>Les données utilisées contiennent l’identification de toutes les espèces récoltées à chacun des traits de pêche. Il est donc possible d’inférer les absences d’une espèce pour chaque trait de pêche où elle n’a pas été identifiée. Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g.&nbsp;problèmes d’identification, non-détection alors que l’espèce est bien présente), mais elles amènent tout de même de l’information très utile lors de la modélisation des aires de distribution d’espèces.</p>
 <p>Nou avons donc inférer les absences pour les quatres espèces se situant dans l’estuaire et le golfe du Saint-Laurent:</p>
 <ol type="1">

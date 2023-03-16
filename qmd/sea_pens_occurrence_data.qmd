@@ -23,7 +23,7 @@ Pour le nord du golfe, il semble y avoir d'autres relevés disponibles sur open.
 Par contre, il est spécifié que la qualité des données s'est améliorée au fil du temps et que les données ne sont pas directement comparables entre ces différents relevés.
 
 
-## Inférence des absences
+## Inférence des absences {#sec-abs}
 
 Les données utilisées contiennent l'identification de toutes les espèces récoltées à chacun des traits de pêche.
 Il est donc possible d'inférer les absences d'une espèce pour chaque trait de pêche où elle n'a pas été identifiée.
