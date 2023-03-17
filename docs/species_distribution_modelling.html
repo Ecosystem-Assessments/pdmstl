@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploration of Sea Pens Data - Modèles de distribution d’espèce</title>
+<title>Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent - Modèles de distribution d’espèce</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,7 +49,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./models.html" rel="next">
-<link href="./surf_calcite.html" rel="prev">
+<link href="./surface.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -108,12 +108,17 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Rapport d’avancement</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Données d’occurrence</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Résumé</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Données d’occurrences</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -126,57 +131,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bathymetry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bathymétrie</span></a>
+  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables du fond marin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./oxygen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxygène dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./salinity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Salinité des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Température des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
+  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables des eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -191,7 +151,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sélection de modèles</span></a>
   </div>
 </li>
       </ul>
@@ -228,7 +188,7 @@ div.csl-indent {
 
 </header>
 
-<p>Les modèles de distribution d’espèces et les modèles de niches écologiques sont des modèles qui visent à déterminer la distribution actuelle ou l’habitat potentiel d’une espèce <span class="citation" data-cites="melo-merino2020">(<a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>. Ces cartes de distributions peuvent entres autres servir à prédire les impacts des perturbations anthropiques et des changements climatiques sur la distribution d’une espèce à des fins de conservation <span class="citation" data-cites="melo-merino2020">(<a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>. Le modèle le plus commun est le modèle corrélatif, qui consiste à expliquer la distribution de l’espèce en se basant sur les corrélations entre ses occurrences et un ensemble de variables environnementales <span class="citation" data-cites="franklin2010">(<a href="references.html#ref-franklin2010" role="doc-biblioref">Franklin 2010</a>)</span>. D’autres modèles sont méchanistiques, orientés sur les processus tels que la capacité de dispersion et les interactions biotiques, alors que d’autres ne sont que des interpolations spatiales <span class="citation" data-cites="bahn2007 peterson2012 peterson2015 melo-merino2020">(<a href="references.html#ref-bahn2007" role="doc-biblioref">Bahn and McGill 2007</a>; <a href="references.html#ref-peterson2012" role="doc-biblioref">Peterson and Soberón 2012</a>; <a href="references.html#ref-peterson2015" role="doc-biblioref">Peterson, Papeş, and Soberón 2015</a>; <a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>. Bien que les modèles de distribution d’espèces et les modèles de niches écologiques ont d’abord été introduits avec les espèces terrestres, de plus en plus de ces modèles sont appliqués aux systèmes marins <span class="citation" data-cites="melo-merino2020">(<a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>.</p>
+<p>Les modèles de distribution d’espèces et les modèles de niches écologiques sont des modèles qui visent à déterminer la distribution actuelle ou l’habitat potentiel d’une espèce <span class="citation" data-cites="melo-merino2020">(<a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>. Ces cartes de distributions peuvent entres autres servir à prédire les impacts des perturbations anthropiques et des changements climatiques sur la distribution d’une espèce à des fins de conservation <span class="citation" data-cites="melo-merino2020">(<a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>. Le modèle le plus commun est le modèle corrélatif, qui consiste à expliquer la distribution de l’espèce en se basant sur les corrélations entre ses occurrences et un ensemble de variables environnementales <span class="citation" data-cites="franklin2010">(<a href="references.html#ref-franklin2010" role="doc-biblioref">Franklin 2010</a>)</span>. D’autres modèles sont méchanistiques et sont donc orientés sur les processus tels que la capacité de dispersion et les interactions biotiques, alors que d’autres ne sont que des interpolations spatiales <span class="citation" data-cites="bahn2007 peterson2012 peterson2015 melo-merino2020">(<a href="references.html#ref-bahn2007" role="doc-biblioref">Bahn and McGill 2007</a>; <a href="references.html#ref-peterson2012" role="doc-biblioref">Peterson and Soberón 2012</a>; <a href="references.html#ref-peterson2015" role="doc-biblioref">Peterson, Papeş, and Soberón 2015</a>; <a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>. Bien que les modèles de distribution d’espèces et les modèles de niches écologiques ont d’abord été introduits avec les espèces terrestres, de plus en plus de ces modèles sont appliqués aux systèmes marins <span class="citation" data-cites="melo-merino2020">(<a href="references.html#ref-melo-merino2020" role="doc-biblioref">Melo-Merino, Reyes-Bonilla, and Lira-Noriega 2020</a>)</span>.</p>
 <p>La prochaine section porte sur les <a href="./models.html">choix de modèles de distribution d’espèces</a> qui ont été faits jusqu’à présent afin d’identifier l’habitat potentiel des quatres espèces de plume de mer présentées dans la section des <a href="./sea_pens_occurrence_data.html">données d’occurrence</a>.</p>
 
 
@@ -386,13 +346,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./surf_calcite.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></span>
+      <a href="./surface.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Variables des eaux de surface</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./models.html" class="pagination-link">
-        <span class="nav-page-text">Sélection de modèles</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-title">Sélection de modèles</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

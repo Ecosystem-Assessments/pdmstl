@@ -1,9 +1,0 @@
-# Les sédiments de fond {#sec-sed}
-
-**Source:** Loring, D. H., and D. J. G. Nota. 1973. Morphology and sediments of the Gulf of St. Lawrence. Bull. Fish. Res. Bd. Can. 182. 147 p. + 7 charts.
-
-**Résolution spatiale originale:** Ne s'applique pas, les données sont des polygones
-
-**Étendue temporelle:** 1961-1969
-
-![Catégories générales des sédiments de surface](figures/env_depot_gro.png){#fig-sediments}

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vincent Bellavance">
-<meta name="dcterms.date" content="2023-03-16">
+<meta name="dcterms.date" content="2023-03-17">
 
-<title>Exploration of Sea Pens Data</title>
+<title>Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./sea_pens_occurrence_data.html" rel="next">
+<link href="./summary.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,13 +64,13 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Exploration of Sea Pens Data</h1>
+      <h1 class="quarto-secondary-nav-title">Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -90,12 +90,17 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Rapport d’avancement</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Données d’occurrence</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Résumé</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Données d’occurrences</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -108,57 +113,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bathymetry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bathymétrie</span></a>
+  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables du fond marin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./oxygen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxygène dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./salinity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Salinité des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Température des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
+  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables des eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -173,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sélection de modèles</span></a>
   </div>
 </li>
       </ul>
@@ -187,21 +147,13 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Exploration of Sea Pens Data</h1>
+<h1 class="title d-none d-lg-block">Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent</h1>
 </div>
 
 
@@ -218,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 16, 2023</p>
+      <p class="date">March 17, 2023</p>
     </div>
   </div>
   
@@ -228,32 +180,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level1 unnumbered">
-<h1 class="unnumbered">Introduction</h1>
-<p>Ce rapport a pour but de documenter l’avancement sur le projet d’identification de l’habitat potentiel de la plume de mer dans l’estuaire maritime et le golfe du Saint-Laurent. Il se décline en trois parties:</p>
-<ul>
-<li><p><a href="./sea_pens_occurrence_data.html">Les données d’occurrence de plumes de mer</a></p>
-<ul>
-<li>Sources des données</li>
-<li>Traitement des données</li>
-<li>Cartes des occurrence pour chaque espèce</li>
-</ul></li>
-<li><p><a href="./environmental_variables.html">Les variables environnementales</a></p>
-<ul>
-<li>Variables environnementales potentielles à utiliser dans les modèles.</li>
-<li>Liste d’articles sur la distribution de la plume de mer avec la liste de variables environnementales associées à sa présence.</li>
-<li>Liste des données à considérer pour la modélisation de l’habitat potentiel de la plume de mer dans l’estuaire et le golfe du Saint-Laurent.</li>
-</ul></li>
-<li><p><a href="./species_distribution_modelling.html">La modélisation de l’habitat potentiel</a></p>
-<ul>
-<li>Modèles choisies pour les données de:
-<ul>
-<li>Présences-absences,</li>
-<li>Biomasse.</li>
-</ul></li>
-<li>Outil utiliser pour construire les modèles.</li>
-</ul></li>
-</ul>
+<section id="rapport-davancement" class="level2 unlisted">
+<h2 class="unlisted anchored" data-anchor-id="rapport-davancement">Rapport d’avancement</h2>
 
 
 </section>
@@ -396,8 +324,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./sea_pens_occurrence_data.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-title">Données d’occurrence</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Résumé</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploration of Sea Pens Data - 1&nbsp; Données d’occurrence</title>
+<title>Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent - 3&nbsp; Données d’occurrences</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -30,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./environmental_variables.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./summary.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Données d’occurrence</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Données d’occurrences</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -89,12 +108,17 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Rapport d’avancement</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Données d’occurrence</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Résumé</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Données d’occurrences</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -107,57 +131,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bathymetry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bathymétrie</span></a>
+  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables du fond marin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./oxygen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxygène dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./salinity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Salinité des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Température des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
+  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables des eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -172,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sélection de modèles</span></a>
   </div>
 </li>
       </ul>
@@ -193,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#sources-de-données" id="toc-sources-de-données" class="nav-link active" data-scroll-target="#sources-de-données">Sources de données</a></li>
   <li><a href="#sec-abs" id="toc-sec-abs" class="nav-link" data-scroll-target="#sec-abs">Inférence des absences</a></li>
-  <li><a href="#cartes-des-données-doccurrence" id="toc-cartes-des-données-doccurrence" class="nav-link" data-scroll-target="#cartes-des-données-doccurrence">Cartes des données d’occurrence</a>
+  <li><a href="#cartes-des-données-doccurrences" id="toc-cartes-des-données-doccurrences" class="nav-link" data-scroll-target="#cartes-des-données-doccurrences">Cartes des données d’occurrences</a>
   <ul class="collapse">
   <li><a href="#anthoptilum-grandiflorum" id="toc-anthoptilum-grandiflorum" class="nav-link" data-scroll-target="#anthoptilum-grandiflorum"><em>Anthoptilum grandiflorum</em></a></li>
   <li><a href="#balticina-finmarchica" id="toc-balticina-finmarchica" class="nav-link" data-scroll-target="#balticina-finmarchica"><em>Balticina finmarchica</em></a></li>
@@ -208,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Données d’occurrence</span></h1>
+<h1 class="title"><span class="chapter-title">Données d’occurrences</span></h1>
 </div>
 
 
@@ -225,14 +204,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="sources-de-données" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sources-de-données">Sources de données</h2>
-<p>Les données d’occurrence des plumes de mer proviennent de deux sources:</p>
+<p>Les données d’occurrences des plumes de mer proviennent de deux sources:</p>
 <ol type="1">
 <li><a href="https://open.canada.ca/data/fr/dataset/1989de32-bc5d-c696-879c-54d422438e64">Relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l’OPANO. Ces données ont été récoltées de 1970 à 2021.</a></li>
 </ol>
 <div id="fig-4t" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/sampling_4t.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.1: Localisation des points d’échantillonnages lors du relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l’OPANO</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.1: Localisation des points d’échantillonnages lors du relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l’OPANO</figcaption><p></p>
 </figure>
 </div>
 <ol start="2" type="1">
@@ -241,10 +220,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-teleost" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/sampling_teleost.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.2: Localisation des points d’échantillonnages lors du relevé multidisciplinaire de poissons de fond et de crevette d’août dans l’estuaire et le nord du golfe du Saint-Laurent de 2004 à 2021 effectué à bord du NGCC Teleost</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.2: Localisation des points d’échantillonnages lors du relevé multidisciplinaire de poissons de fond et de crevette d’août dans l’estuaire et le nord du golfe du Saint-Laurent de 2004 à 2021 effectué à bord du NGCC Teleost</figcaption><p></p>
 </figure>
 </div>
-<p>Pour le nord du golfe, il semble y avoir d’autres relevés disponibles sur open.canada.ca qui ont été réalisés sur d’autres navires:</p>
+<p>Il y a également d’autres relevés disponibles qui ont été réalisés sur d’autres navires pour le partie nord du golfe du Saint-Laurent:</p>
 <ul>
 <li><p>NM Gadus Atlantica (1978-1994)</p></li>
 <li><p>NM Lady Hammond (1984-1990)</p></li>
@@ -254,8 +233,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="sec-abs" class="level2">
 <h2 class="anchored" data-anchor-id="sec-abs">Inférence des absences</h2>
-<p>Les données utilisées contiennent l’identification de toutes les espèces récoltées à chacun des traits de pêche. Il est donc possible d’inférer les absences d’une espèce pour chaque trait de pêche où elle n’a pas été identifiée. Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g.&nbsp;problèmes d’identification, non-détection alors que l’espèce est bien présente), mais elles amènent tout de même de l’information très utile lors de la modélisation des aires de distribution d’espèces.</p>
-<p>Nou avons donc inférer les absences pour les quatres espèces se situant dans l’estuaire et le golfe du Saint-Laurent:</p>
+<p>Les jeux de données utilisés contiennent l’identification de toutes les espèces récoltées à chacun des traits de pêche. Il est donc possible d’inférer les absences d’une espèce pour chaque trait de pêche où celle-ci n’a pas été identifiée. Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g.&nbsp;problèmes d’identification, non-détection alors que l’espèce est bien présente), mais elles amènent sont tout de même utile lors de la modélisation des aires de distribution d’espèces <span class="citation" data-cites="loboUncertainNatureAbsences2010">(<a href="references.html#ref-loboUncertainNatureAbsences2010" role="doc-biblioref">Lobo, Jiménez-Valverde, and Hortal 2010</a>)</span>. Nous avons donc inférer les absences pour les quatres espèces se situant dans l’estuaire et le golfe du Saint-Laurent:</p>
 <ol type="1">
 <li><p><em>Anthoptilum grandiflorum</em></p></li>
 <li><p><em>Balticina finmarchica</em></p></li>
@@ -263,8 +241,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p><em>Ptilella grandis</em></p></li>
 </ol>
 </section>
-<section id="cartes-des-données-doccurrence" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="cartes-des-données-doccurrence">Cartes des données d’occurrence</h2>
+<section id="cartes-des-données-doccurrences" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="cartes-des-données-doccurrences">Cartes des données d’occurrences</h2>
 <section id="anthoptilum-grandiflorum" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="anthoptilum-grandiflorum"><em>Anthoptilum grandiflorum</em></h3>
 <div class="quarto-layout-panel page-columns page-full">
@@ -273,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_angr" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_anthoptilum_grandiflorum.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.3: Données de présence d’Anthoptilum_grandiflorum dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.3: Données de présence d’Anthoptilum grandiflorum dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -283,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_abs_angr" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_absence_anthoptilum_grandiflorum.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.4: Données de présence/absence d’Anthoptilum_grandiflorum dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.4: Données de présences-absences d’Anthoptilum grandiflorum dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -298,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_bafi" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_balticina_finmarchica.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.5: Données de présence de Balticina finmarchica dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.5: Données de présence de Balticina finmarchica dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -308,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_abs_bafi" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_absence_balticina_finmarchica.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.6: Données de présence/absence de Balticina finmarchica dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.6: Données de présences-absences de Balticina finmarchica dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -323,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_peac" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_pennatula_aculeata.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.7: Données de présence de Pennatula aculeata dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.7: Données de présence de Pennatula aculeata dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -333,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_abs_peac" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_absence_pennatula_aculeata.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.8: Données de présence/absence de Pennatula aculeata dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.8: Données de présences-absences de Pennatula aculeata dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -348,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_ptgr" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_ptilella_grandis.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.9: Données de présence de Ptilella grandis dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.9: Données de présence de Ptilella grandis dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -358,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-pres_abs_ptgr" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/presence_absence_ptilella_grandis.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1.10: Données de présence/absence de Ptilella grandis dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;3.10: Données de présences-absences de Ptilella grandis dans l’estuaire maritime et le golfe du Saint-Laurent</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -366,6 +344,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-loboUncertainNatureAbsences2010" class="csl-entry" role="doc-biblioentry">
+Lobo, Jorge M., Alberto Jiménez-Valverde, and Joaquín Hortal. 2010. <span>“The Uncertain Nature of Absences and Their Importance in Species Distribution Modelling.”</span> <em>Ecography</em> 33 (1): 103–14. <a href="https://doi.org/10.1111/j.1600-0587.2009.06039.x">https://doi.org/10.1111/j.1600-0587.2009.06039.x</a>.
+</div>
+</div>
 </section>
 </section>
 
@@ -505,8 +488,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="./summary.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Résumé</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

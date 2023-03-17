@@ -1,0 +1,22 @@
+# Résumé
+
+Ce rapport a pour but de documenter l'avancement sur le projet d'identification de l'habitat potentiel de la plume de mer dans l'estuaire maritime et le golfe du Saint-Laurent et se décline en trois parties:
+
+* [Les données d'occurrence de plumes de mer](sea_pens_occurrence_data.qmd)
+  
+  + Sources des données
+  + Traitement des données
+  + Cartes des occurrence pour chaque espèce
+
+
+* [Les variables environnementales](environmental_variables.qmd)
+
+  + Variables environnementales potentielles à utiliser dans les modèles.
+  + Liste d'articles sur la distribution de la plume de mer avec la liste de variables environnementales associées à sa présence.
+  + Liste des données à considérer pour la modélisation de l'habitat potentiel de la plume de mer dans l'estuaire et le golfe du Saint-Laurent.
+
+
+* [Choix des modèles qui serviront à identifier l'habitat potentiel de la plume de mer](species_distribution_modelling.qmd)
+
+  + Modèles choisies pour les données de présences-absences et de biomasse
+  + Outil utiliser pour construire les modèles.

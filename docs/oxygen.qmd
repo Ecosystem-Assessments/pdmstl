@@ -1,0 +1,37 @@
+## Oxygène dissous dans les eaux de fond {#sec-oxy}
+
+Deux sources de données sont disponibles pour l'oxygène dissous dans les eaux de fond:
+
+* Pêches et Océans Canada
+
+* Bio-Oracle
+
+
+### Pêches et Océans Canada
+
+**Source:** Blais, M. et al. Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St. Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p. iv + 56 p. (2019).
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2017
+
+![Saturation d'oxygène moyenne des eaux de fond](figures/env_sat.png){#fig-oxy_sat}
+
+
+### Bio-Oracle
+
+Les données de Bio-Oracle permettent d'avoir des données sur l'oxygène dissous minimal, maximal et moyen dans les eaux de fond à une profondeur moyenne.
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000 à 2014
+
+![Minimum d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_min.png){#fig-bo-oxy-min}
+
+![Moyenne d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_mean.png){#fig-bo-oxy-mean}
+
+![Maximum d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_max.png){#fig-bo-oxy-max}
+
+![Étendue des valeurs d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_range.png){#fig-bo-oxy-range}

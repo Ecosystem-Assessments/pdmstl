@@ -5,29 +5,21 @@ project:
   post-render: rm -r ./figures
 
 book:
-  title: "Exploration of Sea Pens Data"
+  title: "Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent"
   author: "Vincent Bellavance"
-  date: "2023-03-16"
+  date: "2023-03-17"
   sidebar:
     search: false
     title: Sections
     pinned: true
   chapters:
     - index.qmd
+    - summary.qmd
     - sea_pens_occurrence_data.qmd
     - part: environmental_variables.qmd
       chapters:
-      - bathymetry.qmd
-      - oxygen.qmd
-      - salinity.qmd
-      - temperature.qmd
-      - current_velocity.qmd
-      - chloro_phyto.qmd
-      - molecules_elements.qmd
-      - sediments.qmd
-      - surf_ice_cover.qmd
-      - surf_pp.qmd
-      - surf_calcite.qmd
+        - fond_marin.qmd
+        - surface.qmd
     - part: species_distribution_modelling.qmd
       chapters:
         - models.qmd
@@ -40,6 +32,8 @@ format:
   html:
     theme: cosmo
     number-sections: false
+#  pdf:
+#    fig-pos: 'h'
 
 fig-cap-location: margin
 

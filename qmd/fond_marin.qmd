@@ -1,0 +1,286 @@
+# Variables du fond marin
+
+## Bathymétrie {#sec-bathy}
+
+**Source:** GEBCO Compilation Group (2022) GEBCO_2022 Grid (doi:10.5285/e0f0bb80-ab44-2739-e053-6c86abc0289c)
+
+**Résolution spatiale originale:** 15 secondes d'arc
+
+**Étendue temporelle:** 2022
+
+![Données de bathymétrie du GEBCO (m)](figures/env_bathy.png){#fig-bathy}
+
+
+Les données de pente ont été calculées les données de bathymétrie et la fonction `terrain` du paquet R `terra` [@hijmans2023].
+
+![Données de pente calculées avec la bathymétrie (degrés)](figures/env_slope.png){#fig-slope}
+
+
+
+## Oxygène dissous dans les eaux de fond {#sec-oxy}
+
+Deux sources de données sont disponibles pour l'oxygène dissous dans les eaux de fond:
+
+* Pêches et Océans Canada
+
+* Bio-Oracle
+
+
+### Pêches et Océans Canada
+
+**Source:** Blais, M. et al. Chemical and Biological Oceanographic Conditions in the Estuary and Gulf of St. Lawrence during 2017. DFO Can. Sci. Advis. Sec. Res. Doc. 2019/009. Iv + 56 p. iv + 56 p. (2019).
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2017
+
+![Saturation d'oxygène moyenne des eaux de fond](figures/env_sat.png){#fig-oxy_sat}
+
+
+### Bio-Oracle
+
+Les données de Bio-Oracle permettent d'avoir des données sur l'oxygène dissous minimal, maximal et moyen dans les eaux de fond à une profondeur moyenne.
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000 à 2014
+
+![Minimum d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_min.png){#fig-bo-oxy-min}
+
+![Moyenne d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_mean.png){#fig-bo-oxy-mean}
+
+![Maximum d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_max.png){#fig-bo-oxy-max}
+
+![Étendue des valeurs d'oxygène dissous dans les eaux de fond (mol.m^-3^)](figures/env_bottom_dissolved_oxygen_range.png){#fig-bo-oxy-range}
+
+
+
+## Salinité des eaux de fond {#sec-sal}
+
+Deux sources de données sont disponibles pour la salinité des eaux de fond:
+
+* Pêches et Océans Canada
+
+* Bio-Oracle
+
+
+### Pêches et Océans Canada
+
+**Source:** Pêches et Océans Canada (2022). Température et salinité au fond dans l'estuaire et le golfe du St-Laurent. Pêches et Océans Canada. https://ouvert.canada.ca/data/fr/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2.
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2011 à 2020
+
+![Salinité moyenne des eaux de fond](figures/env_mean_salinity.png){#fig-sal_mean}
+
+
+### Bio-Oracle
+
+Les données de Bio-Oracle permettent d'avoir des données sur la salinité minimale, maximale et moyenne dans les eaux de fond à une profondeur moyenne.
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Salinité minimale des eaux de fond (PSS)](figures/env_bottom_salinity_min.png){#fig-bo-sal-min}
+
+![Salinité moyenne dissous des eaux de fond (PSS)](figures/env_bottom_salinity_mean.png){#fig-bo-sal-mean}
+
+![Salinité maximale dissous des eaux de fond (PSS)](figures/env_bottom_salinity_max.png){#fig-bo-sal-max}
+
+![Étendue des valeurs de salinité des eaux de fond (PSS)](figures/env_bottom_salinity_range.png){#fig-bo-sal-range}
+
+
+
+## Température des eaux de fond {#sec-temp}
+
+Deux sources de données sont disponibles pour la salinité des eaux de fond:
+
+* Pêches et Océans Canada
+
+* Bio-Oracle
+
+
+### Pêches et Océans Canada
+
+**Source:** Pêches et Océans Canada (2022). Température et salinité au fond dans l'estuaire et le golfe du St-Laurent. Pêches et Océans Canada. https://ouvert.canada.ca/data/fr/dataset/10987662-c496-4ba8-a6b9-21cb5a134da2.
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2011 à 2020
+
+![Température moyenne des eaux de fond](figures/env_mean_temperature.png){#fig-temp_mean}
+
+
+### Bio-Oracle
+
+Les données de Bio-Oracle permettent d'avoir des données sur la température minimale, maximale et moyenne dans les eaux de fond à une profondeur moyenne.
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Température minimale des eaux de fond (°C)](figures/env_bottom_temperature_min.png){#fig-bo-temp-min}
+
+![Température moyenne dissous des eaux de fond (°C)](figures/env_bottom_temperature_mean.png){#fig-bo-temp-mean}
+
+![Température maximale dissous des eaux de fond (°C)](figures/env_bottom_temperature_max.png){#fig-bo-temp-max}
+
+![Étendue des valeurs de température des eaux de fond (°C)](figures/env_bottom_temperature_range.png){#fig-bo-temp-range}
+
+
+
+## Vélocité du courant {#sec-curvel}
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Vélocité minimale du courant des eaux de fond (m/s)](figures/env_bottom_current_velocity_min.png){#fig-bo-curvel-min}
+
+![Vélocité moyenne du courant des eaux de fond (m/s)](figures/env_bottom_current_velocity_mean.png){#fig-bo-curvel-mean}
+
+![Vélocité maximale du courant des eaux de fond (m/s)](figures/env_bottom_current_velocity_max.png){#fig-bo-curvel-max}
+
+![Étendue des valeurs de vélocité du courant des eaux de fond (m/s)](figures/env_bottom_current_velocity_range.png){#fig-bo-curvel-range}
+
+
+
+## Biomasse de phytolankton
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Biomasse de phytoplankton minimale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_min.png){#fig-bo-phyto-min}
+
+![Biomasse de phytoplankton moyenne dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_mean.png){#fig-bo-phyto-mean}
+
+![Biomasse de phytoplankton maximale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_max.png){#fig-bo-phyto-max}
+
+![Étendue des valeurs de biomasse de phytoplankton dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_range.png){#fig-bo-phyto-range}
+
+
+
+## Concentration de chlorophylle a
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_min.png){#fig-bo-chloro-min}
+
+![Concentration moyenne de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_mean.png){#fig-bo-chloro-mean}
+
+![Concentration maximale de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_max.png){#fig-bo-chloro-max}
+
+![Étendue des valeurs de concentration de chlorophylle a dans les eaux de fond (mg/m³)](figures/env_bottom_chlorophyll_range.png){#fig-bo-chloro-range}
+
+
+
+## Fer
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_min.png){#fig-bo-iron-min}
+
+![Concentration moyenne de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_mean.png){#fig-bo-iron-mean}
+
+![Concentration maximale de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_max.png){#fig-bo-iron-max}
+
+![Étendue des valeurs de concentration de fer dissous des eaux de fond (μmol/m³)](figures/env_bottom_iron_range.png){#fig-bo-iron-range}
+
+
+
+## Nitrate
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_min.png){#fig-bo-nitrate-min}
+
+![Concentration moyenne de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_mean.png){#fig-bo-nitrate-mean}
+
+![Concentration maximale de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_max.png){#fig-bo-nitrate-max}
+
+![Étendue des valeurs de concentration de nitrate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_range.png){#fig-bo-nitrate-range}
+
+
+
+## Phosphate
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_min.png){#fig-bo-nitrate-min}
+
+![Concentration moyenne de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_mean.png){#fig-bo-nitrate-mean}
+
+![Concentration maximale de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_max.png){#fig-bo-nitrate-max}
+
+![Étendue des valeurs de concentration de phosphate dissous des eaux de fond (μmol/m³)](figures/env_bottom_nitrate_range.png){#fig-bo-nitrate-range}
+
+
+
+## Silicate
+
+**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
+
+**Résolution spatiale originale:** 5 minutes d'arc
+
+**Étendue temporelle:** 2000-2014
+
+![Concentration minimale de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_min.png){#fig-bo-silicate-min}
+
+![Concentration moyenne de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_mean.png){#fig-bo-silicate-mean}
+
+![Concentration maximale de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_max.png){#fig-bo-silicate-max}
+
+![Étendue des valeurs de concentration de silicate dissous des eaux de fond (μmol/m³)](figures/env_bottom_silicate_range.png){#fig-bo-silicate-range}
+
+
+
+## Aragonite
+
+**Source:** Starr, M. & Chassé, J. (2019). Distribution of omega aragonite in the Estuary and Gulf of St. Lawrence in eastern Canada. Department of Fisheries and Oceans.
+
+**Résolution spatiale originale:** 1km²
+
+**Étendue temporelle:** 2017
+
+![Horizon de saturation par l'aragonite des eaux de fond (Ω)](figures/env_arag.png){#fig-arag}
+
+
+
+## Les sédiments de fond {#sec-sed}
+
+**Source:** Loring, D. H., and D. J. G. Nota. (1973). Morphology and sediments of the Gulf of St. Lawrence. Bull. Fish. Res. Bd. Can. 182. 147 p. + 7 charts.
+
+**Résolution spatiale originale:** Ne s'applique pas, les données sont des polygones
+
+**Étendue temporelle:** 1961-1969
+
+![Catégories générales des sédiments de surface](figures/env_depot_gro.png){#fig-sediments}

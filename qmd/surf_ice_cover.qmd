@@ -1,9 +1,0 @@
-# Fraction de la couverture de la glace marine {#sec-ice}
-
-**Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
-
-**Résolution spatiale originale:** 5 minutes d'arc
-
-**Étendue temporelle:** 2000-2014
-
-![Fraction maximale de la couverture de la glace marine](figures/env_surface_ice_cover_max.png){#fig-bo-ice-max}

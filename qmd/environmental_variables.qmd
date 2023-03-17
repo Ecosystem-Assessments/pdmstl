@@ -1,4 +1,4 @@
-# Variables environnementales {#sec-env}
+# Variables environnementales
 
 ## Connaissances sur l'habitat des plumes de mer
 

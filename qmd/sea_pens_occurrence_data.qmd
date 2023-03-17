@@ -1,8 +1,8 @@
-# Données d'occurrence {#sec-occ}
+# Données d'occurrences {#sec-occ}
 
 ## Sources de données
 
-Les données d'occurrence des plumes de mer proviennent de deux sources: 
+Les données d'occurrences des plumes de mer proviennent de deux sources: 
 
 1. [Relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l'OPANO. Ces données ont été récoltées de 1970 à 2021.](https://open.canada.ca/data/fr/dataset/1989de32-bc5d-c696-879c-54d422438e64)
 
@@ -12,7 +12,7 @@ Les données d'occurrence des plumes de mer proviennent de deux sources:
 
 ![Localisation des points d'échantillonnages lors du relevé multidisciplinaire de poissons de fond et de crevette d'août dans l'estuaire et le nord du golfe du Saint-Laurent de 2004 à 2021 effectué à bord du NGCC Teleost](figures/sampling_teleost.png){#fig-teleost}
 
-Pour le nord du golfe, il semble y avoir d'autres relevés disponibles sur open.canada.ca qui ont été réalisés sur d'autres navires:
+Il y a également d'autres relevés disponibles qui ont été réalisés sur d'autres navires pour le partie nord du golfe du Saint-Laurent:
 
 - NM Gadus Atlantica (1978-1994)
 
@@ -25,11 +25,10 @@ Par contre, il est spécifié que la qualité des données s'est améliorée au 
 
 ## Inférence des absences {#sec-abs}
 
-Les données utilisées contiennent l'identification de toutes les espèces récoltées à chacun des traits de pêche.
-Il est donc possible d'inférer les absences d'une espèce pour chaque trait de pêche où elle n'a pas été identifiée.
-Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g. problèmes d'identification, non-détection alors que l'espèce est bien présente), mais elles amènent tout de même de l'information très utile lors de la modélisation des aires de distribution d'espèces.
-
-Nou avons donc inférer les absences pour les quatres espèces se situant dans l'estuaire et le golfe du Saint-Laurent:
+Les jeux de données utilisés contiennent l'identification de toutes les espèces récoltées à chacun des traits de pêche.
+Il est donc possible d'inférer les absences d'une espèce pour chaque trait de pêche où celle-ci n'a pas été identifiée.
+Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g. problèmes d'identification, non-détection alors que l'espèce est bien présente), mais elles amènent sont tout de même utile lors de la modélisation des aires de distribution d'espèces [@loboUncertainNatureAbsences2010].
+Nous avons donc inférer les absences pour les quatres espèces se situant dans l'estuaire et le golfe du Saint-Laurent:
 
 1. *Anthoptilum grandiflorum*
 
@@ -40,15 +39,15 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 4. *Ptilella grandis*
 
 
-## Cartes des données d'occurrence
+## Cartes des données d'occurrences
 
 ### *Anthoptilum grandiflorum*
 
 ::: {layout="[[100],[100]]"}
 
-![Données de présence d'Anthoptilum_grandiflorum dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_anthoptilum_grandiflorum.png){#fig-pres_angr}
+![Données de présence d'Anthoptilum grandiflorum dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_anthoptilum_grandiflorum.png){#fig-pres_angr}
 
-![Données de présence/absence d'Anthoptilum_grandiflorum dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_anthoptilum_grandiflorum.png){#fig-pres_abs_angr}
+![Données de présences-absences d'Anthoptilum grandiflorum dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_anthoptilum_grandiflorum.png){#fig-pres_abs_angr}
 
 :::
 
@@ -59,7 +58,7 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 
 ![Données de présence de Balticina finmarchica dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_balticina_finmarchica.png){#fig-pres_bafi}
 
-![Données de présence/absence de Balticina finmarchica dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_balticina_finmarchica.png){#fig-pres_abs_bafi}
+![Données de présences-absences de Balticina finmarchica dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_balticina_finmarchica.png){#fig-pres_abs_bafi}
 
 :::
 
@@ -70,7 +69,7 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 
 ![Données de présence de Pennatula aculeata dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_pennatula_aculeata.png){#fig-pres_peac}
 
-![Données de présence/absence de Pennatula aculeata dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_pennatula_aculeata.png){#fig-pres_abs_peac}
+![Données de présences-absences de Pennatula aculeata dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_pennatula_aculeata.png){#fig-pres_abs_peac}
 
 :::
 
@@ -81,6 +80,6 @@ Nou avons donc inférer les absences pour les quatres espèces se situant dans l
 
 ![Données de présence de Ptilella grandis dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_ptilella_grandis.png){#fig-pres_ptgr}
 
-![Données de présence/absence de Ptilella grandis dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_ptilella_grandis.png){#fig-pres_abs_ptgr}
+![Données de présences-absences de Ptilella grandis dans l'estuaire maritime et le golfe du Saint-Laurent](figures/presence_absence_ptilella_grandis.png){#fig-pres_abs_ptgr}
 
 :::

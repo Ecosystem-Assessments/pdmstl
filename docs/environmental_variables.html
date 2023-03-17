@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exploration of Sea Pens Data - Variables environnementales</title>
+<title>Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent - Variables environnementales</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,7 +48,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./bathymetry.html" rel="next">
+<link href="./fond_marin.html" rel="next">
 <link href="./sea_pens_occurrence_data.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -108,12 +108,17 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Rapport d’avancement</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Données d’occurrence</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Résumé</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sea_pens_occurrence_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Données d’occurrences</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -126,57 +131,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bathymetry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bathymétrie</span></a>
+  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables du fond marin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./oxygen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxygène dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./salinity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Salinité des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Température des eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./current_velocity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vélocité du courant</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chloro_phyto.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton et concentration de chlorophylle a</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./molecules_elements.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Molécules et éléments dissous dans les eaux de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./sediments.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Les sédiments de fond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_ice_cover.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fraction de la couverture de la glace marine</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_pp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire dans les eaux de surface{#sec-surf-pp}</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./surf_calcite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Concentration de calcite dissous dans les eaux de surface</span></a>
+  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables des eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -191,7 +151,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./models.html" class="sidebar-item-text sidebar-link">Sélection de modèles</a>
+  <a href="./models.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sélection de modèles</span></a>
   </div>
 </li>
       </ul>
@@ -224,7 +184,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-env" class="quarto-section-identifier d-none d-lg-block">Variables environnementales</span></h1>
+<h1 class="title d-none d-lg-block">Variables environnementales</h1>
 </div>
 
 
@@ -309,22 +269,22 @@ div.csl-indent {
 <section id="fond-marin" class="level3">
 <h3 class="anchored" data-anchor-id="fond-marin">Fond marin</h3>
 <ul>
-<li><p><a href="./bathymetry.html">Bathymétrie et dérivés</a></p></li>
-<li><p><a href="./oxygen.html">Oxygène dissous dans les eaux de fond</a></p></li>
-<li><p><a href="./salinity.html">Salinité des eaux de fond</a></p></li>
-<li><p><a href="./temperature.html">Température des eaux de fond</a></p></li>
-<li><p><a href="./current_velocity.html">Vitesse du courant</a></p></li>
-<li><p><a href="./chloro_phyto.html">Biomasse de phytoplankton et concentration de chlorophylle a</a></p></li>
-<li><p><a href="./molecules_elements.html">Molécules et éléments dissous dans l’eau</a></p></li>
-<li><p><a href="./sediments.html">Sédiments</a></p></li>
+<li><p><a href="bathymetry.qmd">Bathymétrie et dérivés</a></p></li>
+<li><p><a href="oxygen.qmd">Oxygène dissous dans les eaux de fond</a></p></li>
+<li><p><a href="salinity.qmd">Salinité des eaux de fond</a></p></li>
+<li><p><a href="temperature.qmd">Température des eaux de fond</a></p></li>
+<li><p><a href="current_velocity.qmd">Vitesse du courant</a></p></li>
+<li><p><a href="chloro_phyto.qmd">Biomasse de phytoplankton et concentration de chlorophylle a</a></p></li>
+<li><p><a href="molecules_elements.qmd">Molécules et éléments dissous dans l’eau</a></p></li>
+<li><p><a href="sediments.qmd">Sédiments</a></p></li>
 </ul>
 </section>
 <section id="surface" class="level3">
 <h3 class="anchored" data-anchor-id="surface">Surface</h3>
 <ul>
-<li><p><a href="./surf_ice_cover.html">Couvert glacier</a></p></li>
-<li><p><a href="./surf_pp.html">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire</a></p></li>
-<li><p><a href="./surf_calcite.html">Calcite</a></p></li>
+<li><p><a href="surf_ice_cover.qmd">Couvert glacier</a></p></li>
+<li><p><a href="surf_pp.qmd">Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire</a></p></li>
+<li><p><a href="surf_calcite.qmd">Calcite</a></p></li>
 </ul>
 
 
@@ -500,12 +460,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./sea_pens_occurrence_data.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Données d’occurrence</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Données d’occurrences</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./bathymetry.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-title">Bathymétrie</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./fond_marin.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Variables du fond marin</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
