@@ -38,7 +38,7 @@ Les prochaines sections présentent les 61 covariables intégrées jusqu'à pré
 Les données présentées proviennent de Pêches et Océans Canada ainsi que de Bio-Oracle.
 Les données ont toutes été projetées sur une grille de 36 secondes d'arc de résolution, à l'exception des données de sédiments puisqu'elles sont sous forme de polygones.
 
-Il est important de noter que cette liste n'est pas exhaustive et que d'autres covariables pourraient être ajoutées à cette liste éventuellement.
+Il est important de noter que cette liste n'est pas exhaustive et que d'autres covariables pourraient y être ajoutées éventuellement.
 
 
 ### Fonds marins
