@@ -38,13 +38,13 @@
 
 **Étendue temporelle:** 2000-2014
 
-![Concentration minimale de chlorophylle a dans les eaux de surface (mg/m³)](figures/env_surface_chlorophyll_min.png){#fig-bo-chloro-min}
+![Concentration minimale de chlorophylle a des eaux de surface (mg/m³)](figures/env_surface_chlorophyll_min.png){#fig-bo-chloro-min}
 
-![Concentration moyenne de chlorophylle a dans les eaux de surface (mg/m³)](figures/env_surface_chlorophyll_mean.png){#fig-bo-chloro-mean}
+![Concentration moyenne de chlorophylle a des eaux de surface (mg/m³)](figures/env_surface_chlorophyll_mean.png){#fig-bo-chloro-mean}
 
-![Concentration maximale de chlorophylle a dans les eaux de surface (mg/m³)](figures/env_surface_chlorophyll_max.png){#fig-bo-chloro-max}
+![Concentration maximale de chlorophylle a des eaux de surface (mg/m³)](figures/env_surface_chlorophyll_max.png){#fig-bo-chloro-max}
 
-![Étendue des valeurs de concentration de chlorophylle a dans les eaux de surface (mg/m³)](figures/env_surface_chlorophyll_range.png){#fig-bo-chloro-range}
+![Étendue des valeurs de concentration de chlorophylle a des eaux de surface (mg/m³)](figures/env_surface_chlorophyll_range.png){#fig-bo-chloro-range}
 
 
 
@@ -56,11 +56,11 @@
 
 **Étendue temporelle:** 2000-2014
 
-![Productivité primaire dans les eaux de surface (g/m³/day)](figures/env_surface_primary_productivity_min.png){#fig-bo-pp-surf-min}
+![Productivité primaire minimale dans les eaux de surface (g/m³/day)](figures/env_surface_primary_productivity_min.png){#fig-bo-pp-surf-min}
 
-![Productivité primaire dans les eaux de surface (g/m³/day)](figures/env_surface_primary_productivity_mean.png){#fig-bo-pp-surf-mean}
+![Productivité primaire moyenne dans les eaux de surface (g/m³/day)](figures/env_surface_primary_productivity_mean.png){#fig-bo-pp-surf-mean}
 
-![Productivité primaire dans les eaux de surface (g/m³/day)](figures/env_surface_primary_productivity_max.png){#fig-bo-pp-surf-max}
+![Productivité primaire maximale dans les eaux de surface (g/m³/day)](figures/env_surface_primary_productivity_max.png){#fig-bo-pp-surf-max}
 
 ![Étendue des valeurs de productivité primaire dans les eaux de surface (g/m³/day)](figures/env_surface_primary_productivity_range.png){#fig-bo-pp-surf-range}
 
