@@ -4,41 +4,41 @@
 
 Les connaissances sur les habitats des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent sont limitées à ce jour.
 Les travaux de @kenchington2016 ont permis de délimiter des zones d'importance pour les plumes de mer avec la méthode du noyau dans le golfe du Saint-Laurent.
-Ces zones où la concentration de plumes de mer est particulièrement élevée se situent le long du chenal Laurentien @fig-zones-sea-pens.
+Ces zones, où la concentration de plumes de mer est particulièrement élevée, se situent le long du chenal Laurentien @fig-zones-sea-pens.
 
 ![Zones de concentration significative de plumes de mer dans le golfe du Saint-Laurent identifiées par @kenchington2016](figures/sea_pens_areas.png){#fig-zones-sea-pens}
 
 Ces polygones ont été complémentés par des modèles de distribution des plumes de mer dans le golfe du Saint-Laurent réalisés par @murillo2016.
-Les modèles basés sur des arbres décisionnels ont permis d'identifier la salinité et la température des eaux de fond ainsi que la profondeur comme étant les covariables les plus importantes pour la prédiction de la présence des plumes de mer [@murillo2016].
-La productivité primaire et la température des eaux de surface sont quant à elles les deux covariables les plus importantes à la prédiction de la biomasse des plumes de mer [@murillo2016].
+Les modèles basés sur des arbres décisionnels ont permis d'identifier la salinité et la température des eaux de fond ainsi que la profondeur comme étant les variables environnementales les plus importantes pour la prédiction de la présence des plumes de mer [@murillo2016].
+La productivité primaire et la température des eaux de surface sont quant à elles les deux variables environnementales les plus importantes pour la prédiction de la biomasse des plumes de mer [@murillo2016].
 
 D'autres modèles de distribution des plumes de mer ont été réalisés pour complémenter les travaux de @kenchington2016. 
 Ces modèles visent la région des Maritimes [@beazley2016a], les plates-formes de Terre-Neuve et du Labrador [@guijarro2016] et l'est de l'Arctique [@beazley2016b].
-La profondeur est une variable importante à la prédiction de la présence des plumes de mer dans ces trois régions [@beazley2016a;@beazley2016b;@guijarro2016], alors que l'étendue des valeurs de la salinité des eaux de fond s'est également avérée importante pour le modèle dans l'est de l'Arctique [@guijarro2016].
+La profondeur est une variable importante pour la prédiction de la présence des plumes de mer dans ces trois régions [@beazley2016a;@beazley2016b;@guijarro2016], alors que l'étendue des valeurs de la salinité des eaux de fond s'est également avérée importante pour le modèle dans l'est de l'Arctique [@guijarro2016].
 
-Nous nous sommes également fiés sur d'autres études portant sur la distribution et les habitats des plumes de mer ailleurs dans le monde afin d'élaborer la liste de covariables à prendre en considération pour les modèles.
-La @tbl-studies présente un résumé de ces études avec les taxons visés, l'aire d'étude et les covariables les plus importantes pour la prédiction de la présence des plumes de mer.
+Nous nous sommes également fiés sur d'autres études portant sur la distribution et les habitats des plumes de mer ailleurs dans le monde afin d'élaborer la liste de variables à prendre en considération pour les modèles.
+La @tbl-studies présente un résumé de ces études avec les taxons visés, l'aire d'étude et les variables les plus importantes pour la prédiction de la présence des plumes de mer.
 
-| Études | Taxons visés | Aires d'étude | Covariables | 
+| Études | Taxons visés | Aires d'étude | Variables | 
 |--------|--------------|---------------|-----------|
 | @gullage2017 | - *Distichophyllum gracile* <br> - *Funiculina quadrangularis* <br> - *Halipteris finmarchica* <br> - *Pennatula grandis* <br> - *Pennatula aculeata* <br> - *Pennatula* spp. <br> - *Umbellula lindahli* <br> - *Anthoptilum grandiflorum* | Plates-formes de Terre-Neuve et du Labrador | - Profondeur <br> - Température des eaux de fond |
-| @yesson2012 | - Sessiliflorae <br> - Subselliflorae | Global | - Température des eaux de fond <br> - Productivité primaire des eaux de surface <br> - Horizons de saturation en calcite <br> - Salinité des eaux de fond |
+| @yesson2012 | - Sessiliflorae <br> - Subselliflorae | Globale | - Température des eaux de fond <br> - Productivité primaire des eaux de surface <br> - Horizons de saturation en calcite <br> - Salinité des eaux de fond |
 | @greathead2015 | - *Funiculina quadrangularis* <br> - *Virgularia mirabilis* <br> - *Pennatula phosphorea* | Royaume-Uni | - Sédiments <br> - Salinité minimale des eaux de fond <br> - Profondeur |
 | @downie2021 | - *Funiculina quadrangularis* <br> - *Virgularia mirabilis* <br> - *Pennatula phosphorea* | Royaume-Uni | - Température des eaux de fond <br> - Vélocité du courant et des vagues <br> - Concentration de particules en suspension en hiver |
 | @ross2021 | - *Funiculina quadrangularis* <br> - *Halipteris* spp. <br> - *Kophobelemnon stelliferum* <br> - *Pennatulidae* spp. <br> - *Umbellula* spp. <br> - *Virgulariidae* spp. | Norvège | - Profondeur <br> - Interaction Température-Salinité <br> - Sédiments <br> - Pente <br> - Vélocité maximale du courant <br> - Biomasse de carbone du phytoplancton |
 
-: Covariables les plus importantes pour la prédiction de la présence des plumes de mer selon cinq études aillant modélisé leurs distributions {#tbl-studies}
+: Variables environnementales les plus importantes pour la prédiction de la présence des plumes de mer selon cinq études aillant modélisé leurs distributions {#tbl-studies}
 
 
 ## Listes des variables environnementales présentées
 
 En raison de l'état des connaissances relativement limitée sur les habitats des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent, il est préférable d'explorer un grand nombre de variables environnementales avant de commencer la modélisation afin d'éviter d'exclure une variable potentiellement importante dès le départ.
-Les prochaines sections présentent les 61 covariables intégrées jusqu'à présent pour modéliser les habitats potentiels des plumes de mer.
+Les prochaines sections présentent les 61 variables intégrées jusqu'à présent pour modéliser les habitats potentiels des plumes de mer.
 
 Les données présentées proviennent de Pêches et Océans Canada ainsi que de Bio-Oracle.
 Les données ont toutes été projetées sur une grille de 36 secondes d'arc de résolution, à l'exception des données de sédiments puisqu'elles sont sous forme de polygones.
 
-Il est important de noter que cette liste n'est pas exhaustive et que d'autres covariables pourraient y être ajoutées éventuellement.
+Il est important de noter que cette liste n'est pas exhaustive et que d'autres variables pourraient y être ajoutées éventuellement.
 
 
 ### Fonds marins

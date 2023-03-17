@@ -12,11 +12,11 @@ Il se décline en trois parties:
 
 * [Les variables environnementales à considérer pour les modèles](environmental_variables.qmd)
 
-  + Liste d'articles sur la distribution des plumes de mer avec la liste de variables environnementales associées à sa présence.
+  + Liste de papiers sur la distribution des plumes de mer avec la liste de variables environnementales associées à sa présence pour chacune des études.
   + Liste des données à considérer pour la modélisation des habitats potentiels des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent.
 
 
 * [Choix des modèles qui serviront à identifier les habitats potentiels des plumes de mer](species_distribution_modelling.qmd)
 
-  + Modèles choisis pour les données d'occurrences et de biomasse
-  + Outil utilisé pour construire les modèles.
+  + Modèles choisis pour les données d'occurrences et les données de biomasse
+  + Outils utilisés pour construire les modèles et obtenir les cartes des habitats potentiels.

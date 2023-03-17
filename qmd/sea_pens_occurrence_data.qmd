@@ -1,7 +1,7 @@
 # Données d'occurrences {#sec-occ}
 
 Une donnée d'occurrence présente la preuve de la présence d'une espèce à un endroit et un temps précis [@wieczorek2012].
-Lorsque tous les taxons visés par l'échantillonnage (e.g. endobenthos) sont identifiés à un endroit et un temps précis, une donnée d'occurrence d'un taxon qui n'a pas été identifié présente la preuve de l'absence du taxon à un endroit et un temps précis [@wieczorek2012]. 
+Lorsque tous les taxons visés par l'échantillonnage (p. ex. endobenthos) sont identifiés à un endroit et un temps précis, une donnée d'occurrence d'un taxon qui n'a pas été identifié présente la preuve de l'absence du taxon à un endroit et un temps précis [@wieczorek2012]. 
 Le terme «occurrence» utilisé dans ce rapport signifie donc la présence ou l'absence observée d'un taxon à un endroit et un temps précis.
 
 
@@ -11,13 +11,13 @@ Les données d'occurrences des plumes de mer proviennent de deux sources:
 
 1. [Relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l'OPANO. Ces données ont été récoltées de 1970 à 2021.](https://open.canada.ca/data/fr/dataset/1989de32-bc5d-c696-879c-54d422438e64)
 
-![Localisation des points d'échantillonnages lors du relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l'OPANO](figures/sampling_4t.png){#fig-4t}
+![Localisation des points d'échantillonnage lors du relevé au chalut par navire de recherche de poisson de fond de la Division 4T de l'OPANO](figures/sampling_4t.png){#fig-4t}
 
 2. [Relevé multidisciplinaire de poissons de fond et de crevette d'août dans l'estuaire et le nord du golfe du Saint-Laurent](https://open.canada.ca/data/fr/dataset/40381c35-4849-4f17-a8f3-707aa6a53a9d)
 
-![Localisation des points d'échantillonnages lors du relevé multidisciplinaire de poissons de fond et de crevette d'août dans l'estuaire et le nord du golfe du Saint-Laurent de 2004 à 2021 effectué à bord du NGCC Teleost](figures/sampling_teleost.png){#fig-teleost}
+![Localisation des points d'échantillonnage lors du relevé multidisciplinaire de poissons de fond et de crevette d'août dans l'estuaire et le nord du golfe du Saint-Laurent de 2004 à 2021 effectué à bord du NGCC Teleost](figures/sampling_teleost.png){#fig-teleost}
 
-Il y a également d'autres relevés disponibles qui ont été réalisés sur d'autres navires pour la partie nord du golfe du Saint-Laurent:
+D'autres relevés ont également été réalisés sur d'autres navires pour la partie nord du golfe du Saint-Laurent:
 
 - NM Gadus Atlantica (1978-1994)
 
