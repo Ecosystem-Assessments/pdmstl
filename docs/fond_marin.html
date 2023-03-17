@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent - 4&nbsp; Variables du fond marin</title>
+<title>Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent - 4&nbsp; Variables environnementales des fonds marins</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,7 +88,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Variables du fond marin</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Variables environnementales des fonds marins</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -123,7 +123,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./environmental_variables.html" class="sidebar-item-text sidebar-link">Variables environnementales</a>
+            <a href="./environmental_variables.html" class="sidebar-item-text sidebar-link">Variables environnementales à considérer pour les modèles</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -131,12 +131,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Variables du fond marin</span></a>
+  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Variables environnementales des fonds marins</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables des eaux de surface</span></a>
+  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables environnementales des eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -195,6 +195,7 @@ div.csl-indent {
   <li><a href="#silicate" id="toc-silicate" class="nav-link" data-scroll-target="#silicate">Silicate</a></li>
   <li><a href="#aragonite" id="toc-aragonite" class="nav-link" data-scroll-target="#aragonite">Aragonite</a></li>
   <li><a href="#sec-sed" id="toc-sec-sed" class="nav-link" data-scroll-target="#sec-sed">Les sédiments de fond</a></li>
+  <li><a href="#données-sur-la-pêche-commrciale" id="toc-données-sur-la-pêche-commrciale" class="nav-link" data-scroll-target="#données-sur-la-pêche-commrciale">Données sur la pêche commrciale</a></li>
   </ul>
 </nav>
     </div>
@@ -203,7 +204,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-title">Variables du fond marin</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-title">Variables environnementales des fonds marins</span></h1>
 </div>
 
 
@@ -226,14 +227,14 @@ div.csl-indent {
 <div id="fig-bathy" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bathy.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.1: Données de bathymétrie du GEBCO (m)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.1: Profondeur des fonds marins (m)</figcaption><p></p>
 </figure>
 </div>
-<p>Les données de pente ont été calculées les données de bathymétrie et la fonction <code>terrain</code> du paquet R <code>terra</code> <span class="citation" data-cites="hijmans2023">(<a href="references.html#ref-hijmans2023" role="doc-biblioref">Hijmans 2023</a>)</span>.</p>
+<p>Les données de pente ont été calculées avec les données de bathymétrie et la fonction <code>terrain</code> du paquet R <em>terra</em> <span class="citation" data-cites="hijmans2023">(<a href="references.html#ref-hijmans2023" role="doc-biblioref">Hijmans 2023</a>)</span>.</p>
 <div id="fig-slope" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_slope.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.2: Données de pente calculées avec la bathymétrie (degrés)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.2: Pente des fonds marins (degrés)</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -258,7 +259,6 @@ div.csl-indent {
 </section>
 <section id="bio-oracle" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="bio-oracle">Bio-Oracle</h3>
-<p>Les données de Bio-Oracle permettent d’avoir des données sur l’oxygène dissous minimal, maximal et moyen dans les eaux de fond à une profondeur moyenne.</p>
 <p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
 <p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
 <p><strong>Étendue temporelle:</strong> 2000 à 2014</p>
@@ -309,7 +309,6 @@ div.csl-indent {
 </section>
 <section id="bio-oracle-1" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="bio-oracle-1">Bio-Oracle</h3>
-<p>Les données de Bio-Oracle permettent d’avoir des données sur la salinité minimale, maximale et moyenne dans les eaux de fond à une profondeur moyenne.</p>
 <p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
 <p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
 <p><strong>Étendue temporelle:</strong> 2000-2014</p>
@@ -322,13 +321,13 @@ div.csl-indent {
 <div id="fig-bo-sal-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_salinity_mean.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.10: Salinité moyenne dissous des eaux de fond (PSS)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.10: Salinité moyenne des eaux de fond (PSS)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-sal-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_salinity_max.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.11: Salinité maximale dissous des eaux de fond (PSS)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.11: Salinité maximale des eaux de fond (PSS)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-sal-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
@@ -341,7 +340,7 @@ div.csl-indent {
 </section>
 <section id="sec-temp" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-temp">Température des eaux de fond</h2>
-<p>Deux sources de données sont disponibles pour la salinité des eaux de fond:</p>
+<p>Deux sources de données sont disponibles pour la température des eaux de fond:</p>
 <ul>
 <li><p>Pêches et Océans Canada</p></li>
 <li><p>Bio-Oracle</p></li>
@@ -360,7 +359,6 @@ div.csl-indent {
 </section>
 <section id="bio-oracle-2" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="bio-oracle-2">Bio-Oracle</h3>
-<p>Les données de Bio-Oracle permettent d’avoir des données sur la température minimale, maximale et moyenne dans les eaux de fond à une profondeur moyenne.</p>
 <p><strong>Source:</strong> Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” <em>Global Ecology and Biogeography</em>, <em>27</em>(3), 277-284. doi:10.1111/geb.12693</p>
 <p><strong>Résolution spatiale originale:</strong> 5 minutes d’arc</p>
 <p><strong>Étendue temporelle:</strong> 2000-2014</p>
@@ -373,13 +371,13 @@ div.csl-indent {
 <div id="fig-bo-temp-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_temperature_mean.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.15: Température moyenne dissous des eaux de fond (°C)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.15: Température moyenne des eaux de fond (°C)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-temp-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_temperature_max.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.16: Température maximale dissous des eaux de fond (°C)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.16: Température maximale des eaux de fond (°C)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-temp-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
@@ -458,25 +456,25 @@ div.csl-indent {
 <div id="fig-bo-chloro-min" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_chlorophyll_min.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.26: Concentration minimale de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.26: Concentration minimale de chlorophylle a des eaux de fond (mg/m³)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-chloro-mean" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_chlorophyll_mean.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.27: Concentration moyenne de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.27: Concentration moyenne de chlorophylle a des eaux de fond (mg/m³)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-chloro-max" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_chlorophyll_max.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.28: Concentration maximale de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.28: Concentration maximale de chlorophylle a des eaux de fond (mg/m³)</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-bo-chloro-range" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="figures/env_bottom_chlorophyll_range.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.29: Étendue des valeurs de concentration de chlorophylle a dans les eaux de fond (mg/m³)</figcaption><p></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.29: Étendue des valeurs de concentration de chlorophylle a des eaux de fond (mg/m³)</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -615,7 +613,7 @@ div.csl-indent {
 <section id="sec-sed" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sec-sed">Les sédiments de fond</h2>
 <p><strong>Source:</strong> Loring, D. H., and D. J. G. Nota. (1973). Morphology and sediments of the Gulf of St.&nbsp;Lawrence. Bull. Fish. Res. Bd. Can. 182. 147 p.&nbsp;+ 7 charts.</p>
-<p><strong>Résolution spatiale originale:</strong> Ne s’applique pas, les données sont des polygones</p>
+<p><strong>Résolution spatiale originale:</strong> Ne s’applique pas</p>
 <p><strong>Étendue temporelle:</strong> 1961-1969</p>
 <div id="fig-sediments" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -623,6 +621,10 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;4.47: Catégories générales des sédiments de surface</figcaption><p></p>
 </figure>
 </div>
+</section>
+<section id="données-sur-la-pêche-commrciale" class="level2">
+<h2 class="anchored" data-anchor-id="données-sur-la-pêche-commrciale">Données sur la pêche commrciale</h2>
+<p>Comme le chalutage peut avoir un impact important sur l’établissement des plumes de mer, il pourrait être pertinent d’inclure l’information sur la densité de pêche commerciale au chalut dans les modèles. Bien que cette méthode de pêche ne constitue pas une variable environnementale qui peut définir un habitat potentiel pour les plumes de mer, elle reste tout de même une variable pouvant expliquer une partie de la variance dans l’occurrence des plumes de mer. Considérer la densité de pêche commerciale au chalut dans les modèles pourrait donc améliorer la qualité des prédictions de ceux-ci. Nous n’avons pas intégré les données de densité de peĉhe commerciale au chalut pour l’instant, mais il sera intéressant d’explorer l’effet de cette variable sur les cartes de distribution des plumes de mer obtenues à partir des modèles.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
@@ -769,12 +771,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./environmental_variables.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Variables environnementales</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Variables environnementales à considérer pour les modèles</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./surface.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-title">Variables des eaux de surface</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-title">Variables environnementales des eaux de surface</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

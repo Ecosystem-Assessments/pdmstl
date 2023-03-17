@@ -123,7 +123,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./environmental_variables.html" class="sidebar-item-text sidebar-link">Variables environnementales</a>
+            <a href="./environmental_variables.html" class="sidebar-item-text sidebar-link">Variables environnementales à considérer pour les modèles</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -131,12 +131,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables du fond marin</span></a>
+  <a href="./fond_marin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables environnementales des fonds marins</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables des eaux de surface</span></a>
+  <a href="./surface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables environnementales des eaux de surface</span></a>
   </div>
 </li>
       </ul>
@@ -202,6 +202,7 @@ div.csl-indent {
 
 </header>
 
+<p>Une donnée d’occurrence présente la preuve de la présence d’une espèce à un endroit et un temps précis <span class="citation" data-cites="wieczorek2012">(<a href="references.html#ref-wieczorek2012" role="doc-biblioref">Wieczorek et al. 2012</a>)</span>. Lorsque tous les taxons visés par l’échantillonnage (e.g.&nbsp;endobenthos) sont identifiés à un endroit et un temps précis, une donnée d’occurrence d’un taxon qui n’a pas été identifié présente la preuve de l’absence du taxon à un endroit et un temps précis <span class="citation" data-cites="wieczorek2012">(<a href="references.html#ref-wieczorek2012" role="doc-biblioref">Wieczorek et al. 2012</a>)</span>. Le terme «occurrence» utilisé dans ce rapport signifie donc la présence ou l’absence d’un taxon à un endroit et un temps précis.</p>
 <section id="sources-de-données" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="sources-de-données">Sources de données</h2>
 <p>Les données d’occurrences des plumes de mer proviennent de deux sources:</p>
@@ -233,7 +234,7 @@ div.csl-indent {
 </section>
 <section id="sec-abs" class="level2">
 <h2 class="anchored" data-anchor-id="sec-abs">Inférence des absences</h2>
-<p>Les jeux de données utilisés contiennent l’identification de toutes les espèces récoltées à chacun des traits de pêche. Il est donc possible d’inférer les absences d’une espèce pour chaque trait de pêche où celle-ci n’a pas été identifiée. Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g.&nbsp;problèmes d’identification, non-détection alors que l’espèce est bien présente), mais elles amènent sont tout de même utile lors de la modélisation des aires de distribution d’espèces <span class="citation" data-cites="loboUncertainNatureAbsences2010">(<a href="references.html#ref-loboUncertainNatureAbsences2010" role="doc-biblioref">Lobo, Jiménez-Valverde, and Hortal 2010</a>)</span>. Nous avons donc inférer les absences pour les quatres espèces se situant dans l’estuaire et le golfe du Saint-Laurent:</p>
+<p>Les jeux de données utilisés contiennent l’identification de toutes les espèces récoltées à chacun des traits de pêche. Il est donc possible d’inférer les absences d’une espèce pour chaque trait de pêche où celle-ci n’a pas été identifiée. Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g.&nbsp;problèmes d’identification, non-détection alors que l’espèce est bien présente), mais elles amènent sont tout de même une information utile lors de la modélisation des aires de distribution d’espèces <span class="citation" data-cites="loboUncertainNatureAbsences2010">(<a href="references.html#ref-loboUncertainNatureAbsences2010" role="doc-biblioref">Lobo, Jiménez-Valverde, and Hortal 2010</a>)</span>. Nous avons donc inférer les absences pour les quatres espèces de plumes de mer se situant dans l’estuaire et le golfe du Saint-Laurent:</p>
 <ol type="1">
 <li><p><em>Anthoptilum grandiflorum</em></p></li>
 <li><p><em>Balticina finmarchica</em></p></li>
@@ -347,6 +348,9 @@ div.csl-indent {
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-loboUncertainNatureAbsences2010" class="csl-entry" role="doc-biblioentry">
 Lobo, Jorge M., Alberto Jiménez-Valverde, and Joaquín Hortal. 2010. <span>“The Uncertain Nature of Absences and Their Importance in Species Distribution Modelling.”</span> <em>Ecography</em> 33 (1): 103–14. <a href="https://doi.org/10.1111/j.1600-0587.2009.06039.x">https://doi.org/10.1111/j.1600-0587.2009.06039.x</a>.
+</div>
+<div id="ref-wieczorek2012" class="csl-entry" role="doc-biblioentry">
+Wieczorek, John, David Bloom, Robert Guralnick, Stan Blum, Markus Döring, Renato Giovanni, Tim Robertson, and David Vieglais. 2012. <span>“Darwin <span>Core</span>: <span>An Evolving Community-Developed Biodiversity Data Standard</span>.”</span> <em>PLOS ONE</em> 7 (1): e29715. <a href="https://doi.org/10.1371/journal.pone.0029715">https://doi.org/10.1371/journal.pone.0029715</a>.
 </div>
 </div>
 </section>
@@ -494,7 +498,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./environmental_variables.html" class="pagination-link">
-        <span class="nav-page-text">Variables environnementales</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Variables environnementales à considérer pour les modèles</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
