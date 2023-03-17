@@ -1,7 +1,7 @@
 # Modèles de distribution d'espèces {#sec-model}
 
 Les modèles de distribution d'espèces et les modèles de niches écologiques sont des modèles qui visent à déterminer la distribution actuelle ou l'habitat potentiel d'une espèce [@melo-merino2020].
-Ces modèles de distributions peuvent entre autres servir à prédire les impacts des perturbations anthropiques et des changements climatiques sur la distribution d'une espèce à des fins de conservation [@melo-merino2020].
+Ces modèles de distribution peuvent entre autres servir à prédire les impacts des perturbations anthropiques et des changements climatiques sur la distribution d'une espèce à des fins de conservation [@melo-merino2020].
 Le modèle le plus commun est le modèle corrélatif, qui consiste à expliquer la distribution d'une en se basant sur les corrélations entre ses occurrences et un ensemble de variables environnementales [@franklin2010].
 D'autres modèles sont mécanistiques et sont donc orientés sur les processus tels que la capacité de dispersion et les interactions biotiques, alors que d'autres ne sont que des interpolations spatiales [@bahn2007;@peterson2012;@peterson2015;@melo-merino2020].
 Bien que les modèles de distribution d'espèces et les modèles de niches écologiques ont d'abord été introduits avec les espèces terrestres, de plus en plus de ces modèles sont appliqués aux systèmes marins [@melo-merino2020]. 
