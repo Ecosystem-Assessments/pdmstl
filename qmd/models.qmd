@@ -1,29 +1,29 @@
 # Sélection de modèles
 
-## Types de modèles
+## Probabilité de présence
 
-### Occurrences
-
-Les données d'occurrences seront d'abord ramenées sur une grille de 36 secondes d'arc de résolution afin d'avoir des succès (présences) et des essais (présences et absences combinées) aux centroïdes de chaque cellule.
-Les paramètres du modèle de distribution d'espèce seront estimés avec une régression binomiale dans un cadre bayésien en utilisant l'approximation de Laplace imbriquée et intégrée (INLA) [@rue2009].
+Les données d'occurrences seront d'abord rapportées sur une grille de 36 secondes d'arc de résolution afin d'avoir des succès (présences) et des essais (présences et absences combinées) aux centroïdes de chaque cellule.
+Les paramètres des modèles de distribution des plumes de mer seront estimés avec une régression binomiale dans un cadre bayésien en utilisant l'approximation de Laplace imbriquée et intégrée (INLA) [@rue2009].
 INLA est une procédure d'estimation des paramètres et hyperparamètres d'un modèle bayésien extrêmement efficace.
-Elle permet notamment de construire des modèles spatiaux avec un très grand nombre d'échantillons très rapidement en contournant certaines procédures qui sont normalement très coûteuse en temps [@lindgren2011].
+Elle permet notamment de construire des modèles spatiaux avec un très grand nombre d'échantillons très rapidement en contournant certaines procédures qui sont normalement très coûteuses en temps et en mémoire [@lindgren2011].
 
-Un types de modèle spatial est un modèle de distribution d'espèce qui considère explicitement l'autocorrélation spatiale.
+Un type de modèle spatial est un modèle de distribution d'espèce qui considère explicitement l'autocorrélation spatiale.
 L'autocorrélation spatiale, dans la distribution d'une espèce, est une similitude plus marquée entre une paire d'observations plus rapprochées comparativement à une paire d'observations plus éloignées [@guelat2018].
 Cette autocorrélation peut avoir un effet important sur la qualité et l'incertitude des modèles spatiaux [@guelat2018].
 Modéliser explicitement cette autocorrélation peut grandement améliorer la qualité du modèle [@guelat2018].
 Comme la modélisation explicite de l'autocorrélation spatiale est particulièrement coûteuse en temps, l'utilisation d'INLA devient alors tout indiquée [@lindgren2011].
 
 Les cartes de probabilités de présence obtenues à partir des modèles seront binarisées en présence et absence à l'aide d'une valeur seuil de probabilité de présence.
-Cette valeur seuil représente la probabilité de présence où la sensibilité (taux de vrai positif) et la spécifité (taux de vrai négatif) du modèle sont maximisées et sera calculée à l'aide du paquet R *dismo* [@hijmans2022].
+Cette valeur seuil représente la probabilité de présence où la sensibilité (taux de vrai positif) et la spécificité (taux de vrai négatif) du modèle sont maximisées et sera calculée à l'aide du paquet R *dismo* [@hijmans2022].
 
 
-### Biomasse
+## Biomasse
 
 Des modèles pour prédire la biomasse seront également construits avec les données de biomasse afin d'avoir un comparatif avec les modèles de probabilités de présence.
-En inférant les zéros de la même manière que les absences [voir Section @sec-abs], il y a aura un excès de zéro dans la distribution des données.
+En inférant les zéros de la même manière que les absences (voir @sec-abs), il y a aura un excès de zéro dans la distribution des données.
 Dans ce cas, une approche à deux probabilités serait utilisée en décomposant la distribution des données en deux parties [@rustand2023]:
-  1. Issue binaire (présences-absences, régression binomiale)
-  2. Distribution de masses positives continues (loi Gamma ou loi log-normale).
+
+1) Issue binaire (présences-absences, régression binomiale)
+2) Distribution de masses positives continues (loi Gamma ou loi log-normale).
+
 Les méthodes pour construire et valider les performances des modèles et pour obtenir des cartes binaires seront les mêmes que celles utilisées pour les modèles de probabilités de présence.

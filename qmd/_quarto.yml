@@ -6,7 +6,10 @@ project:
 
 book:
   title: "Identification des habitats potentiels des plumes de mer dans l’estuaire maritime et le golfe du Saint-Laurent"
-  author: "Vincent Bellavance"
+  author: 
+    - "Vincent Bellavance"
+    - "Cindy Grant"
+    - "Philippe Archambault"
   date: "2023-03-17"
   sidebar:
     search: false

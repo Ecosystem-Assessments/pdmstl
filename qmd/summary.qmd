@@ -3,7 +3,7 @@
 Ce rapport a pour but de documenter l'avancement sur le projet d'identification des habitats potentiels des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent.
 Il se décline en trois parties:
 
-* [Les données d'occurrence des plumes de mer](sea_pens_occurrence_data.qmd)
+* [Les données d'occurrences des plumes de mer](sea_pens_occurrence_data.qmd)
   
   + Sources des données
   + Traitement des données

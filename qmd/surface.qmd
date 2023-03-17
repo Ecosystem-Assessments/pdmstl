@@ -12,7 +12,7 @@
 
 
 
-## Biomasse de phytolankton
+## Biomasse de phytoplancton
 
 **Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
 
@@ -20,13 +20,13 @@
 
 **Étendue temporelle:** 2000-2014
 
-![Biomasse de phytoplankton minimale dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_min.png){#fig-bo-phyto-surf-min}
+![Biomasse de phytoplancton minimale dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_min.png){#fig-bo-phyto-surf-min}
 
-![Biomasse de phytoplankton moyenne dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_mean.png){#fig-bo-phyto-surf-mean}
+![Biomasse de phytoplancton moyenne dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_mean.png){#fig-bo-phyto-surf-mean}
 
-![Biomasse de phytoplankton maximale dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_max.png){#fig-bo-phyto-surf-max}
+![Biomasse de phytoplancton maximale dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_max.png){#fig-bo-phyto-surf-max}
 
-![Étendue des valeurs de biomasse de phytoplankton dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_range.png){#fig-bo-phyto-surf-range}
+![Étendue des valeurs de biomasse de phytoplancton dans les eaux de surface (μmol/m³)](figures/env_surface_phytoplankton_range.png){#fig-bo-phyto-surf-range}
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-## Concentration de calcite dissous {#sec-calcite}
+## Concentration de calcite dissoute {#sec-calcite}
 
 **Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
 
@@ -74,4 +74,4 @@
 
 **Étendue temporelle:** 2000-2014
 
-![Concentration moyenne de calcite dissous dans les eaux de surface (mol/m³)](figures/env_surface_calcite_mean.png){#fig-bo-calcite-surf-mean}
+![Concentration moyenne de calcite dissoute dans les eaux de surface (mol/m³)](figures/env_surface_calcite_mean.png){#fig-bo-calcite-surf-mean}

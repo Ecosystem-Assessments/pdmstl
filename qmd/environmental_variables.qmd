@@ -1,10 +1,10 @@
-# Variables environnementales à considérer pour les modèles
+# Variables environnementales
 
 ## Connaissances sur les habitats des plumes de mer
 
 Les connaissances sur les habitats des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent sont limitées à ce jour.
 Les travaux de @kenchington2016 ont permis de délimiter des zones d'importance pour les plumes de mer avec la méthode du noyau dans le golfe du Saint-Laurent.
-Ces zones où la concentration de plumes de mer est particulièrement élevée se situent le long du Chenal Laurentien @fig-zones-sea-pens.
+Ces zones où la concentration de plumes de mer est particulièrement élevée se situent le long du chenal Laurentien @fig-zones-sea-pens.
 
 ![Zones de concentration significative de plumes de mer dans le golfe du Saint-Laurent identifiées par @kenchington2016](figures/sea_pens_areas.png){#fig-zones-sea-pens}
 
@@ -21,22 +21,24 @@ La @tbl-studies présente un résumé de ces études avec les taxons visés, l'a
 
 | Études | Taxons visés | Aires d'étude | Covariables | 
 |--------|--------------|---------------|-----------|
-| @gullage2017 | <ul><li>Distichophyllum gracile</li><li>Funiculina quadrangularis</li><li>Halipteris finmarchica</li><li>Pennatula grandis</li><li>Pennatula aculeata</li><li>Pennatula spp.</li><li>Umbellula lindahli</li><li>Anthoptilum grandiflorum</li></ul> | Plates-formes de Terre-Neuve et du Labrador | <ul><li>Profondeur</li><li>Température des eaux de fond</li></ul> |
-| @yesson2012 | <ul><li>Sessiliflorae</li><li>Subselliflorae</li></ul> | Global | <ul><li>Température des eaux de fond</li><li>Productivité primaire des eaux de surface</li><li>Horizons de saturation en calcite</li><li>Salinité des eaux de fond</li></ul> |
-| @greathead2015 | <ul><li>Funiculina quadrangularis</li><li>Virgularia mirabilis</li><li>Pennatula phosphorea</li></ul> | Royaume-Uni | <ul><li>Sédiments</li><li>Salinité minimale des eaux de fond</li><li>Profondeur</li></ul> |
-| @downie2021 | <ul><li>Funiculina quadrangularis</li><li>Virgularia mirabilis</li><li>Pennatula phosphorea</li></ul> | Royaume-Uni | <ul><li>Température des eaux de fond</li><li>Vélocité du courant et des vagues</li><li>Concentration de particules en suspension en hiver</li></ul> |
-| @ross2021 | <ul><li>Funiculina quadrangularis</li><li>Halipteris spp.</li><li>Kophobelemnon stelliferum</li><li>Pennatulidae spp.</li><li>Umbellula spp.</li><li>Virgulariidae spp.</li></ul> | Norvège | <ul><li>Profondeur</li><li>Interaction Température-Salinité</li><li>Sédiments</li><li>Pente</li><li>Vélocité maximale du courant</li><li>Biomasse de carbone du phytoplancton</li></ul> |
+| @gullage2017 | - *Distichophyllum gracile* <br> - *Funiculina quadrangularis* <br> - *Halipteris finmarchica* <br> - *Pennatula grandis* <br> - *Pennatula aculeata* <br> - *Pennatula* spp. <br> - *Umbellula lindahli* <br> - *Anthoptilum grandiflorum* | Plates-formes de Terre-Neuve et du Labrador | - Profondeur <br> - Température des eaux de fond |
+| @yesson2012 | - Sessiliflorae <br> - Subselliflorae | Global | - Température des eaux de fond <br> - Productivité primaire des eaux de surface <br> - Horizons de saturation en calcite <br> - Salinité des eaux de fond |
+| @greathead2015 | - *Funiculina quadrangularis* <br> - *Virgularia mirabilis* <br> - *Pennatula phosphorea* | Royaume-Uni | - Sédiments <br> - Salinité minimale des eaux de fond <br> - Profondeur |
+| @downie2021 | - *Funiculina quadrangularis* <br> - *Virgularia mirabilis* <br> - *Pennatula phosphorea* | Royaume-Uni | - Température des eaux de fond <br> - Vélocité du courant et des vagues <br> - Concentration de particules en suspension en hiver |
+| @ross2021 | - *Funiculina quadrangularis* <br> - *Halipteris* spp. <br> - *Kophobelemnon stelliferum* <br> - *Pennatulidae* spp. <br> - *Umbellula* spp. <br> - *Virgulariidae* spp. | Norvège | - Profondeur <br> - Interaction Température-Salinité <br> - Sédiments <br> - Pente <br> - Vélocité maximale du courant <br> - Biomasse de carbone du phytoplancton |
 
 : Covariables les plus importantes pour la prédiction de la présence des plumes de mer selon cinq études aillant modélisé leurs distributions {#tbl-studies}
 
 
 ## Listes des variables environnementales présentées
 
-En raison de l'état des connaissances relativement limitée sur les habitats des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent, il est préférable d'explorer un grand nombre de covariables avant de commencer la modélisation afin d'éviter d'exclure une covariable potentiellement importante dès le départ.
+En raison de l'état des connaissances relativement limitée sur les habitats des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent, il est préférable d'explorer un grand nombre de variables environnementales avant de commencer la modélisation afin d'éviter d'exclure une variable potentiellement importante dès le départ.
 Les prochaines sections présentent les 61 covariables intégrées jusqu'à présent pour modéliser les habitats potentiels des plumes de mer.
-Il est important de noter que cette liste n'est pas exhaustive et que d'autres covariables pourraient être ajoutées à cette liste éventuellement.
+
 Les données présentées proviennent de Pêches et Océans Canada ainsi que de Bio-Oracle.
 Les données ont toutes été projetées sur une grille de 36 secondes d'arc de résolution, à l'exception des données de sédiments puisqu'elles sont sous forme de polygones.
+
+Il est important de noter que cette liste n'est pas exhaustive et que d'autres covariables pourraient être ajoutées à cette liste éventuellement.
 
 
 ### Fonds marins
@@ -51,9 +53,9 @@ Les données ont toutes été projetées sur une grille de 36 secondes d'arc de 
 
 * Vitesse du courant
 
-* Biomasse de phytoplankton et concentration de chlorophylle a
+* Biomasse de phytoplancton et concentration de chlorophylle a
 
-* Molécules et éléments dissous dans l'eau
+* Concentration de molécules et éléments dissous dans les eaux de fond
 
 * Sédiments
 
@@ -64,6 +66,6 @@ Les données ont toutes été projetées sur une grille de 36 secondes d'arc de 
 
 * Couvert glacier
 
-* Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire
+* Biomasse de phytoplancton, concentration de chlorophylle a et productivité primaire
 
 * Calcite dissous dans les eaux de surface

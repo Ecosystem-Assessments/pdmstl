@@ -149,7 +149,7 @@ Deux sources de données sont disponibles pour la température des eaux de fond:
 
 
 
-## Biomasse de phytolankton
+## Biomasse de phytoplancton
 
 **Source:** Assis J, Tyberghein L, Bosch S, Heroen V, Serrão E, De Clerck O, Tittensor D (2018). “Bio‐ORACLE v2.0: Extending marine data layers for bioclimatic modelling.” _Global Ecology and Biogeography_, *27*(3), 277-284. doi:10.1111/geb.12693
 
@@ -157,13 +157,13 @@ Deux sources de données sont disponibles pour la température des eaux de fond:
 
 **Étendue temporelle:** 2000-2014
 
-![Biomasse de phytoplankton minimale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_min.png){#fig-bo-phyto-min}
+![Biomasse de phytoplancton minimale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_min.png){#fig-bo-phyto-min}
 
-![Biomasse de phytoplankton moyenne dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_mean.png){#fig-bo-phyto-mean}
+![Biomasse de phytoplancton moyenne dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_mean.png){#fig-bo-phyto-mean}
 
-![Biomasse de phytoplankton maximale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_max.png){#fig-bo-phyto-max}
+![Biomasse de phytoplancton maximale dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_max.png){#fig-bo-phyto-max}
 
-![Étendue des valeurs de biomasse de phytoplankton dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_range.png){#fig-bo-phyto-range}
+![Étendue des valeurs de biomasse de phytoplancton dans les eaux de fond (μmol/m³)](figures/env_bottom_phytoplankton_range.png){#fig-bo-phyto-range}
 
 
 
@@ -281,9 +281,10 @@ Deux sources de données sont disponibles pour la température des eaux de fond:
 
 
 
-## Données sur la pêche commrciale
+## Données sur la pêche commerciale
 
 Comme le chalutage peut avoir un impact important sur l'établissement des plumes de mer, il pourrait être pertinent d'inclure l'information sur la densité de pêche commerciale au chalut dans les modèles.
-Bien que cette méthode de pêche ne constitue pas une variable environnementale qui peut définir un habitat potentiel pour les plumes de mer, elle reste tout de même une variable pouvant expliquer une partie de la variance dans l'occurrence des plumes de mer.
+Bien que cette méthode de pêche ne constitue pas une variable environnementale qui peut définir un habitat potentiel pour les plumes de mer, elle reste tout de même une variable pouvant expliquer une partie de la variance dans les occurrences des plumes de mer.
 Considérer la densité de pêche commerciale au chalut dans les modèles pourrait donc améliorer la qualité des prédictions de ceux-ci.
+
 Nous n'avons pas intégré les données de densité de peĉhe commerciale au chalut pour l'instant, mais il sera intéressant d'explorer l'effet de cette variable sur les cartes de distribution des plumes de mer obtenues à partir des modèles.
