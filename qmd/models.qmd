@@ -14,8 +14,8 @@ L'autocorrélation spatiale dans la distribution d'une espèce est une similitud
 Cette autocorrélation peut avoir un effet important sur la qualité et l'incertitude des modèles spatiaux et modéliser explicitement cette autocorrélation peut grandement améliorer la qualité du modèle [@guelat2018].
 Comme la modélisation explicite de l'autocorrélation spatiale est particulièrement coûteuse en temps, l'utilisation d'INLA devient alors tout indiquée.
 
-Les cartes de probabilités d'occurrence obtenues à partir des modèles seront binarisées en présence et absence à l'aide d'une valeur seuil de probabilité d'occurrence.
-Cette valeur seuil représente la probabilité d'occurrence où la sensibilité (taux de vrai positif) et la spécifité (taux de vrai négatif) du modèle sont maximisées et sera calculée à l'aide du paquet R *dismo* [@hijmans2022].
+Les cartes de probabilités de présence obtenues à partir des modèles seront binarisées en présence et absence à l'aide d'une valeur seuil de probabilité de présence.
+Cette valeur seuil représente la probabilité de présence où la sensibilité (taux de vrai positif) et la spécifité (taux de vrai négatif) du modèle sont maximisées et sera calculée à l'aide du paquet R *dismo* [@hijmans2022].
 
 
 ### Biomasse

@@ -1,5 +1,10 @@
 # Données d'occurrences {#sec-occ}
 
+Une donnée d'occurrence présente la preuve de la présence d'une espèce à un endroit et un temps précis [@wieczorek2012].
+Lorsque tous les taxons visés par l'échantillonnage (e.g. endobenthos) sont identifiés à un endroit et un temps précis, une donnée d'occurrence d'un taxon qui n'a pas été identifié présente la preuve de l'absence du taxon à un endroit et un temps précis [@wieczorek2012]. 
+Le terme «occurrence» utilisé dans ce rapport signifie donc la présence ou l'absence d'un taxon à un endroit et un temps précis.
+
+
 ## Sources de données
 
 Les données d'occurrences des plumes de mer proviennent de deux sources: 
@@ -27,8 +32,8 @@ Par contre, il est spécifié que la qualité des données s'est améliorée au 
 
 Les jeux de données utilisés contiennent l'identification de toutes les espèces récoltées à chacun des traits de pêche.
 Il est donc possible d'inférer les absences d'une espèce pour chaque trait de pêche où celle-ci n'a pas été identifiée.
-Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g. problèmes d'identification, non-détection alors que l'espèce est bien présente), mais elles amènent sont tout de même utile lors de la modélisation des aires de distribution d'espèces [@loboUncertainNatureAbsences2010].
-Nous avons donc inférer les absences pour les quatres espèces se situant dans l'estuaire et le golfe du Saint-Laurent:
+Ces absences ne sont évidemment pas parfaites pour plusieurs raisons (e.g. problèmes d'identification, non-détection alors que l'espèce est bien présente), mais elles amènent sont tout de même une information utile lors de la modélisation des aires de distribution d'espèces [@loboUncertainNatureAbsences2010].
+Nous avons donc inférer les absences pour les quatres espèces de plumes de mer se situant dans l'estuaire et le golfe du Saint-Laurent:
 
 1. *Anthoptilum grandiflorum*
 

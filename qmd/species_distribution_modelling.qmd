@@ -7,4 +7,4 @@ D'autres modèles sont méchanistiques et sont donc orientés sur les processus 
 Bien que les modèles de distribution d'espèces et les modèles de niches écologiques ont d'abord été introduits avec les espèces terrestres, de plus en plus de ces modèles sont appliqués aux systèmes marins [@melo-merino2020]. 
 
 
-La prochaine section porte sur les [choix de modèles de distribution d'espèces](models.qmd) qui ont été faits jusqu'à présent afin d'identifier l'habitat potentiel des quatres espèces de plume de mer présentées dans la section des [données d'occurrence](sea_pens_occurrence_data.qmd).
+La prochaine section porte sur les [choix de modèles de distribution d'espèces](models.qmd) qui ont été faits jusqu'à présent afin d'identifier les habitats potentiels des quatres espèces de plumes de mer présentées dans la section des [données d'occurrences](sea_pens_occurrence_data.qmd).

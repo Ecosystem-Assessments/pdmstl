@@ -1,27 +1,25 @@
-# Variables environnementales
+# Variables environnementales à considérer pour les modèles
 
-## Connaissances sur l'habitat des plumes de mer
+## Connaissances sur les habitats des plumes de mer
 
-Les connaissances sur l'habitat de la plume de mer dans le golfe du Saint-Laurent sont limitées à ce jour.
-Les travaux de @kenchington2016 ont délimité des zones d'importances pour la plume de mer est élevées avec la méthode du noyau.
+Les connaissances sur les habitats des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent sont limitées à ce jour.
+Les travaux de @kenchington2016 ont permis de délimiter des zones d'importance pour les plumes de mer avec la méthode du noyau dans le golfe du Saint-Laurent.
 Ces zones où la concentration de plumes de mer est particulièrement élevée se situent le long du Chenal Laurentien @fig-zones-sea-pens.
 
 ![Zones de concentration significative de plumes de mer dans le golfe du Saint-Laurent identifiées par @kenchington2016](figures/sea_pens_areas.png){#fig-zones-sea-pens}
 
-Ces polygones ont été complémentés par les modèles d'espèces réalisés par @murillo2016.
-Les modèles basés sur des arbres décisionnels ont permis d'identifier la salinité et la température des eaux de fond ainsi que la profondeur comme variables les plus importantes pour la prédiction de la présence de plumes de mer @murillo2016.
-La productivité primaire et la température des eaux de surface sont quant à elles les deux variables les plus importantes à la prédiction de la biomasse de plume de mer @murillo2016.
+Ces polygones ont été complémentés par des modèles de distribution des plumes de mer dans le golfe du Saint-Laurent réalisés par @murillo2016.
+Les modèles basés sur des arbres décisionnels ont permis d'identifier la salinité et la température des eaux de fond ainsi que la profondeur comme étant les covariables les plus importantes pour la prédiction de la présence des plumes de mer [@murillo2016].
+La productivité primaire et la température des eaux de surface sont quant à elles les deux covariables les plus importantes à la prédiction de la biomasse des plumes de mer [@murillo2016].
 
-
-D'autres modèles de distribution de la plume de mer ont également été réalisés pour complémenter les travaux de @kenchington2016. 
+D'autres modèles de distribution des plumes de mer ont été réalisés pour complémenter les travaux de @kenchington2016. 
 Ces modèles visent la région des Maritimes [@beazley2016a], les plates-formes de Terre-Neuve et du Labrador [@guijarro2016] et l'est de l'Arctique [@beazley2016b].
-La profondeur est une variable importante à la prédiction de la présence de la plume de mer dans ces trois régions [@beazley2016a;@beazley2016b;@guijarro2016], alors que l'étendue des valeus de salinité des eaux de fond s'est également avérée importante pour le modèle de la région de l'Arctique [@guijarro2016].
+La profondeur est une variable importante à la prédiction de la présence des plumes de mer dans ces trois régions [@beazley2016a;@beazley2016b;@guijarro2016], alors que l'étendue des valeurs de la salinité des eaux de fond s'est également avérée importante pour le modèle dans l'est de l'Arctique [@guijarro2016].
 
+Nous nous sommes également fiés sur d'autres études portant sur la distribution et les habitats des plumes de mer ailleurs dans le monde afin d'élaborer la liste de covariables à prendre en considération pour les modèles.
+La @tbl-studies présente un résumé de ces études avec les taxons visés, l'aire d'étude et les covariables les plus importantes pour la prédiction de la présence des plumes de mer.
 
-Nous nous sommes également fiés sur d'autres études portant sur la distribution et l'habitat de la plume de mer ailleurs dans le monde afin d'élaborer la liste de variables environnementales à utiliser avec nos modèles.
-La @tbl-studies présente un résumé de ces études avec les taxons visés, l'aire d'étude et les variables les plus importantes pour la prédiction de la présence de la plume de mer.
-
-| Études | Taxons visés | Aires d'étude | Variables | 
+| Études | Taxons visés | Aires d'étude | Covariables | 
 |--------|--------------|---------------|-----------|
 | @gullage2017 | <ul><li>Distichophyllum gracile</li><li>Funiculina quadrangularis</li><li>Halipteris finmarchica</li><li>Pennatula grandis</li><li>Pennatula aculeata</li><li>Pennatula spp.</li><li>Umbellula lindahli</li><li>Anthoptilum grandiflorum</li></ul> | Plates-formes de Terre-Neuve et du Labrador | <ul><li>Profondeur</li><li>Température des eaux de fond</li></ul> |
 | @yesson2012 | <ul><li>Sessiliflorae</li><li>Subselliflorae</li></ul> | Global | <ul><li>Température des eaux de fond</li><li>Productivité primaire des eaux de surface</li><li>Horizons de saturation en calcite</li><li>Salinité des eaux de fond</li></ul> |
@@ -29,40 +27,43 @@ La @tbl-studies présente un résumé de ces études avec les taxons visés, l'a
 | @downie2021 | <ul><li>Funiculina quadrangularis</li><li>Virgularia mirabilis</li><li>Pennatula phosphorea</li></ul> | Royaume-Uni | <ul><li>Température des eaux de fond</li><li>Vélocité du courant et des vagues</li><li>Concentration de particules en suspension en hiver</li></ul> |
 | @ross2021 | <ul><li>Funiculina quadrangularis</li><li>Halipteris spp.</li><li>Kophobelemnon stelliferum</li><li>Pennatulidae spp.</li><li>Umbellula spp.</li><li>Virgulariidae spp.</li></ul> | Norvège | <ul><li>Profondeur</li><li>Interaction Température-Salinité</li><li>Sédiments</li><li>Pente</li><li>Vélocité maximale du courant</li><li>Biomasse de carbone du phytoplancton</li></ul> |
 
-: Variables les plus importantes pour la prédiction de la présence de plumes de mer selon cinq études aillant modéliser sa distribution {#tbl-studies}
+: Covariables les plus importantes pour la prédiction de la présence des plumes de mer selon cinq études aillant modélisé leurs distributions {#tbl-studies}
 
 
-## Listes des données environnementales présentées
+## Listes des variables environnementales présentées
 
-En raison de l'état des connaissances relativement limitée sur l'habitat de la plume de mer dans le golfe du Saint-Laurent, il est préférable d'explorer un grand nombre de variables avant de commencer la modélisation afin d'éviter d'exclure une variable potentiellement importante dès le départ.
-Les prochaines sections présentent les 61 variables environnementales intégrées jusqu'à présent pour modéliser l'habitat potentiel de la plume de mer.
-Ces données proviennent de Pêches et Océans Canada ainsi que de Bio-Oracle.
-Les données ont toutes été reprojetées sur une grille de 36 secondes d'arc de résolution, à l'exception des données de sédiments puisqu'elles sont sous forme de polygones.
-
-
-### Fond marin
-
-* [Bathymétrie et dérivés](bathymetry.qmd)
-
-* [Oxygène dissous dans les eaux de fond](oxygen.qmd)
-
-* [Salinité des eaux de fond](salinity.qmd)
-
-* [Température des eaux de fond](temperature.qmd)
-
-* [Vitesse du courant](current_velocity.qmd)
-
-* [Biomasse de phytoplankton et concentration de chlorophylle a](chloro_phyto.qmd)
-
-* [Molécules et éléments dissous dans l'eau](molecules_elements.qmd)
-
-* [Sédiments](sediments.qmd)
+En raison de l'état des connaissances relativement limitée sur les habitats des plumes de mer dans l'estuaire maritime et le golfe du Saint-Laurent, il est préférable d'explorer un grand nombre de covariables avant de commencer la modélisation afin d'éviter d'exclure une covariable potentiellement importante dès le départ.
+Les prochaines sections présentent les 61 covariables intégrées jusqu'à présent pour modéliser les habitats potentiels des plumes de mer.
+Il est important de noter que cette liste n'est pas exhaustive et que d'autres covariables pourraient être ajoutées à cette liste éventuellement.
+Les données présentées proviennent de Pêches et Océans Canada ainsi que de Bio-Oracle.
+Les données ont toutes été projetées sur une grille de 36 secondes d'arc de résolution, à l'exception des données de sédiments puisqu'elles sont sous forme de polygones.
 
 
-### Surface
+### Fonds marins
 
-* [Couvert glacier](surf_ice_cover.qmd)
+* Bathymétrie et pente
 
-* [Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire](surf_pp.qmd)
+* Oxygène dissous dans les eaux de fond
 
-* [Calcite](surf_calcite.qmd)
+* Salinité des eaux de fond
+
+* Température des eaux de fond
+
+* Vitesse du courant
+
+* Biomasse de phytoplankton et concentration de chlorophylle a
+
+* Molécules et éléments dissous dans l'eau
+
+* Sédiments
+
+* Données sur la pêche commerciale
+
+
+### Eaux de surface
+
+* Couvert glacier
+
+* Biomasse de phytoplankton, concentration de chlorophylle a et productivité primaire
+
+* Calcite dissous dans les eaux de surface
